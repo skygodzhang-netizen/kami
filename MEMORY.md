@@ -48,3 +48,12 @@
 ### 风险提示
 
 近期科技股波动加大，Q2财报季为AI投入回报关键验证期。建议关注8月初后续财报数据，谨慎持有。
+
+---
+
+# 2026-08-06
+
+## GitHub Token 配置
+- 2026-08-06: 配置 GitHub PAT token 用于 workspace git 操作
+- 远程仓库: skygodzhang-netizen/kami
+- 完成首次推送，包含配置文件和脚本
