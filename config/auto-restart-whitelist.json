@@ -1,0 +1,19 @@
+{
+  "enabled": false,
+  "mode": "observe",
+  "description": "Docker自动恢复白名单，目前仅观察，不执行自动恢复",
+  "containers": [
+    {
+      "name": "homeassistant",
+      "enabled": true,
+      "max_restart": 1,
+      "cooldown_minutes": 30
+    },
+    {
+      "name": "openclaw-gateway",
+      "enabled": false,
+      "max_restart": 1,
+      "cooldown_minutes": 30
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+=== API 健康检查 2026-07-31 17:07:22 UTC ===
+agnes-2.0-flash ✅ 7ms
+agnes-2.5-flash ✅ 9ms
+agnes-2.5-pro-alpha ✅ 8ms
+
+=== API 健康检查 2026-07-31 22:03:08 UTC ===
+agnes-2.0-flash ✅ 6ms
+agnes-2.5-flash ✅ 6ms
+=== API 健康检查 2026-07-31 23:03:34 UTC ===
+agnes-2.0-flash ✅ 7ms
+agnes-2.5-flash ✅ 9ms
+agnes-2.5-pro-alpha ❌ 30ms 
+
+🔴 API 异常告警 - 请检查：
+=== API 健康检查  ===
+2026-08-01 02:06:30 UTC
+agnes-2.0-flash ✅ OK
+agnes-2.5-flash ✅ OK
+agnes-2.5-pro-alpha ❌ 
+=== API 恢复检查 2026-08-01 02:08:36 UTC ===
+agnes-2.0-flash ✅ OK
+agnes-2.5-flash ✅ OK
+agnes-2.5-pro-alpha ✅ OK
+=== API 健康检查 2026-08-01 07:05:36 UTC ===
+agnes-2.0-flash ✅ 7ms
+agnes-2.5-flash ✅ 7ms
+=== API 健康检查 2026-08-01 07:06:21 UTC ===
+agnes-2.0-flash ❌ model_not_found
+agnes-2.5-flash ❌ model_not_found
+agnes-2.5-pro-alpha ❌ model_not_found
+
+=== API 健康检查 2026-08-01 08:02:59 UTC ===
+agnes-2.0-flash ✅ 11ms
+agnes-2.5-flash ✅ 7ms
+agnes-2.5-pro-alpha ✅ 6ms
+
+=== API 健康检查 2026-08-01 08:02:59 UTC ===
+agnes-2.0-flash ✅ 11ms
+agnes-2.5-flash ✅ 7ms
+agnes-2.5-pro-alpha ✅ 6ms
+
+=== API 健康检查 2026-08-01 08:04:24 UTC ===
+agnes-2.0-flash ✅ 8ms
+agnes-2.5-flash ✅ 7ms
+agnes-2.5-pro-alpha ✅ 8ms
+
+=== API 健康检查 2026-08-01 08:06:26 UTC ===
+agnes-2.0-flash ✅ 8ms
+agnes-2.5-flash ✅ 8ms
+agnes-2.5-pro-alpha ✅ 7ms
+
+=== API 健康检查 2026-08-01 08:06:26 UTC ===
+agnes-2.0-flash ✅ 8ms
+agnes-2.5-flash ✅ 8ms
+agnes-2.5-pro-alpha ✅ 7ms
+
+
+=== API 健康检查 2026-08-01 09:02:49 UTC ===
+agnes-2.0-flash ✅ 14ms
+agnes-2.5-flash ✅ 7ms
+agnes-2.5-pro-alpha ✅ 8ms
+
+=== API 健康检查 2026-08-01 09:04:27 UTC ===
+agnes-2.0-flash ✅ 7ms
+agnes-2.5-flash ✅ 7ms
+agnes-2.5-pro-alpha ✅ 8ms
+
+=== API 健康检查 2026-08-01 09:06:24 UTC ===
+agnes-2.0-flash ✅ 7ms
+agnes-2.5-flash ✅ 7ms
+agnes-2.5-pro-alpha ✅ 7ms
+
+=== API 健康检查 2026-08-01 09:06:24 UTC ===
+agnes-2.0-flash ✅ 7ms
+agnes-2.5-flash ✅ 7ms
+agnes-2.5-pro-alpha ✅ 7ms
+
+=== API 健康检查 2026-08-01 09:12:23 UTC ===
+agnes-2.0-flash ✅ 9ms
+agnes-2.5-flash ✅ 10ms
+agnes-2.5-pro-alpha ✅ 8ms
+
+=== API 健康检查 2026-08-01 10:02:55 UTC ===
+agnes-2.0-flash ✅ 7ms
+agnes-2.5-flash ✅ 7ms
+agnes-2.5-pro-alpha ❌ 30ms 
+
+🔴 API 异常告警 - 请检查：
+=== API 健康检查 2026-08-01 11:04:22 UTC ===
+=== API 健康检查 2026-08-01 11:04:22 UTC ===
+agnes-2.0-flash ✅ 7ms
+agnes-2.0-flash ✅ 7ms
+agnes-2.5-flash ✅ 7ms
+agnes-2.5-flash ✅ 7ms
+agnes-2.5-pro-alpha ✅ 8ms
+agnes-2.5-pro-alpha ✅ 8ms
+
+
+=== API 健康检查 2026-08-05 02:05:19 UTC ===
+agnes-2.0-flash ✅ 8ms
+agnes-2.5-flash ✅ 7ms
+agnes-2.5-pro-alpha ✅ 7ms
+
+=== API 健康检查 2026-08-06 04:07:27 UTC ===

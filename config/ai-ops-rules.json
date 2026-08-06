@@ -1,0 +1,27 @@
+{
+  "disk": {
+    "warning": 70,
+    "critical": 85,
+    "growth_warning_per_day": 2
+  },
+
+  "memory": {
+    "warning": 80,
+    "critical": 90
+  },
+
+  "temperature": {
+    "warning": 70,
+    "critical": 85
+  },
+
+  "openclash": {
+    "critical": "stopped"
+  },
+
+  "risk_level": {
+    "low": 0,
+    "medium": 2,
+    "high": 4
+  }
+}

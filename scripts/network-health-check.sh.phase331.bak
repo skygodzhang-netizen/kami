@@ -1,0 +1,72 @@
+#!/bin/bash
+# network-health-check.sh
+# Phase 3.3 网络智能巡检（观察模式）
+
+set -euo pipefail
+
+TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S CST")
+
+BASE="/home/ubuntu/.openclaw/workspace"
+CONFIG="$BASE/config/network-check-rules.json"
+LOG_DIR="$BASE/metrics/network"
+
+mkdir -p "$LOG_DIR"
+
+LOG_FILE="$LOG_DIR/network-health-$(date +%Y-%m-%d).json"
+
+echo "=========================================="
+echo " 网络智能巡检 — $TIMESTAMP"
+echo "=========================================="
+
+RESULT="["
+
+FIRST=true
+
+while read -r name host type; do
+
+    [ -z "$name" ] && continue
+
+    echo ""
+    echo "检测: $name ($host)"
+
+    if ping -c 3 -W 2 "$host" >/tmp/ping_result 2>/dev/null; then
+
+        LOSS=$(grep -oP '\d+(?=% packet loss)' /tmp/ping_result || echo "100")
+        AVG=$(grep "rtt" /tmp/ping_result | awk -F'/' '{print $5}' || echo "0")
+
+        STATUS="online"
+
+    else
+
+        LOSS="100"
+        AVG="0"
+        STATUS="offline"
+
+    fi
+
+
+    echo "状态: $STATUS"
+    echo "延迟: ${AVG}ms"
+    echo "丢包: ${LOSS}%"
+
+    [ "$FIRST" = true ] || RESULT+=","
+
+    RESULT+="{\"name\":\"$name\",\"host\":\"$host\",\"status\":\"$STATUS\",\"latency_ms\":\"$AVG\",\"loss\":\"$LOSS\"}"
+
+    FIRST=false
+
+done < <(
+jq -r '.targets[] | "\(.name) \(.host) \(.type)"' "$CONFIG"
+)
+
+
+RESULT+="]"
+
+echo "$RESULT" > "$LOG_FILE"
+
+
+echo ""
+echo "记录:"
+echo "$LOG_FILE"
+
+echo "=========================================="

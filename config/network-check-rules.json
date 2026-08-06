@@ -1,0 +1,27 @@
+{
+  "enabled": true,
+  "mode": "observe",
+  "description": "网络节点质量巡检，仅采集分析，不自动切换",
+  "targets": [
+    {
+      "name": "Cloudflare",
+      "host": "1.1.1.1",
+      "type": "dns"
+    },
+    {
+      "name": "Google",
+      "host": "8.8.8.8",
+      "type": "dns"
+    },
+    {
+      "name": "OpenAI API",
+      "url": "https://api.openai.com/v1/models",
+      "type": "https"
+    },
+    {
+      "name": "Agnes API",
+      "url": "https://apihub.agnes-ai.cn/v1/models",
+      "type": "https"
+    }
+  ]
+}

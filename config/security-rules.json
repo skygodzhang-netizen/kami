@@ -1,0 +1,122 @@
+{
+  "version": "1.0",
+  "created": "2026-07-24",
+  "providers": [
+    "Google",
+    "Bybit",
+    "PayPal",
+    "GitHub",
+    "Cloudflare",
+    "CloudCone",
+    "OpenAI",
+    "Anthropic"
+  ],
+  "rules": {
+    "critical": {
+      "level": "red",
+      "notify": "telegram_immediate",
+      "keywords_en": [
+        "password changed",
+        "password was changed",
+        "password reset",
+        "api key created",
+        "api key deleted",
+        "api key revoked",
+        "token created",
+        "token deleted",
+        "withdrawal",
+        "payment method",
+        "payment method changed",
+        "billing updated",
+        "two-factor disabled",
+        "2fa disabled",
+        "security verification turned off",
+        "unauthorized access",
+        "account locked",
+        "account suspended",
+        "fraudulent",
+        "chargeback",
+        "fund transfer",
+        "login from new device succeeded"
+      ],
+      "keywords_zh": [
+        "密码已修改",
+        "密码更改",
+        "密码重置",
+        "API Key",
+        "密钥创建",
+        "密钥删除",
+        "令牌创建",
+        "提现",
+        "付款方式",
+        "支付方式修改",
+        "账单更新",
+        "双重验证已关闭",
+        "2FA 已关闭",
+        "安全验证关闭",
+        "未经授权访问",
+        "账户被锁定",
+        "账户暂停",
+        "欺诈",
+        "退款",
+        "资金转账",
+        "异常登录成功",
+        "异常登录"
+      ]
+    },
+    "warning": {
+      "level": "yellow",
+      "notify": "telegram_digest",
+      "keywords_en": [
+        "new device",
+        "new sign-in",
+        "login from",
+        "sign-in attempt",
+        "location changed",
+        "security setting",
+        "security update",
+        "login alert",
+        "unusual activity",
+        "suspicious",
+        "verification code"
+      ],
+      "keywords_zh": [
+        "新设备",
+        "新登录",
+        "异地登录",
+        "登录提醒",
+        "登录尝试",
+        "安全设置",
+        "安全更新",
+        "异常活动",
+        "可疑",
+        "验证码",
+        "位置变更"
+      ]
+    },
+    "info": {
+      "level": "green",
+      "notify": "log_only",
+      "keywords_en": [
+        "security tip",
+        "recommend",
+        "enable two-step",
+        "best practice",
+        "marketing",
+        "newsletter",
+        "update available",
+        "release notes"
+      ],
+      "keywords_zh": [
+        "安全建议",
+        "推荐",
+        "启用两步验证",
+        "最佳实践",
+        "营销",
+        "新闻稿",
+        "更新可用",
+        "发行说明"
+      ]
+    }
+  }
+}

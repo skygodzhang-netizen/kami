@@ -1,0 +1,13 @@
+{
+  "time":"2026-08-06 12:00:15",
+  "risk":"low",
+  "score":"0",
+  "reason":"",
+  "metrics":{
+    "ubuntu_disk":"16",
+    "istoreos_overlay":"67",
+    "memory":"59",
+    "temperature":"53",
+    "openclash":"running"
+  }
+}

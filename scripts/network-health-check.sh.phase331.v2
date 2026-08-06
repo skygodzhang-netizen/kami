@@ -1,0 +1,114 @@
+#!/bin/bash
+# Phase 3.3.1 v2 网络智能巡检
+# DNS + HTTPS 检测
+
+set -euo pipefail
+
+BASE="/home/ubuntu/.openclaw/workspace"
+CONFIG="$BASE/config/network-check-rules.json"
+LOG_DIR="$BASE/metrics/network"
+
+mkdir -p "$LOG_DIR"
+
+TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S CST")
+LOG_FILE="$LOG_DIR/network-health-$(date +%Y-%m-%d).json"
+
+echo "=========================================="
+echo " 网络智能巡检 v2 — $TIMESTAMP"
+echo "=========================================="
+
+RESULT="["
+FIRST=true
+
+
+while read -r name host type; do
+
+    [ -z "$name" ] && continue
+
+    echo ""
+    echo "检测: $name ($host)"
+
+    if [ "$type" = "dns" ]; then
+
+        PING=$(ping -c 3 -W 2 "$host" 2>/dev/null || true)
+
+        if echo "$PING" | grep -q "packet loss"; then
+
+            LOSS=$(echo "$PING" | grep -oP '\d+(?=% packet loss)')
+            AVG=$(echo "$PING" | grep "rtt" | awk -F'/' '{print $5}')
+
+            STATUS="online"
+
+        else
+
+            LOSS="100"
+            AVG="0"
+            STATUS="offline"
+
+        fi
+
+
+        echo "类型: DNS"
+        echo "状态: $STATUS"
+        echo "延迟: ${AVG}ms"
+        echo "丢包: ${LOSS}%"
+
+
+    elif [ "$type" = "https" ]; then
+
+
+        CURL=$(curl -o /dev/null \
+        -s \
+        -w "%{http_code} %{time_total}" \
+        --max-time 10 \
+        "https://$host")
+
+
+        CODE=$(echo "$CURL" | awk '{print $1}')
+        TIME=$(echo "$CURL" | awk '{print $2}')
+
+
+        if [ "$CODE" != "000" ]; then
+
+            STATUS="online"
+
+        else
+
+            STATUS="offline"
+
+        fi
+
+
+        echo "类型: HTTPS"
+        echo "状态: $STATUS"
+        echo "HTTP: $CODE"
+        echo "耗时: ${TIME}s"
+
+        LOSS="0"
+        AVG="$TIME"
+
+    fi
+
+
+    [ "$FIRST" = true ] || RESULT+=","
+
+    RESULT+="{\"name\":\"$name\",\"host\":\"$host\",\"type\":\"$type\",\"status\":\"$STATUS\",\"latency\":\"$AVG\",\"loss\":\"$LOSS\"}"
+
+    FIRST=false
+
+
+done < <(
+jq -r '.targets[] | "\(.name) \(.host) \(.type)"' "$CONFIG"
+)
+
+
+RESULT+="]"
+
+echo "$RESULT" > "$LOG_FILE"
+
+
+echo ""
+echo "记录:"
+echo "$LOG_FILE"
+
+echo "=========================================="

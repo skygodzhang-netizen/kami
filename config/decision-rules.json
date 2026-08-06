@@ -1,0 +1,25 @@
+{
+  "disk": {
+    "overlay": {
+      "warning": 80,
+      "action": "notify_only"
+    },
+    "data_disk": {
+      "warning": 85,
+      "action": "suggest_then_confirm"
+    }
+  },
+
+  "docker": {
+    "restart": false,
+    "auto_remove": false
+  },
+
+  "network": {
+    "modify_config": false
+  },
+
+  "security": {
+    "external_message": "confirm"
+  }
+}

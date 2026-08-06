@@ -1,0 +1,9 @@
+{
+  "status":"ok",
+  "samples":"42",
+  "current_disk":"16%",
+  "growth_total":"0%",
+  "growth_per_day":"0.00%",
+  "forecast_to_85_percent":"unknown days",
+  "risk":"low"
+}

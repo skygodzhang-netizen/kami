@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "arcane-docker-manager": {
+      "version": "1.0.0",
+      "installedAt": 1784118878237,
+      "ownerHandle": "cougz"
+    }
+  }
+}

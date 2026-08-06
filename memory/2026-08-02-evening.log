@@ -1,0 +1,23 @@
+# 2026-08-02 晚安巡检 (21:02 CST / 13:02 UTC)
+
+## Ubuntu AI Server (192.168.100.108)
+```
+[系统] 运行时间: 11 days, 22:34 | 负载: 0.30 0.14 0.10 ✅
+[内存] 1.5G / 3.8G (40%), available 2.3G ✅
+[磁盘] / : 16% (15G, 可用79G) ✅
+[Docker] homeassistant: Up 29 hours ✅
+[服务] openclaw-gateway: active ✅
+```
+
+## iStoreOS 路由器 (192.168.100.1)
+```
+[系统] 运行时间: 11 days, 22:36 | 负载: 0.24 0.22 0.20 ✅
+[服务] OpenClash: running (enable=1) ✅
+[Tailscale] istoreos online (100.74.236.122) · zhanglihua/windows offline ✅
+```
+
+## 安全邮件扫描
+- 无新增邮件，早检已处理 Anthropic 账户暂停事件
+
+## 结论
+全部服务正常，无异常需要报告。
