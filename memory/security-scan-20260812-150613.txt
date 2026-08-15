@@ -1,0 +1,85 @@
+[2026-08-12 15:06:13 CST] 开始安全邮件扫描...
+
+=== Provider: google (Level: critical) ===
+  ID                   DATE                              FROM                                         SUBJECT                         LABELS                            THREAD
+  19f88bbf23a84638     2026-07-22 07:30                  Google Pay <googlepay-noreply@google.com>    kami，你已新增卡片，可以透過 Google Pay 使用  IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19f6b8b519edb9ac     2026-07-16 15:28                  Google Play <googleplay-noreply@google.com>  
+  您的“YouTube”订阅福利即将结束  IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19f4aff4645a6467     2026-07-10 07:47                  Google Play <googleplay-noreply@google.com>    Play 服務條款更新說明                    IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19f16f56a0212db1     2026-06-30 05:16                  Google Payments <payments-noreply@google.com>  Google Payments：kami my的付款方式已更新  IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19ef525df367e34f     2026-06-23 15:42                  Google Play <googleplay-noreply@google.com>    系统将取消您订阅的“YouTube”               CATEGORY_UPDATES,INBOX            -
+
+=== Provider: google (Level: warning) ===
+  ID                DATE              FROM                                   SUBJECT                                                                LABELS                            THREAD
+  19f1e22b803acb93  2026-07-01 14:43  Google <noreply@google.com>            Google 验证码                                                             IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19e772f036bb6403  2026-05-30 04:40  Google <no-reply@accounts.google.com>  重大安全性快訊                                                                IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19e772e6e1077f61  2026-05-30 04:39  Google <noreply@google.com>            Google 验证码                                                             IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19984cf02899bd52  2025-09-26 06:56  Google <noreply@google.com>            电子邮件验证码： 695401                                                        IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  1967af838804f1bb  2025-04-28 05:56  Google <no-reply@google.com>           ✅ Kami, finish setting up your Redmi Note 12 Turbo device with Google  CATEGORY_PROMOTIONS,INBOX         -
+
+=== Provider: google (Level: info) ===
+  ID                DATE              FROM                                   SUBJECT           LABELS                            THREAD
+  19e7c556de0826bb  2026-05-31 04:40  Google <no-reply@accounts.google.com>  您的 Google 账号恢复请求  IMPORTANT,CATEGORY_UPDATES,INBOX  -
+
+=== Provider: bybit (Level: critical) ===
+  ID                DATE              FROM                                     SUBJECT                                                                     LABELS                                    THREAD
+  19f94291a9cf2431  2026-07-24 11:17  Bybit EU <no-reply@noreply.bybit.eu>     Important Changes to Bybit EU´s Fee Structure                               CATEGORY_UPDATES,INBOX                    -
+  19f164c02bb56212  2026-06-30 02:11  Bybit <noreply@email-service.bybit.com>  [Bybit]Login from a new device Taichung Taiwan -  2026-06-30 02:11:46(UTC)  UNREAD,IMPORTANT,CATEGORY_PERSONAL,INBOX  -
+  19f164566250c846  2026-06-30 02:04  Bybit <notification@bybit.com>           [Bybit]Security Code for Your Bybit Account                                 IMPORTANT,CATEGORY_UPDATES,INBOX          -
+  19f1643c73f9cca0  2026-06-30 02:20  Bybit <noreply@email-service.bybit.com>  [Bybit]Security Code for Your Bybit Account                                 IMPORTANT,CATEGORY_PERSONAL,INBOX         [2 msgs]
+  19f163a679992411  2026-06-30 02:11  Bybit <noreply@email-service.bybit.com>  [Bybit]Login notification                                                   IMPORTANT,CATEGORY_PERSONAL,INBOX         [2 msgs]
+
+=== Provider: bybit (Level: warning) ===
+  ID                DATE              FROM                                     SUBJECT                                                                     LABELS                                    THREAD
+  19f164c02bb56212  2026-06-30 02:11  Bybit <noreply@email-service.bybit.com>  [Bybit]Login from a new device Taichung Taiwan -  2026-06-30 02:11:46(UTC)  UNREAD,IMPORTANT,CATEGORY_PERSONAL,INBOX  -
+  19f164566250c846  2026-06-30 02:04  Bybit <notification@bybit.com>           [Bybit]Security Code for Your Bybit Account                                 IMPORTANT,CATEGORY_UPDATES,INBOX          -
+  19f1643c73f9cca0  2026-06-30 02:20  Bybit <noreply@email-service.bybit.com>  [Bybit]Security Code for Your Bybit Account                                 IMPORTANT,CATEGORY_PERSONAL,INBOX         [2 msgs]
+  19f16336923173bc  2026-06-30 01:44  Bybit <noreply@email-service.bybit.com>  [Bybit]Email authentication                                                 IMPORTANT,CATEGORY_PERSONAL,INBOX         -
+  19f1203fefc6db55  2026-06-29 06:14  Bybit <noreply@email-service.bybit.com>  [Bybit]Security Code for Your Bybit Account                                 IMPORTANT,CATEGORY_PERSONAL,INBOX         -
+
+=== Provider: paypal (Level: critical) ===
+  ID                DATE              FROM                                                 SUBJECT            LABELS                            THREAD
+  19f8c2f523f0bd9e  2026-07-22 23:35  "service@intl.paypal.com" <service@intl.paypal.com>  跟踪您的数据删除请求         CATEGORY_UPDATES,INBOX            -
+  19f88ca2dceab6ad  2026-07-22 07:46  "service@intl.paypal.com" <service@intl.paypal.com>  您已要求我们删除您的数据       CATEGORY_UPDATES,INBOX            -
+  19f88c57f36e838d  2026-07-22 07:41  "service@intl.paypal.com" <service@intl.paypal.com>  您的PayPal验证码        IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19f21bb389471067  2026-07-02 07:29  "service@intl.paypal.com" <service@intl.paypal.com>  您添加了新地址            CATEGORY_UPDATES,INBOX            -
+  19f21b4873f79bf5  2026-07-02 07:21  "service@intl.paypal.com" <service@intl.paypal.com>  您从 PayPal 账户中移除了卡  CATEGORY_UPDATES,INBOX            -
+
+=== Provider: paypal (Level: warning) ===
+  ID                DATE              FROM                                                 SUBJECT      LABELS                            THREAD
+  19f88c57f36e838d  2026-07-22 07:41  "service@intl.paypal.com" <service@intl.paypal.com>  您的PayPal验证码  IMPORTANT,CATEGORY_UPDATES,INBOX  -
+
+=== Provider: paypal (Level: info) ===
+  ID                DATE              FROM                                                 SUBJECT     LABELS                  THREAD
+  19f8c2f523f0bd9e  2026-07-22 23:35  "service@intl.paypal.com" <service@intl.paypal.com>  跟踪您的数据删除请求  CATEGORY_UPDATES,INBOX  -
+
+=== Provider: github (Level: warning) ===
+  ID                DATE              FROM                         SUBJECT                              LABELS                            THREAD
+  19f59af07e530f31  2026-07-13 04:14  GitHub <noreply@github.com>  [GitHub] Please verify your device   IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19f174390242cee0  2026-06-30 06:42  GitHub <noreply@github.com>  [GitHub] Please review this sign in  IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19e7df8ad3f402f9  2026-05-31 12:18  GitHub <noreply@github.com>  [GitHub] Please verify your device   IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19ca1f983a3e8a67  2026-02-28 02:00  GitHub <noreply@github.com>  [GitHub] Please review this sign in  IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19ca1f8cd72fa2c2  2026-02-28 01:59  GitHub <noreply@github.com>  [GitHub] Please verify your device   IMPORTANT,CATEGORY_UPDATES,INBOX  -
+
+=== Provider: cloudflare (Level: critical) ===
+  ID                DATE              FROM                                        SUBJECT                           LABELS                            THREAD
+  19a5ee9195aa15f1  2025-11-07 15:22  Cloudflare <noreply@notify.cloudflare.com>  [Cloudflare]：更改 Cloudflare 密码的说明  IMPORTANT,CATEGORY_UPDATES,INBOX  -
+
+=== Provider: cloudflare (Level: info) ===
+  ID                DATE              FROM                                        SUBJECT                                 LABELS                  THREAD
+  19a585aed873c645  2025-11-06 08:49  Cloudflare <noreply@notify.cloudflare.com>  wsszlh.icu 现已在 Cloudflare （Free 计划下激活）  CATEGORY_UPDATES,INBOX  -
+
+=== Provider: cloudcone (Level: info) ===
+  ID                DATE              FROM                                         SUBJECT                                                                                                  LABELS                               THREAD
+  19f461a2b2c4f003  2026-07-12 10:08  CloudCone <support@tickets.cloudcone.email>  (#1407842) VPS离线                                                                                         IMPORTANT,CATEGORY_UPDATES,INBOX     [4 msgs]
+  19eda4a00f5577b0  2026-06-18 09:54  David From CloudCone <hello@cloudcone.com>   Everyone's favorite SSD VPS offers are back in stock! 🇺🇸                                                 CATEGORY_PERSONAL,INBOX              -
+  19e5de1474842496  2026-05-25 06:45  Shashi From CloudCone <hello@cloudcone.com>  MO, USA based SSD VPS offers are back in stock! 🇺🇸                                                       CATEGORY_PROMOTIONS,INBOX            -
+  19e450fb94d478be  2026-05-20 11:05  David From CloudCone <hello@cloudcone.com>   USA based SSD VPS offers are back in stock! 🇺🇸                                                           CATEGORY_PROMOTIONS,IMPORTANT,INBOX  -
+  19d62c16d53a476b  2026-04-06 12:25  David from CloudCone <hello@cloudcone.com>   USA based VPS starts at $14.99/Year 👋 | Packed with all the core features to take you online instantly!  CATEGORY_UPDATES,INBOX               -
+
+=== Provider: openai (Level: info) ===
+  ID                DATE              FROM                               SUBJECT                                                    LABELS                            THREAD
+  19f71be9062cc1e7  2026-07-17 20:22  OpenAI <noreply@email.openai.com>  OpenAI Dev News: OpenAI Build Week, GPT-5.6, ChatGPT Work  CATEGORY_UPDATES,INBOX            -
+  19e701ba9020fb1c  2026-05-28 19:41  OpenAI <noreply@email.openai.com>  Update to our privacy policy and more controls             IMPORTANT,CATEGORY_UPDATES,INBOX  -
+  19c96b55eea73fd0  2026-02-25 21:29  OpenAI <noreply@email.openai.com>  OpenAI Dev News: Codex app, tips from OpenAI devs          CATEGORY_UPDATES,INBOX            -
+

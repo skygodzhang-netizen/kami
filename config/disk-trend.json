@@ -1,2435 +1,1315 @@
 {
-  "collected": [
+  "entries": [
     {
-      "timestamp": "2026-07-18T14:37:36.018034Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "644.0M",
-          "use_pct": "67%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.3G",
-          "avail": "83.6G",
-          "use_pct": "20%"
-        }
-      ]
+      "timestamp": "2026-08-10 19:03:53",
+      "ubuntu": {
+        "load": "0.07",
+        "mem_pct": "38",
+        "disk_root_pct": "16",
+        "docker": "homeassistant: Up 9 days",
+        "openclaw": "active",
+        "caddy": "active",
+        "fail2ban": "active"
+      },
+      "istoreos": {
+        "load": "0.50",
+        "mem_pct": "59",
+        "overlay_pct": "67",
+        "sata_pct": "8",
+        "data_pct": "21",
+        "openclash": "running (mihomo进程正常)",
+        "tailscale": "running",
+        "devices_online": 13
+      },
+      "certs": "all OK",
+      "network": "internal/external/DNS OK"
     },
     {
-      "timestamp": "2026-07-18T14:47:05Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "644.0M",
-          "use_pct": "67%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.3G",
-          "avail": "83.6G",
-          "use_pct": "20%"
-        }
-      ]
+      "timestamp": "2026-08-11 08:02:46 CST",
+      "ubuntu": {
+        "load": "0.50",
+        "mem_pct": "42",
+        "disk_root_pct": "16",
+        "docker": "homeassistant: Up 9 days",
+        "openclaw": "active",
+        "caddy": "active",
+        "fail2ban": "active"
+      },
+      "istoreos": {
+        "load": "0.74",
+        "mem_pct": "59",
+        "overlay_pct": "67",
+        "sata_pct": "8",
+        "data_pct": "21",
+        "openclash": "running",
+        "tailscale": "running",
+        "devices_online": 11
+      }
     },
     {
-      "timestamp": "2026-07-19T12:00:24Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-11 21:03:24 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "644.0M",
-          "use_pct": "67%"
+        "uptime": "13:03:24 up 20 days, 22:35,  0 user,  load average: 0.11, 0.14, 0.06",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.4G",
-          "avail": "83.5G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "21:03:24 up 20 days, 22:37,  load average: 0.46, 0.40, 0.32",
+        "mem_pct": "59%",
+        "mem_used": "4686456MB",
+        "mem_total": "7961832MB"
+      }
     },
     {
-      "timestamp": "2026-07-20T01:02:04Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-11 21:03:40 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "644.1M",
-          "use_pct": "67%"
+        "uptime": "13:03:40 up 20 days, 22:36,  0 user,  load average: 0.08, 0.13, 0.06",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.3Gi",
+        "mem_pct": "1.6/3.8"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.4G",
-          "avail": "83.5G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "21:03:40 up 20 days, 22:37,  load average: 0.35, 0.38, 0.31",
+        "mem_pct": "59%",
+        "mem_used": "4689136MB",
+        "mem_total": "7961832MB"
+      }
     },
     {
-      "timestamp": "2026-07-20T12:00:48Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-11 21:05:03 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "644.1M",
-          "use_pct": "67%"
+        "uptime": "13:05:04 up 20 days, 22:37,  0 user,  load average: 0.77, 0.31, 0.13",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.4G",
-          "avail": "83.5G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "21:05:04 up 20 days, 22:39,  load average: 0.76, 0.49, 0.36",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-07-21T12:00:23Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 01:03:14 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "644.0M",
-          "use_pct": "67%"
+        "uptime": "17:03:14 up 21 days,  2:35,  0 user,  load average: 0.16, 0.16, 0.11",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.4G",
-          "avail": "83.4G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "01:03:14 up 21 days,  2:37,  load average: 0.47, 0.37, 0.29",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-07-22T12:00:31Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 01:07:47 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "641.7M",
-          "use_pct": "67%"
+        "uptime": "17:07:47 up 21 days,  2:40,  0 user,  load average: 0.96, 0.53, 0.27",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.5G",
-          "avail": "83.4G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "01:07:46 up 21 days,  2:41,  load average: 1.19, 0.86, 0.52",
+        "mem_pct": "58%"
+      }
     },
     {
-      "timestamp": "2026-07-23T12:00:40Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 03:03:12 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "639.1M",
-          "use_pct": "67%"
+        "uptime": "19:03:12 up 21 days,  4:35,  0 user,  load average: 0.38, 0.24, 0.12",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.6G",
-          "avail": "83.3G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "03:03:12 up 21 days,  4:37,  load average: 0.43, 0.29, 0.25",
+        "mem_pct": "58%"
+      }
     },
     {
-      "timestamp": "2026-07-24T12:00:11Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 06:03:25 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "636.8M",
-          "use_pct": "67%"
+        "uptime": "22:03:25 up 21 days,  7:35,  0 user,  load average: 0.47, 0.33, 0.16",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.6G",
-          "avail": "83.2G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "06:03:25 up 21 days,  7:37,  load average: 0.45, 0.24, 0.19",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-07-25T12:00:25Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 09:01:34 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "636.6M",
-          "use_pct": "67%"
+        "uptime": "01:01:34 up 21 days, 10:34,  0 user,  load average: 0.50, 0.31, 0.17",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.6G",
-          "avail": "83.2G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "09:01:35 up 21 days, 10:35,  load average: 0.64, 0.39, 0.28",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-07-26T12:00:09Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 11:02:58 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "636.6M",
-          "use_pct": "67%"
+        "uptime": "03:02:58 up 21 days, 12:35,  0 user,  load average: 0.67, 0.22, 0.09",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.7G",
-          "avail": "83.2G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "11:02:58 up 21 days, 12:37,  load average: 0.41, 0.41, 0.29",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-07-27T12:08:32Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 13:03:04 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "636.6M",
-          "use_pct": "67%"
+        "uptime": "05:03:04 up 21 days, 14:35,  0 user,  load average: 0.18, 0.17, 0.12",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.7G",
-          "avail": "83.2G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "13:03:04 up 21 days, 14:37,  load average: 0.21, 0.17, 0.20",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-07-27T12:14:35Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 14:00:32 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "636.6M",
-          "use_pct": "67%"
+        "uptime": "06:00:32 up 21 days, 15:33,  0 user,  load average: 0.45, 0.15, 0.10",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.7G",
-          "avail": "83.2G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "14:00:32 up 21 days, 15:34,  load average: 0.26, 0.22, 0.19",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-07-29T12:03:14Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 14:03:59 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.0M",
-          "use_pct": "67%"
+        "uptime": "06:03:59 up 21 days, 15:36,  0 user,  load average: 0.58, 0.41, 0.21",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.7G",
-          "avail": "83.2G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "14:04:00 up 21 days, 15:38,  load average: 0.92, 0.62, 0.36",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-07-30T12:00:50Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 16:03:04 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "637.9M",
-          "use_pct": "67%"
+        "uptime": "08:03:04 up 21 days, 17:35,  0 user,  load average: 0.22, 0.16, 0.10",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.7G",
-          "avail": "83.2G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "16:03:04 up 21 days, 17:37,  load average: 0.40, 0.22, 0.19",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-07-31T12:00:33Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 19:03:12 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "637.9M",
-          "use_pct": "67%"
+        "uptime": "11:03:12 up 21 days, 20:35,  0 user,  load average: 0.72, 0.31, 0.16",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.7G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "19:03:12 up 21 days, 20:37,  load average: 0.59, 0.41, 0.32",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-07-31T12:04:51Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 20:02:42 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "637.9M",
-          "use_pct": "67%"
+        "uptime": "12:02:42 up 21 days, 21:35,  0 user,  load average: 0.32, 0.24, 0.15",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.7G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "20:02:42 up 21 days, 21:36,  load average: 0.45, 0.33, 0.27",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-08-01T12:00:19Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 21:00:21 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "637.9M",
-          "use_pct": "67%"
+        "uptime": "13:00:21 up 21 days, 22:32,  0 user,  load average: 0.33, 0.10, 0.05",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "21:00:22 up 21 days, 22:34,  load average: 0.84, 0.49, 0.44",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-08-01T13:04:14Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
+      "timestamp": "2026-08-12 22:02:51 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
           "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "637.9M",
-          "use_pct": "67%"
+        "uptime": "14:02:51 up 21 days, 23:35,  0 user,  load average: 0.69, 0.29, 0.12",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "21%"
+        },
+        "uptime": "22:02:51 up 21 days, 23:36,  load average: 0.62, 0.33, 0.26",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-08-01T18:03:21Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-12 23:07:38 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "637.9M",
-          "use_pct": "67%"
+        "uptime": "15:07:38 up 22 days, 40 min,  0 user,  load average: 1.18, 0.85, 0.49",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.7Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "23:07:38 up 22 days, 41 min,  load average: 1.09, 0.88, 0.65",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-08-02T04:03:52Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-13 06:04:16 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "637.9M",
-          "use_pct": "67%"
+        "uptime": "22:04:16 up 22 days,  7:36,  0 user,  load average: 1.07, 0.74, 0.47",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "06:04:16 up 22 days,  7:38,  load average: 1.52, 0.68, 0.40",
+        "mem_pct": "59%"
+      }
     },
     {
-      "timestamp": "2026-08-02T06:03:11Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-13 08:03:18 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "637.9M",
-          "use_pct": "67%"
+        "uptime": "00:03:18 up 22 days,  9:35,  0 user,  load average: 1.23, 0.47, 0.23",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "08:03:18 up 22 days,  9:37,  load average: 1.08, 0.56, 0.37",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-02T09:04:16Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-13 13:03:19 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "637.9M",
-          "use_pct": "67%"
+        "uptime": "05:03:19 up 22 days, 14:35,  0 user,  load average: 0.46, 0.31, 0.22",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "13:03:20 up 22 days, 14:37,  load average: 0.51, 0.40, 0.32",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-02T12:00:20Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-13 14:00:33 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "637.9M",
-          "use_pct": "67%"
+        "uptime": "06:00:33 up 22 days, 15:33,  0 user,  load average: 0.26, 0.09, 0.06",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "14:00:33 up 22 days, 15:34,  load average: 0.77, 0.50, 0.38",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-02T12:03:50Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-13 14:03:21 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "637.9M",
-          "use_pct": "67%"
+        "uptime": "06:03:21 up 22 days, 15:35,  0 user,  load average: 0.97, 0.43, 0.20",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "14:03:21 up 22 days, 15:37,  load average: 0.79, 0.60, 0.44",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-03T01:00:44Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-13 20:02:45 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "12:02:45 up 22 days, 21:35,  0 user,  load average: 0.66, 0.30, 0.18",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "20:02:46 up 22 days, 21:36,  load average: 0.78, 0.60, 0.43",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-03T01:03:00Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-13 21:00:22 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "13:00:22 up 22 days, 22:32,  0 user,  load average: 0.46, 0.24, 0.16",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "21:00:22 up 22 days, 22:34,  load average: 0.58, 0.32, 0.28",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-03T12:00:24Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-13 21:07:52 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "13:07:52 up 22 days, 22:40,  0 user,  load average: 0.94, 0.57, 0.34",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "21:07:52 up 22 days, 22:41,  load average: 1.00, 0.75, 0.51",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-03T13:07:30Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-13 22:02:48 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "14:02:48 up 22 days, 23:35,  0 user,  load average: 0.66, 0.24, 0.14",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "22:02:48 up 22 days, 23:36,  load average: 0.39, 0.31, 0.32",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-03T23:03:46Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-13 23:00:29 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "15:00:29 up 23 days, 33 min,  0 user,  load average: 0.25, 0.12, 0.11",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.8G",
-          "avail": "83.1G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "23:00:29 up 23 days, 34 min,  load average: 0.35, 0.31, 0.27",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-04T01:03:37Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-14 09:05:04 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "01:05:04 up 23 days, 10:37,  0 user,  load average: 1.07, 0.59, 0.31",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.7Gi",
+        "mem_avail": "2.1Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "09:05:04 up 23 days, 10:39,  load average: 0.97, 0.73, 0.47",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-04T12:00:29Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-14 09:06:08 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "01:06:08 up 23 days, 10:38,  0 user,  load average: 0.88, 0.64, 0.35",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.7Gi",
+        "mem_avail": "2.1Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "09:06:09 up 23 days, 10:40,  load average: 1.16, 0.83, 0.52",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-04T12:08:08Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-14 10:06:46 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "02:06:46 up 23 days, 11:39,  0 user,  load average: 0.50, 0.51, 0.35",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.7Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "10:06:46 up 23 days, 11:40,  load average: 0.74, 0.71, 0.51",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-04T20:03:06Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-14 14:04:59 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "06:04:59 up 23 days, 15:37,  0 user,  load average: 0.75, 0.55, 0.29",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.7Gi",
+        "mem_avail": "2.1Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "67%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "14:04:59 up 23 days, 15:39,  load average: 1.10, 0.83, 0.52",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-04T22:03:05Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-14 16:06:06 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "08:06:06 up 23 days, 17:38,  0 user,  load average: 0.87, 0.53, 0.31",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.7Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "16:06:07 up 23 days, 17:40,  load average: 1.41, 1.17, 0.76",
+        "mem_pct": "60%"
+      }
     },
     {
-      "timestamp": "2026-08-05T00:03:27Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-14 20:02:59 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "12:02:59 up  2:02,  0 user,  load average: 0.24, 0.14, 0.04",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.3Gi",
+        "mem_avail": "2.5Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "20:03:00 up  2:04,  load average: 0.95, 0.91, 0.91",
+        "mem_pct": "34%"
+      }
     },
     {
-      "timestamp": "2026-08-05T01:01:11Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-14 21:00:32 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "13:00:32 up  3:00,  0 user,  load average: 0.26, 0.20, 0.12",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.2Gi",
+        "mem_avail": "2.6Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "21:00:32 up  3:01,  load average: 0.89, 0.91, 0.92",
+        "mem_pct": "36%"
+      }
     },
     {
-      "timestamp": "2026-08-05T03:09:41Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-14 21:03:58 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "13:03:58 up  3:03,  0 user,  load average: 0.16, 0.14, 0.10",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.5Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "21:03:59 up  3:05,  load average: 0.95, 0.89, 0.91",
+        "mem_pct": "36%"
+      }
     },
     {
-      "timestamp": "2026-08-05T04:03:40Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-14 21:04:07 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "13:04:07 up  3:04,  0 user,  load average: 0.58, 0.23, 0.13",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "21:04:07 up  3:05,  load average: 1.03, 0.91, 0.92",
+        "mem_pct": "36%"
+      }
     },
     {
-      "timestamp": "2026-08-05T05:04:01Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-14 21:09:03 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "13:09:03 up  3:09,  0 user,  load average: 0.07, 0.22, 0.17",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.3Gi",
+        "mem_avail": "2.6Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "21:09:03 up  3:10,  load average: 1.37, 1.17, 1.01",
+        "mem_pct": "37%"
+      }
     },
     {
-      "timestamp": "2026-08-05T09:13:51Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-14 23:00:42 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "15:00:42 up  5:00,  0 user,  load average: 0.09, 0.06, 0.01",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.3Gi",
+        "mem_avail": "2.5Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "23:00:42 up  5:02,  load average: 1.03, 1.20, 1.10",
+        "mem_pct": "38%"
+      }
     },
     {
-      "timestamp": "2026-08-05T11:04:37Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-15 04:03:02 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "20:03:02 up 10:03,  0 user,  load average: 0.27, 0.14, 0.03",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "04:03:02 up 10:04,  load average: 1.06, 1.04, 1.01",
+        "mem_pct": "42%"
+      }
     },
     {
-      "timestamp": "2026-08-05T12:05:53Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-15 09:06:22 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "01:06:22 up 15:06,  0 user,  load average: 0.71, 0.43, 0.21",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "09:06:22 up 15:07,  load average: 1.26, 0.99, 0.99",
+        "mem_pct": "42%"
+      }
     },
     {
-      "timestamp": "2026-08-05T13:05:48Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-15 10:01 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "16:01 up 16:01",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "20.9G",
-          "avail": "83.0G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "16:03 up 16:03",
+        "mem_pct": "46%"
+      }
     },
     {
-      "timestamp": "2026-08-05T17:02:44Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-15 10:01 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "16:01 up 16:01",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "21.0G",
-          "avail": "82.9G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "16:03 up 16:03",
+        "mem_pct": "46%"
+      }
     },
     {
-      "timestamp": "2026-08-05T19:03:56Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-15 10:04:42 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "02:04:42 up 16:04,  0 user,  load average: 0.72, 0.39, 0.19",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "21.0G",
-          "avail": "82.8G",
-          "use_pct": "20%"
-        }
-      ]
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "10:04:42 up 16:06,  load average: 1.53, 1.22, 1.08",
+        "mem_pct": "48%"
+      }
     },
     {
-      "timestamp": "2026-08-06T01:04:16Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+      "timestamp": "2026-08-15 11:01:12 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
+        "uptime": "03:01:12 up 17:01,  0 user,  load average: 0.26, 0.09, 0.08",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
+        "disk_sata2-4": {
+          "pct": "8%"
         },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "21.0G",
-          "avail": "82.8G",
-          "use_pct": "20%"
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-08-06T04:05:04Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
+        "disk_data_sda1": {
+          "pct": "22%"
         },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "21.0G",
-          "avail": "82.8G",
-          "use_pct": "20%"
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-08-06T04:09:04Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "21.0G",
-          "avail": "82.8G",
-          "use_pct": "20%"
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-08-06T05:02:47Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "21.0G",
-          "avail": "82.8G",
-          "use_pct": "20%"
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-08-06T11:03:57Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "21.3G",
-          "avail": "82.5G",
-          "use_pct": "21%"
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-08-06T12:03:01Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "21.3G",
-          "avail": "82.5G",
-          "use_pct": "21%"
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-08-06T14:02:49Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "21.3G",
-          "avail": "82.5G",
-          "use_pct": "21%"
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-08-06T15:02:50Z",
-      "ubuntu": [
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        },
-        {
-          "mount": "/",
-          "total": "98G",
-          "used": "15G",
-          "avail": "79G",
-          "use_pct": "16%"
-        }
-      ],
-      "istoreos": [
-        {
-          "host": "istoreos",
-          "mount": "/overlay",
-          "total": "1.9G",
-          "used": "1.3G",
-          "avail": "638.1M",
-          "use_pct": "67%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/sata2-4",
-          "total": "26.5G",
-          "used": "1.9G",
-          "avail": "23.2G",
-          "use_pct": "8%"
-        },
-        {
-          "host": "istoreos",
-          "mount": "/mnt/data_sda1",
-          "total": "109.5G",
-          "used": "21.3G",
-          "avail": "82.5G",
-          "use_pct": "21%"
-        }
-      ]
+        "uptime": "11:01:12 up 17:02,  load average: 1.25, 1.07, 1.02",
+        "mem_pct": "47%"
+      }
     }
-  ],
-  "last_update": "2026-08-06T15:02:50Z"
+  ]
 }

@@ -1,8 +1,1 @@
-{
-  "lastChecks": {
-    "email": null,
-    "calendar": null,
-    "weather": null,
-    "ops_report": 1754134860
-  }
-}
+{"lastCheck": "2026-08-15T00:02:00+00:00", "status": "ok", "nextCheck": "2026-08-15T01:00:00+00:00", "note": "heartbeat ok, Ubuntu AI Server 全部正常, iStoreOS 全部正常"}

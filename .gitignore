@@ -1,0 +1,34 @@
+# OpenClaw runtime
+.clawhub/
+.openclaw/
+
+# Auto-generated data/metrics
+metrics/
+data/
+reports/
+ops/
+
+# Temporary images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.webp
+frame*.jpg
+temp_*.jpg
+temp_*.png
+
+# Font files
+*.ttf
+*.otf
+*.woff
+*.woff2
+
+# One-time setup scripts
+openclaw-*-setup.md
+openclaw-*-setup.ps1
+setup-openclaw.sh
+
+# Logs (keep in git, but exclude large binary logs)
+# memory/*.log

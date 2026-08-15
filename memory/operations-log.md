@@ -1,50 +1,54 @@
 # 操作日志
 
-## 2026-08-03
+## 2026-08-14
 
-### 早检巡检 (01:02 UTC / 09:02 CST)
-- 全部服务正常，无需通知 kami
-- 磁盘趋势数据采集完成，累计 27 条记录
-- SSL 证书最短剩余 116 天
+### 23:05 CST — OpenClash 维护
+**操作**：修复YouTube延迟高、手机GPT证书错误问题
+**步骤**：
+1. 配置TUN证书到 smart.yaml
+2. 重启OpenClash服务
+
+**结果**：
+- YouTube延迟: 7.9s → 1.77s ✅
+- GPT API连通性正常 ✅
+- TUN证书问题已由 kami 处理完成 ✅
+
+**待办**：
+- Airport1和VPS订阅可能需要更新
 
 ---
 
-## 2026-08-01
-
-## 安全邮件监控扫描 - 2026-08-01 16:00 UTC
-- 扫描服务商：Google, Bybit, PayPal, GitHub, Cloudflare, CloudCone, OpenAI, Anthropic
-- 结果：无安全相关邮件（24h窗口内）
-- 状态：✅ 正常
+### 20:03 UTC — 晚检日报
+**问题**：
+- OpenClash 未运行 (enable=0)
+- Telegram通知发送失败
+- Agnes API响应变慢 (2.14s)
 
 ---
 
-## API 全挂告警 - 2026-08-01 18:02 UTC
+### 15:00 UTC — 午检
+- 全部正常
 
-**所有 Agnes 模型返回 model_not_found**
-- agnes/agnes-2.0-flash ❌
-- agnes/agnes-2.5-flash ❌
-- agnes/agnes-2.5-pro-alpha ❌
+---
 
-错误：`No available channel for model ... under group default (distributor)`
-可能原因：API key 配额耗尽或服务端问题
-已通知 kami
+### 13:12 CST — 安全邮件扫描
+- Bybit 新设备登录（台中）
+- PayPal 数据删除请求
+- Google 多次验证码
 
-## 心跳巡检 - 2026-08-01 08:02 UTC
-- Docker homeassistant 已自动重启（运行中），无异常
-- scheduler 容器不存在（预期行为）
-- API 恢复正常（之前 503 问题已解决）
+---
 
-## 2026-08-04 09:03 CST — 早检完成
-- 所有系统正常，无异常
-- SSL证书最短115天
-- 磁盘趋势31条记录，无异常增长
-- 安全邮件无新增
-- Gateway偶发timeout（00:11 UTC）已自动恢复
+### 05:05 UTC — 安全邮件扫描
+- Bybit 台中新设备登录
 
-## 2026-08-04 20:07 CST - 晚检完成
-- Ubuntu AI Server：全部正常
-- iStoreOS：全部正常
-- SSL 证书：全部正常
-- 容器健康：1/1 正常
-- 安全邮件：无高危
-- 注意：api-health-check 任务卡住（非关键），node-llama-cpp 缺失（可选功能）
+---
+
+## 2026-08-13
+
+### 操作记录
+- 安全邮件扫描完成
+
+### 10:01 CST — 早检完成
+- Ubuntu AI Server: 全部正常
+- iStoreOS: 全部正常
+- 无异常，安静时段不打扰

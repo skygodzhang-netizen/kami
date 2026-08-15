@@ -102,3 +102,48 @@ agnes-2.5-flash ✅ 7ms
 agnes-2.5-pro-alpha ✅ 7ms
 
 === API 健康检查 2026-08-06 04:07:27 UTC ===
+=== API 健康检查 2026-08-08 15:03:04 UTC ===
+agnes-2.0-flash ✅ 1ms
+agnes-2.5-flash ✅ 4ms
+agnes-2.5-pro-alpha ✅ 2ms
+
+=== API 健康检查 2026-08-09 00:03:09 UTC ===
+agnes-2.0-flash ✅ 1ms
+agnes-2.5-flash ✅ 2ms
+agnes-2.5-pro-alpha ✅ 2ms
+
+=== API 健康检查 2026-08-09 20:02:59 UTC ===
+agnes-2.0-flash ✅ 1ms
+agnes-2.5-flash ✅ 6ms
+agnes-2.5-pro-alpha ✅ 1ms
+
+=== API 健康检查 2026-08-10 02:02:37 UTC ===
+agnes-2.0-flash ✅ 1ms
+agnes-2.5-flash ✅ 1ms
+agnes-2.5-pro-alpha ✅ 1ms
+
+=== API 健康检查 2026-08-10 09:02:39 UTC ===
+agnes-2.0-flash ✅ 1ms
+agnes-2.5-flash ✅ 1ms
+agnes-2.5-pro-alpha ✅ 12ms
+
+=== API 健康检查 2026-08-11 16:02:47 UTC ===
+agnes-2.0-flash ✅ 1ms
+agnes-2.5-flash ✅ 1ms
+agnes-2.5-pro-alpha ✅ 4ms
+
+=== API 健康检查 2026-08-12 06:03:46 UTC ===
+agnes-2.0-flash ✅ 1ms
+agnes-2.5-flash ✅ 6ms
+agnes-2.5-pro-alpha ✅ 5ms
+
+=== API 健康检查 2026-08-13 00:03:17 UTC ===
+agnes-2.0-flash ✅ 1ms
+agnes-2.5-flash ✅ 1ms
+agnes-2.5-pro-alpha ✅ 1ms
+
+=== API 健康检查 2026-08-13 02:03:40 UTC ===
+agnes-2.0-flash ✅ 1ms
+agnes-2.5-flash ✅ 1ms
+agnes-2.5-pro-alpha ✅ 1ms
+
