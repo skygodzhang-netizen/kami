@@ -25,10 +25,8 @@ temp_*.png
 *.woff
 *.woff2
 
-# One-time setup scripts
-openclaw-*-setup.md
-openclaw-*-setup.ps1
-setup-openclaw.sh
+# One-time setup scripts (exclude most, but keep setup guides)
+openclaw-windows-setup.ps1
 
 # Logs (keep in git, but exclude large binary logs)
 # memory/*.log
