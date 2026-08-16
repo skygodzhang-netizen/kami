@@ -1,7 +1,32 @@
 {
-  "timestamp": "2026-08-16T02:01:00Z",
-  "root_pct": "16%",
-  "root_used": "15G",
-  "root_avail": "79G",
-  "root_size": "98G"
+  "entries": [
+    {
+      "timestamp": "2026-08-16 10:30:26 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "79G",
+          "pct": "16%"
+        },
+        "uptime": "02:30:26 up 1 day, 16:30,  0 user,  load average: 0.11, 0.09, 0.05",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.5Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "68%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "22%"
+        },
+        "uptime": "10:30:26 up 1 day, 16:31,  load average: 1.25, 1.07, 1.01",
+        "mem_pct": "50%"
+      }
+    }
+  ]
 }
