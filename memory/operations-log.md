@@ -55,3 +55,25 @@
 
 [2026-08-15 12:04 CST] 午检完成 — OpenClash运行正常，全部服务稳定
 [2026-08-15 13:32:31 CST] 晚检完成 - 全部正常，无异常
+
+## 2026-08-16 06:00 UTC — Heartbeat
+- Ubuntu AI Server: up 1d20h, load 0.31, disk 16%, mem 1.4G/3.8G, HA 401, Gateway 200
+- iStoreOS: up 1d20h, load 1.08, disk overlay 68%, sdb4 8%, sda1 22%, OpenClash running, Tailscale running
+- SSL: Caddy intermediate cert 6 days (Aug 22)
+- Docker: homeassistant Up 44h
+- No zombie processes, no log errors
+- 6 packages upgradable (krb5)
+- Status: ALL NORMAL
+
+## 2026-08-16 16:00 UTC
+- 心跳巡检完成，全部正常
+- SSL Caddy 中间证书剩余6天，连续多日关注
+- 安全邮件无新增高危事件
+
+## 2026-08-16 16:30 UTC - 心跳巡检
+- Ubuntu AI Server: 正常
+- iStoreOS: 正常
+- SSL证书: 中间CA剩余6天，继续观察
+- 安全邮件: 无新增事件
+- 磁盘趋势: 已采集
+- 无异常事件
