@@ -77,3 +77,33 @@
 - 安全邮件: 无新增事件
 - 磁盘趋势: 已采集
 - 无异常事件
+
+## 2026-08-16 10:30 UTC — 心跳巡检
+- Ubuntu AI Server: all normal
+- iStoreOS: all normal
+- SSL: Caddy cert still 6 days (持续关注)
+- Disk trend: data collected
+- Status: ALL OK
+[2026-08-16 11:30 CST] 心跳巡检 — Ubuntu AI Server: all OK, iStoreOS: all OK, SSL: Caddy cert 6 days, disk trend: collected, security email: no new high-risk events
+
+[2026-08-16 20:02 CST] 晚检完成
+- Ubuntu AI Server: all normal, 1 package upgradable (krb5)
+- iStoreOS: all normal, OpenClash running, Tailscale running
+- SSL: Caddy intermediate cert 6 days (Aug 22) — persistent warning
+- No security events, no disk alerts
+- Container health: 1/1 normal
+- Status: ALL OK
+
+[2026-08-16 20:03 CST] 安全邮件扫描
+- Google: 无新增高危
+- Bybit: 2026-06-30 台中新设备登录（历史事件）
+- PayPal: 数据删除请求（历史事件）
+- 无新增高危事件
+
+## 2026-08-17 01:00 UTC — 夜间心跳巡检
+- Ubuntu: up 2d7h, load 0.57, mem 37%, disk 16%, HA/ Gateway OK
+- iStoreOS: up 2d7h, load 1.27, overlay 68%, OpenClash/Tailscale OK
+- SSL: Caddy中间证书剩余5天（8/22到期）— 持续告警
+- Gateway错误：141条/24h（mostly非关键：node-llama-cpp缺失、Telegram瞬时失败、Agnes DNS临时失败）
+- 磁盘趋势：已采集
+- 结论：系统稳定，无紧急事项

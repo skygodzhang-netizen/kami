@@ -1,0 +1,21 @@
+[
+  {
+    "ts": "2026-08-16T16:00:00Z",
+    "root": "/ 16% 98G 15G 79G"
+  },
+  {
+    "ts": "2026-08-16T16:00:00Z",
+    "root_pct": "16%",
+    "root_total": "98G",
+    "root_used": "15G",
+    "root_avail": "79G"
+  },
+  {
+    "ts": "2026-08-17T01:00:00Z",
+    "root": "/ 16% 98G 15G 79G",
+    "root_pct": "16%",
+    "root_total": "98G",
+    "root_used": "15G",
+    "root_avail": "79G"
+  }
+]
