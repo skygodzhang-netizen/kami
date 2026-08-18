@@ -1,0 +1,12 @@
+{
+  "name": "卧室",
+  "ip": "192.168.100.195",
+  "model": "u64G",
+  "status": "online",
+  "device_id": "cam_bedroom",
+  "features": ["snapshot", "rtsp", "speaker", "record"],
+  "rtsp_url": "rtsp://192.168.100.195:554/stream1",
+  "snapshot_url": "http://192.168.100.195/cgi-bin/snapshot.cgi",
+  "configured_at": "2026-08-18T05:29:00Z",
+  "notes": "2026-08-18 新添加的摄像头"
+}
