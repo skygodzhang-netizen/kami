@@ -1,0 +1,21 @@
+{
+  "name": "客厅",
+  "ip": "192.168.100.152",
+  "device_id": "T1MVNY4H3YMSP4NP111A",
+  "mac_address": "44:29:1E:8D:D1:5B",
+  "device_name": "JA_IPC",
+  "model": "u64G",
+  "snapshot_url": "http://192.168.100.152/cgi-bin/snapshot.cgi",
+  "rtsp_url": "rtsp://192.168.100.152:554/stream1",
+  "api_urls": {
+    "config": "http://192.168.100.152/cgi-bin/config.cgi?action=get",
+    "api": "http://192.168.100.152/cgi-bin/api.cgi?action=getConfig",
+    "speaker": "http://192.168.100.152/cgi-bin/speaker.cgi",
+    "record": "http://192.168.100.152/cgi-bin/record.cgi?action=list"
+  },
+  "added_at": "2026-08-17T15:10:00+08:00",
+  "status": "online",
+  "last_seen": "2026-08-17T15:30:00+08:00",
+  "features": ["snapshot", "rtsp", "speaker", "record"],
+  "notes": "u64G 无线摄像头，支持对讲和录制"
+}

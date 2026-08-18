@@ -1,0 +1,122 @@
+security-report-2026-07-30.md|security-report-2026-07-30|# 🔒 每日安全审计报告 | 2026-07-30 ## fail2ban 状态 ### sshd jail fail2ban not running #
+episodes|2026-08-17-memory-upgrade|# 记忆系统升级完成报告 ## 时间 2026-08-17 12:30 CST ## 完成项 ### 1. 分层记忆结�
+episodes|2026-08-17|# 2026-08-17 事件记录 ## 19:45 CST — 技能安装 - 安装 13 个自我进化类 Skills - 从 
+security-report-2026-08-14.md|security-report-2026-08-14|# 🔒 每日安全审计报告 | 2026-08-14 ## fail2ban 状态 ### sshd jail fail2ban not running #
+daily-report-2026-08-04.md|daily-report-2026-08-04|# AI 运维分析日报 **日期：2026-08-04 20:07 CST（周二）** **风险等级：🟢 低 — 
+2026-07-28.md|2026-07-28|# HEARTBEAT.md 每日早检日志 — 2026-07-28 ## 执行时间 2026-07-28 01:00 UTC (09:00 CST) ##
+daily-report-2026-08-14.md|daily-report-2026-08-14|# 每日运维报告 — 2026-08-14 ## 系统健康总览 | 项目 | 状态 | 备注 | |------|-----
+daily-report-2026-08-16.md|daily-report-2026-08-16|# 日报 2026-08-16（周日） ## 系统概览 - 整体状态：**稳定** - 巡检时间：21:00 C
+security-report-2026-08-17.md|security-report-2026-08-17|# 🔒 每日安全审计报告 | 2026-08-17 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-08-11.md|2026-08-11|## 2026-08-11 巡检日志 ### 11:02 CST — 午检快速检查 - Ubuntu AI Server: 正常 - 负载:
+daily-report-2026-08-13.md|daily-report-2026-08-13|# 2026-08-13 晚检报告 ## 时间 2026-08-13 21:07 CST (13:07 UTC) --- ## Ubuntu AI Server ✅ | �
+2026-07-16-0852.md|2026-07-16-0852|# Session: 2026-07-16 08:52:36 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+016453-daily-report-2026-07-23.md|016453-daily-report-2026-07-23|# 2026-07-23 基金日报 | 南方纳斯达克100指数发起(QDII)C (016453) --- ## 📊 基金净�
+2026-08-12.md|2026-08-12|# 2026-08-12 巡检日志 ### 安全邮件扫描 (06:03 CST) - 🔴 高危: 无新增（历史 3 起
+2026-07-16-0852-2.md|2026-07-16-0852-2|# Session: 2026-07-16 08:52:37 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+daily-report-2026-08-06.md|daily-report-2026-08-06|# 日报 2026-08-06 ## 巡检汇总 ### Ubuntu AI Server (192.168.100.108) ✅ - 运行时间: 15 da
+security-report-2026-07-31.md|security-report-2026-07-31|# 🔒 每日安全审计报告 | 2026-07-31 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-08-02-email-digest.md|2026-08-02-email-digest|# 2026-08-02 每日未读邮件简报 ## ⚠️ 重要安全通知（需关注） | 时间 | 发件�
+security-report-2026-07-24.md|security-report-2026-07-24|# 🔒 每日安全审计报告 | 2026-07-24 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-08-05-ppt-summary.md|2026-08-05-ppt-summary|# 对话总结：AI 赋能企业数字化转型 PPT 制作 **时间**: 2026-08-05 18:02 UTC **平台
+2026-07-18.md|2026-07-18|# 2026-07-18 每日巡检日志 ## 早检 01:00 UTC (09:00 CST) ### Ubuntu AI Server (ubuntu-ai) - *
+2026-08-08-1039.md|2026-08-08-1039|# Session: 2026-08-08 10:39:03 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+incidents.md|incidents|# Incident History ## 2026-07-19 事件: iStoreOS tailscale 443冲突提示 现象: 巡检发现tail
+security-report-2026-08-12.md|security-report-2026-08-12|# 🔒 每日安全审计报告 | 2026-08-12 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-07-15-1400.md|2026-07-15-1400|# Session: 2026-07-15 14:00:08 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+security-report-2026-07-28.md|security-report-2026-07-28|# 🔒 每日安全审计报告 | 2026-07-28 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-07-17.md|2026-07-17|# 2026-07-17 Daily Log ## 自动化配置 (15:31 UTC) kami 要求建立全自动 AI 助手模式。�
+operations-log.md|operations-log|# 操作日志 2026-08-17 ## 19:50 CST — 晚间巡检 ### 紧急发现 - 建议用户尽快续签�
+2026-08-15.md|2026-08-15|# 2026-08-15 日志 ## 巡检 (05:30 CST / 21:30 UTC) **Ubuntu AI Server** ✅ - 运行时间: 1天1
+environment|status|# Environment Memory — 环境状态 # 技术环境、网络状态、运行状态 ## 技术环境 #
+2026-07-14-0807.md|2026-07-14-0807|# Session: 2026-07-14 08:07:11 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+2026-08-10-pm.md|2026-08-10-pm|# 2026-08-10 晚检 ## Ubuntu AI Server - **运行时间**: 20天3小时 - **CPU负载**: 0.08 (低)
+ai-analysis|latest-summary|# AI运维分析报告 时间： 2026-08-17 20:00 CST ## 系统状态 风险等级： medium（CPU �
+security-report-2026-08-06.md|security-report-2026-08-06|# 🔒 每日安全审计报告 | 2026-08-06 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-08-07.md|2026-08-07|# 2026-08-07 巡检记录 ## 早检 (09:01 CST / 01:01 UTC) **iStoreOS 路由器** ✅ - 分区：ov
+fail2ban-report-2026-06-24.md|fail2ban-report-2026-06-24|# Fail2ban 每日审计报告 — 2026-06-24 01:00 UTC ## 封禁概览 - **sshd jail**: 当前封禁
+solutions.md|solutions|# Solutions Library ## OpenClaw Gateway 问题: Gateway异常 检查: systemctl status openclaw-gate
+security-report-2026-07-26.md|security-report-2026-07-26|# 🔒 每日安全审计报告 | 2026-07-26 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-07-22.md|2026-07-22|# 2026-07-22 每日巡检日志 ## 01:00 UTC 早检 (auto) ### Ubuntu AI Server (ubuntu-ai) | 项目
+2026-08-14.md|2026-08-14|# 2026-08-14 日志 ## 安全邮件扫描 (02:03 CST / 18:03 UTC) - Bybit: 台中登录 + 多个验�
+2026-07-27.md|2026-07-27|# 每日巡检日报 — 2026-07-27 12:00 UTC (20:00 CST) ## 📊 健康状态汇总 ### Ubuntu AI S
+security-report-2026-08-16.md|security-report-2026-08-16|# 🔒 每日安全审计报告 | 2026-08-16 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-07-21-1249.md|2026-07-21-1249|# Session: 2026-07-21 12:49:06 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+security-report-2026-07-27.md|security-report-2026-07-27|# 🔒 每日安全审计报告 | 2026-07-27 ## fail2ban 状态 ### sshd jail fail2ban not running #
+daily-reports.md|daily-reports|# 日报 2026-08-13 ## 巡检摘要 - 早检 (09:00 CST): ✅ 正常 - 午检 (14:00 CST): ✅ 正�
+security-report-2026-08-05.md|security-report-2026-08-05|# 🔒 每日安全审计报告 | 2026-08-05 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-07-19.md|2026-07-19|# 2026-07-19 巡检日志 ## 午检 06:00 UTC - 服务器端整体无变化，状态稳定 - iStoreO
+infrastructure.md|infrastructure|# Infrastructure 更新时间： 2026-07-20 # Ubuntu AI Server IP: 192.168.100.108 用途: AI自动�
+reflections|2026-08-17|# 每日反思 - 2026-08-17 ## 事件回顾 # 2026-08-17 事件记录 ## 19:45 CST — 技能安装 
+security-report-2026-07-29.md|security-report-2026-07-29|# 🔒 每日安全审计报告 | 2026-07-29 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-08-09-append.md|2026-08-09-append|## 心跳巡检 (20:04 CST / 12:04 UTC) **Ubuntu AI Server** ✅ - 运行：18天21小时，负载 0
+2026-08-13.md|2026-08-13|# 2026-08-13 巡检记录 ## 巡检 (21:03 CST / 13:03 UTC) **iStoreOS 路由器** ✅ - 分区：ov
+preferences|user-model|# User Model — 用户行为模型 # 学习时间规律、常用操作、偏好分析 ## 活跃时�
+preferences|user-profile|# Preference Memory — 用户偏好 # kami 的工作方式、沟通风格、决策倾向 ## 沟通�
+2026-07-24.md|2026-07-24|# 2026-07-24 运维巡检日志 ## 晚检（全面健康检查）— 20:00 CST / 12:00 UTC ### Ubunt
+2026-07-20-evening.md|2026-07-20-evening|# 2026-07-20 日报 (晚检 12:00 UTC / 20:00 CST) ## 📊 全天状态汇总 ### Ubuntu AI Server (
+2026-07-20.md|2026-07-20|# 2026-07-20 巡检日志 ## 12:00 UTC (20:00 CST) — 晚检 + 日报 ### Ubuntu AI Server (192.168
+2026-08-09.md|2026-08-09|# 2026-08-09 Daily Log ## 巡检 (19:02 CST / 11:02 UTC) ## 晚检 (20:01 CST / 12:01 UTC) — 全�
+security-report-2026-07-22.md|security-report-2026-07-22|# 🔒 每日安全审计报告 | 2026-07-22 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-08-06.md|2026-08-06|# 2026-08-06 ## 07:02 CST — 早检 **Ubuntu AI Server** ✅ - 运行：16天8小时，负载 0.22�
+2026-07-15-0322.md|2026-07-15-0322|# Session: 2026-07-15 03:22:23 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+2026-07-31.md|2026-07-31|# 2026-07-31 ## API 全挂告警 (18:02 UTC) **严重：所有 Agnes 模型返回 model_not_found** 
+2026-07-21-0807.md|2026-07-21-0807|# Session: 2026-07-21 08:07:32 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+current.md|current|# Current Daily Report Link Today's health report: memory/YYYY-07-27.md 
+security-report-2026-08-15.md|security-report-2026-08-15|# 🔒 每日安全审计报告 | 2026-08-15 ## fail2ban 状态 ### sshd jail fail2ban not running #
+security-report-2026-08-02.md|security-report-2026-08-02|# 🔒 每日安全审计报告 | 2026-08-02 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-07-28-1454-2.md|2026-07-28-1454-2|# Session: 2026-07-28 14:54:15 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+2026-07-21-morning-check.md|2026-07-21-morning-check|# 2026-07-21 午检（快速健康检查）— 06:00 UTC / 14:00 CST ## 📊 Ubuntu AI Server (192.1
+security-report-2026-08-07.md|security-report-2026-08-07|# 🔒 每日安全审计报告 | 2026-08-07 ## fail2ban 状态 ### sshd jail fail2ban not running #
+daily-report-2026-08-15.md|daily-report-2026-08-15|# 2026-08-15 晚检日报 (21:30 CST) ## 巡检结果摘要 ### Ubuntu AI Server ✅ - **运行时�
+2026-07-29.md|2026-07-29|## 2026-07-29 运营日志 晨间任务执行： - 08:00 CST AI科技早报定时任务触发 - 搜�
+2026-08-06-quiet-check.md|2026-08-06-quiet-check|# 2026-08-06 ## 01:03 CST — 安静时段巡检 - Ubuntu AI Server: 运行 16 天，负载 0.47，�
+security-report-2026-07-25.md|security-report-2026-07-25|# 🔒 每日安全审计报告 | 2026-07-25 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-07-21-0810.md|2026-07-21-0810|# Session: 2026-07-21 08:10:30 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+daily-report-2026-08-11.md|daily-report-2026-08-11|# 2026-08-11 日报 ## 系统总览 ### Ubuntu AI Server ✅ - 运行时间: 21天4小时 - CPU负�
+security-audit-2026-08-10.md|security-audit-2026-08-10|# 2026-08-10 安全审计日志 ## 审计时间 2026-08-10 09:02 CST ## 审计结果摘要 - 高风�
+2026-07-15-0505.md|2026-07-15-0505|# Session: 2026-07-15 05:05:54 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+2026-08-10.md|2026-08-10|# 2026-08-10 Daily Log ## 巡检 (19:02 CST / 11:02 UTC) ## 晚检 (20:01 CST / 12:01 UTC) — 全�
+2026-07-21-0554.md|2026-07-21-0554|# Session: 2026-07-21 05:54:53 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+2026-07-14-0855.md|2026-07-14-0855|# Session: 2026-07-14 08:55:27 UTC - **Session Key**: agent:main:telegram:skykami:direct:8446950958 
+2026-08-08.md|2026-08-08|# 2026-08-08 巡检记录 ## 巡检 (19:05 CST / 11:05 UTC) **Ubuntu AI Server** ✅ - 运行：17�
+preference|preference-20260817-123219|# 记忆: preference-20260817-123219 ## 元数据 - **类型**: preference - **来源**: manual - **
+preference|preference-20260817-123241|# 记忆: preference-20260817-123241 ## 元数据 - **类型**: preference - **来源**: manual - **
+preference|preference-20260817-123320|# 记忆: preference-20260817-123320 ## 元数据 - **类型**: preference - **来源**: manual - **
+2026-08-01.md|2026-08-01|# 2026-08-01 ## 📈 投资日报 ### 基金表现 - **016453 南方纳斯达克100指数(QDII)C** -
+2026-07-23.md|2026-07-23|# 每日早检日志 — 2026-07-23 ## 运行时间 - Ubuntu AI Server: up 1d 10h 31m - iStoreOS: up
+2026-07-28-1454.md|2026-07-28-1454|# Session: 2026-07-28 14:54:13 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+security-report-2026-08-08.md|security-report-2026-08-08|# 🔒 每日安全审计报告 | 2026-08-08 ## fail2ban 状态 ### sshd jail fail2ban active (runni
+security-report-2026-08-10.md|security-report-2026-08-10|# 🔒 每日安全审计报告 | 2026-08-10 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-08-17.md|2026-08-17|# 2026-08-17 巡检记录 ## 巡检 (2026-08-17 17:30 CST / 09:31 UTC) ### Ubuntu AI Server - 运行
+security-report-2026-08-03.md|security-report-2026-08-03|# 🔒 每日安全审计报告 | 2026-08-03 ## fail2ban 状态 ### sshd jail fail2ban not running #
+daily-report-2026-08-12.md|daily-report-2026-08-12|# 2026-08-12 日报 ## 系统总览 ### Ubuntu AI Server ✅ - 运行时间: 21天22小时 - CPU负�
+2026-07-16-1151.md|2026-07-16-1151|# Session: 2026-07-16 11:51:17 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+2026-07-15-1400-2.md|2026-07-15-1400-2|# Session: 2026-07-15 14:00:09 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+2026-08-03.md|2026-08-03|# 2026-08-03 巡检记录 ## 安全邮件扫描 (09:21 UTC / 17:21 CST) - 8个服务商扫描完成�
+security-report-2026-08-01.md|security-report-2026-08-01|# 🔒 每日安全审计报告 | 2026-08-01 ## fail2ban 状态 ### sshd jail fail2ban not running #
+security-report-2026-08-09.md|security-report-2026-08-09|# 🔒 每日安全审计报告 | 2026-08-09 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-07-25.md|2026-07-25|# 2026-07-25 Daily Log ## Docker 容器健康检查（观察模式）— 22:03 CST - **Ubuntu AI Ser
+2026-07-28-1446.md|2026-07-28-1446|# Session: 2026-07-28 14:46:05 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+2026-08-02.md|2026-08-02|# 2026-08-02 晚检巡检记录 (20:03 CST / 12:03 UTC) ## Ubuntu AI Server (192.168.100.108) ``` [�
+2026-08-04.md|2026-08-04|# 2026-08-04 巡检日志 ## 晚检 (20:07 CST) ### Ubuntu AI Server (192.168.100.108) - 运行时�
+daily-report-2026-08-10.md|daily-report-2026-08-10|# 日报 — 2026-08-10 (周日) ## 📊 健康状态汇总 ### Ubuntu AI Server ✅ - **运行时�
+procedural|sop|# Procedural Memory — 操作经验 # 如何操作、常见问题解决方案、SOP ## Docker 管�
+archive|2026-07-15-0439|# Session: 2026-07-15 04:39:09 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+archive|2026-06-10|# 2026-06-10 ## VPS Setup - Connected to VPS (66.154.126.131) via SSH key - OpenClaw 2026.6.5 runnin
+archive|2026-07-15-0453|# Session: 2026-07-15 04:53:46 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+2026-07-15-0518.md|2026-07-15-0518|# Session: 2026-07-15 05:18:01 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+security-report-2026-07-21.md|security-report-2026-07-21|# 🔒 每日安全审计报告 | 2026-07-21 ## fail2ban 状态 ### sshd jail fail2ban not running #
+security-report-2026-08-11.md|security-report-2026-08-11|# 🔒 每日安全审计报告 | 2026-08-11 ## fail2ban 状态 ### sshd jail fail2ban not running #
+semantic|infrastructure|# Semantic Memory — 事实记忆 # 持久化知识、技术架构、配置信息 ## 基础设施 #
+daily-report-2026-08-09.md|daily-report-2026-08-09|# 📋 每日巡检日报 — 2026-08-09（周日） --- ## 健康状态汇总 | 设备 | 状态 | �
+security-report-2026-08-04.md|security-report-2026-08-04|# 🔒 每日安全审计报告 | 2026-08-04 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-08-05.md|2026-08-05|# 2026-08-05 巡检记录 ## 早检 (09:02 CST / 01:02 UTC) **Ubuntu AI Server** ✅ - 运行时间�
+2026-07-30.md|2026-07-30|# 每日早检记录 — 2026-07-30 01:00 UTC (09:00 CST) ## Ubuntu AI Server (192.168.100.108) ### 
+security-report-2026-07-23.md|security-report-2026-07-23|# 🔒 每日安全审计报告 | 2026-07-23 ## fail2ban 状态 ### sshd jail fail2ban not running #
+YYYY-07-27.md|YYYY-07-27|# Daily Health Report — 2026-07-27 (晚检) ## 执行时间 2026-07-27 12:13 CST (UTC) --- ## 一�
+2026-07-21.md|2026-07-21|# 2026-07-21 每日巡检 & 晚检日报 ## 📋 巡检概要 | 项目 | 状态 | |------|------| | 
+2026-08-17-0645.md|2026-08-17-0645|# Session: 2026-08-17 06:45:05 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 
+2026-07-26.md|2026-07-26|# 2026-07-26 Daily Log ## 晚间巡检 — 12:00 UTC (20:00 CST) ### Ubuntu AI Server 🐾 | 项目 
+2026-08-16.md|2026-08-16|# 2026-08-16 运维记录 ## 12:00 UTC - AI运维分析日报 ### 系统状态 - 风险等级：低 
+security-report-2026-08-13.md|security-report-2026-08-13|# 🔒 每日安全审计报告 | 2026-08-13 ## fail2ban 状态 ### sshd jail fail2ban not running #
+2026-08-03-1354.md|2026-08-03-1354|# Session: 2026-08-03 13:54:42 UTC - **Session Key**: agent:main:telegram:default:direct:8446950958 

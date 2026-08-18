@@ -1,0 +1,4 @@
+# Home Assistant Long-Lived Access Token
+# 获取方式: HA Web UI → 配置 → 用户 → 长寿命访问令牌
+# 将下面这行替换为实际 Token
+# HA_TOKEN=your-token-here

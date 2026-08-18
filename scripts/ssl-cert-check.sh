@@ -114,7 +114,37 @@ if [ -d "$ACME_DIR_ROOT" ]; then
     done
 fi
 
-# 4. 通用 PEM/CRT 文件扫描（排除系统 CA）
+# 4. OpenClaw 本地证书
+OPENCLAW_CERT_DIR="/home/ubuntu/.openclaw/certs"
+if [ -d "$OPENCLAW_CERT_DIR" ]; then
+    CERT_FOUND=$((CERT_FOUND + 1))
+    echo ""
+    echo "[OpenClaw Local Certificates]"
+    
+    find "$OPENCLAW_CERT_DIR" -name "*.crt" -type f 2>/dev/null | while read -r cert_file; do
+        domain=$(basename "$cert_file" .crt)
+        expiry=$(openssl x509 -noout -enddate -in "$cert_file" 2>/dev/null | cut -d= -f2)
+        if [ -n "$expiry" ]; then
+            expiry_epoch=$(date -d "$expiry" +%s 2>/dev/null || echo 0)
+            now_epoch=$(date +%s)
+            remaining_days=$(( (expiry_epoch - now_epoch) / 86400 ))
+            
+            if [ "$remaining_days" -lt 0 ]; then
+                echo "  🔴 $domain: 已过期 ($expiry)"
+                ISSUES_FOUND=$((ISSUES_FOUND + 1))
+            elif [ "$remaining_days" -lt "$CRITICAL_DAYS" ]; then
+                echo "  🔴 $domain: 剩余 ${remaining_days} 天 ($expiry)"
+                ISSUES_FOUND=$((ISSUES_FOUND + 1))
+            elif [ "$remaining_days" -lt "$WARN_DAYS" ]; then
+                echo "  🟡 $domain: 剩余 ${remaining_days} 天 ($expiry)"
+            else
+                echo "  🟢 $domain: 剩余 ${remaining_days} 天 ($expiry)"
+            fi
+        fi
+    done
+fi
+
+# 5. 通用 PEM/CRT 文件扫描（排除系统 CA）
 echo ""
 echo "[通用证书扫描]"
 FOUND_GENERIC=0

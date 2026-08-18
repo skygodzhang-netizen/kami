@@ -12,6 +12,8 @@
 - [ ] 磁盘空间（/ 和 /home，阈值 >85% 告警）
 - [ ] Docker 容器状态（名称、运行时间、端口映射）
 - [ ] Home Assistant 状态（是否在线、版本、长时间运行异常）
+- [ ] HA 环境快照（运行 scripts/ha/ha-integration.sh）
+- [ ] HA Camera 状态（运行 scripts/ha/ha-camera.sh list）
 - [ ] OpenClaw Gateway 状态（进程、连接、日志错误）
 - [ ] 系统更新可用（apt upgrade 检查）
 - [ ] 安全日志（fail2ban、登录异常）

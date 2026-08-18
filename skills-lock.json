@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "book-writing-assistant": {
+      "source": "zola-lab/book-writing-assistant",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "821d0db2d008353ef04fadc9fcf7810c258ac9b476aa7b2bf9274b0eb4db4054"
+    },
+    "humanizer": {
+      "source": "brandonwise/humanizer",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "95ee87bcb4bb4fb2d3ed3ab3f498f940caaa2059d4b9b0e3dd762c284c846ea3"
+    },
+    "universal-book-creator": {
+      "source": "zola-lab/universal-book-creator",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "329e91419e37510890ffbe506e4317c5be4117a5c3e3010ed5963afdd85c919d"
+    }
+  }
+}

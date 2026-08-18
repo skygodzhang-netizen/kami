@@ -1,0 +1,32 @@
+#!/bin/bash
+# memory-loader.sh — 分层记忆系统加载器
+# 在巡检/对话前加载相关记忆
+
+MEM_BASE="$HOME/.openclaw/workspace/memory"
+
+# 加载语义记忆（基础设施）
+if [ -f "$MEM_BASE/semantic/infrastructure.md" ]; then
+    echo "📚 已加载基础设施记忆"
+fi
+
+# 加载环境状态
+if [ -f "$MEM_BASE/environment/status.md" ]; then
+    echo "🌍 已加载环境状态"
+fi
+
+# 加载用户偏好
+if [ -f "$MEM_BASE/preferences/user-profile.md" ]; then
+    echo "👤 已加载用户偏好"
+fi
+
+# 加载操作经验
+if [ -f "$MEM_BASE/procedural/sop.md" ]; then
+    echo "📋 已加载操作手册"
+fi
+
+# 加载用户模型
+if [ -f "$MEM_BASE/preferences/user-model.md" ]; then
+    echo "🧠 已加载用户模型"
+fi
+
+echo "记忆系统就绪"
