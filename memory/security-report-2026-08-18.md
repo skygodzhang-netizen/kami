@@ -1,37 +1,29 @@
-# 🔒 每日安全审计报告 | 2026-08-18
+# 安全邮件扫描 — 2026-08-18
 
-## fail2ban 状态
+## Gmail 授权
+- ✅ OpenClaw Gmail OAuth 完成（刚才 04:40 UTC）
+- 应用：OpenClaw Gmail，权限：gmail.modify + settings
 
-### sshd jail
-fail2ban not running
+## 安全邮件摘要
 
-### 封禁 IP 列表
-No bans
+### 🔴 高危
+无
 
-## SSH 登录日志（最近24小时）
+### 🟡 警告
+- **Aug 11**: Anthropic 申诉被拒绝（4 封重复邮件）
+  - 原因：违反使用政策，无法恢复账户
+  - Reference: TS-019ff167-0c49-713c-ab05-8bab7b4be665
 
-Aug 17 11:40:57 ubuntu-ai sshd[54355]: Accepted password for ubuntu from 192.168.100.109 port 50501 ssh2
-Aug 17 11:40:58 ubuntu-ai sshd[54357]: Accepted password for ubuntu from 192.168.100.109 port 50502 ssh2
-Aug 17 11:45:01 ubuntu-ai sshd[54704]: Accepted password for ubuntu from 192.168.100.109 port 52556 ssh2
-Aug 17 11:45:01 ubuntu-ai sshd[54706]: Accepted password for ubuntu from 192.168.100.109 port 52557 ssh2
-Aug 17 19:30:16 ubuntu-ai sshd[68803]: Accepted publickey for ubuntu from 192.168.100.108 port 56718 ssh2: ED25519 SHA256:MjFrqG5azJ4Swa1TnYXv/hurcdG3mEaWxLzs9+ND1Ho
-Aug 17 22:00:47 ubuntu-ai sshd[71659]: Accepted publickey for root from 192.168.100.108 port 33708 ssh2: ED25519 SHA256:MjFrqG5azJ4Swa1TnYXv/hurcdG3mEaWxLzs9+ND1Ho
+### 🟢 普通
+- **Aug 18**: Google 安全性快讯 - OpenClaw Gmail 授权完成
+- **Aug 14**: 与 Linear 分享 Google 账户资料
+- **Aug 10**: kamigod.zhang@gmail.com Windows 登录提醒（副本）
+- **Aug 4**: 备援电话变动 + 2FA 号码移除/新增（✅ 已确认本人操作）
+- **Jul 29**: 与 RedteaGO 分享 Google 账户资料
 
-## 当前活跃连接
+## GitHub PAT
+- Aug 6: openclaw PAT 已重新生成
+- 状态：正常
 
-
-## 系统状态
-
-Uptime:  02:00:02 up 3 days, 16:00,  0 user,  load average: 0.01, 0.02, 0.03
-Disk: /dev/sda2        98G   15G   79G  16% /
-Memory: Mem:           3.8Gi       1.7Gi       514Mi       1.1Mi       2.0Gi       2.2Gi
-
-## iStoreOS 状态
-
-OpenClash_running
- 10:00:02 up 3 days, 16:01,  load average: 1.34, 1.43, 1.27
-              total        used        free      shared  buff/cache   available
-Mem:        7961832     4661348      151580       17564     3148904     3162384
-Swap:             0           0           0
-Banned_IPs
-0
+## 待处理
+- Anthropic 账户申诉失败，需确认是否继续处理
