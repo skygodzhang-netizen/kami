@@ -62,3 +62,25 @@
 - ⚠️ 发现: Caddy intermediate.crt 剩余5天
 - Telegram通知发送失败（网络问题）
 - 日报已保存: memory/daily-report-2026-08-17.md
+
+## 2026-08-18 14:31 UTC
+- 巡检完成，系统正常
+- 消息发送失败：Telegram chat ID 未找到
+
+## 2026-08-18 14:31 UTC
+- 巡检完成，系统正常
+- 消息发送失败：Telegram chat ID 未找到，需要重新配置
+
+## 2026-08-18 14:31 UTC - 巡检
+- 系统状态：正常
+- 消息投递失败：Telegram @heartbeat 无法解析 chat ID
+- 建议：检查 Telegram 频道/群组配置或改用其他通知方式
+[2026-08-18 21:31:27 UTC] 21:30 晚间巡检完成 - 系统运行稳定
+
+## 2026-08-18 23:00 CST — 夜间心跳巡检
+- 系统状态：正常
+- Ubuntu AI Server：✅ 运行4天13小时，磁盘17%，内存42%，Docker正常
+- iStoreOS 路由器：✅ 运行4天13小时，OpenClash运行中
+- ⚠️ Tailscale 需重新登录（BackendState: unknown，非崩溃）
+- ⚠️ Caddy 中间证书剩余4天（8月22日到期）
+- ℹ️ Gateway 模型回退：agnes-2.0-flash 超时，openai-official 认证失败
