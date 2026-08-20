@@ -122,3 +122,27 @@ curl -sL "<视频URL>" -o /root/.openclaw/workspace/<文件名>.mp4
 发送成功后立即删除：
 rm /root/.openclaw/workspace/<文件名>.mp4
 发完务必清理，不要在工作区残留视频文件。
+
+## ElevenLabs TTS 配置
+
+API Key 存储在 `config/elevenlabs.json`
+
+### 使用方式
+```bash
+curl -s -X POST "https://api.elevenlabs.io/v1/text-to-speech/<voice_id>" \
+  -H "xi-api-key: <API_KEY>" \
+  -H "Content-Type: application/json" \
+  -d '{"text":"文本内容"}' -o <output_file> -w "%{http_code}"
+```
+
+### 常用声音 ID
+- Adam (男, 坚定): pNInz6obpgDQGcFmaJgB
+- Bella (女, 专业明亮): hpp4J3VqNfWAUOO0d1Us
+- Sarah (女, 成熟稳重): EXAVITQu4vr4xnSDxMaL
+- Brian (男, 深沉): nPczCjzI2devNBz1zQrb
+
+声音列表: curl -s "https://api.elevenlabs.io/v1/voices" -H "xi-api-key: <API_KEY>"
+
+### 当前账户状态
+- 订阅: 免费版 (10,000 字符/月)
+- 当前已用: ~256 字符
