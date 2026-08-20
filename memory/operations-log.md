@@ -84,3 +84,16 @@
 - ⚠️ Tailscale 需重新登录（BackendState: unknown，非崩溃）
 - ⚠️ Caddy 中间证书剩余4天（8月22日到期）
 - ℹ️ Gateway 模型回退：agnes-2.0-flash 超时，openai-official 认证失败
+## 2026-08-19 22:00 UTC — 晚间巡检
+- 系统整体正常 ✅
+- ⚠️ Caddy 中间证书预计 8月22日到期（约4天）
+- Tailscale zhanglihua 离线
+- 7个包可升级（非紧急）
+
+## 2026-08-20 01:10 UTC — 夜间心跳巡检
+- 系统状态: 全部正常 ✅
+- Ubuntu AI Server: 运行5天15小时，负载0.27，内存39%，磁盘17%
+- iStoreOS: 运行5天15小时，负载0.58，分区正常，OpenClash/Tailscale/WAN均正常
+- SSL证书: gateway.pem 剩余364天 ✅
+- 安全邮件: 无新增高危事件
+- 磁盘趋势: 数据已采集
