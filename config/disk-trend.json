@@ -1959,6 +1959,902 @@
         "uptime": "00:01:27 up 6 days,  6:03,  load average: 1.28, 1.18, 1.11",
         "mem_pct": "59%"
       }
+    },
+    {
+      "timestamp": "2026-08-21 01:31:24 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "17:31:24 up  4:19,  0 user,  load average: 0.02, 0.05, 0.07",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "01:31:24 up 6 days,  7:32,  load average: 1.20, 1.12, 1.09",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 02:00:42 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "18:00:42 up  4:48,  0 user,  load average: 0.20, 0.08, 0.04",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "02:00:41 up 6 days,  8:02,  load average: 1.09, 1.12, 1.09",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 02:01:04 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "18:01:04 up  4:48,  0 user,  load average: 0.65, 0.20, 0.09",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "02:01:03 up 6 days,  8:02,  load average: 1.26, 1.16, 1.10",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 02:30:44 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "18:30:44 up  5:18,  0 user,  load average: 0.39, 0.12, 0.05",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "02:30:44 up 6 days,  8:32,  load average: 1.37, 1.18, 1.11",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 03:01:03 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "19:01:03 up  5:49,  0 user,  load average: 0.03, 0.03, 0.00",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "03:01:04 up 6 days,  9:02,  load average: 1.16, 1.15, 1.11",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 04:00:18 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "20:00:18 up  6:48,  0 user,  load average: 0.39, 0.15, 0.04",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "04:00:18 up 6 days, 10:01,  load average: 1.55, 1.24, 1.13",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 04:01:01 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "20:01:01 up  6:48,  0 user,  load average: 0.46, 0.20, 0.07",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "04:01:02 up 6 days, 10:02,  load average: 1.67, 1.33, 1.17",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 04:30:42 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "20:30:42 up  7:18,  0 user,  load average: 0.00, 0.00, 0.00",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "04:30:42 up 6 days, 10:32,  load average: 1.20, 1.26, 1.26",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 04:31:05 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "20:31:05 up  7:19,  0 user,  load average: 0.41, 0.10, 0.03",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "04:31:05 up 6 days, 10:32,  load average: 1.21, 1.26, 1.26",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 05:30:47 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "21:30:47 up  8:18,  0 user,  load average: 0.14, 0.06, 0.01",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "05:30:47 up 6 days, 11:32,  load average: 1.33, 1.27, 1.22",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 07:00:23 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "23:00:23 up  9:48,  0 user,  load average: 0.50, 0.26, 0.13",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "07:00:23 up 6 days, 13:01,  load average: 1.26, 1.21, 1.18",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 09:04:49 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "01:04:49 up 11:52,  0 user,  load average: 0.21, 0.14, 0.10",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "09:04:49 up 6 days, 15:06,  load average: 1.35, 1.19, 1.16",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 09:30:41 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "01:30:41 up 12:18,  0 user,  load average: 0.13, 0.05, 0.03",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "09:30:41 up 6 days, 15:32,  load average: 1.12, 1.12, 1.15",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 10:04:05 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "02:04:05 up 12:52,  0 user,  load average: 0.15, 0.10, 0.06",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.2Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "10:04:05 up 6 days, 16:05,  load average: 1.26, 1.23, 1.19",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 10:31:54 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "02:31:54 up 13:19,  0 user,  load average: 0.34, 0.18, 0.11",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "10:31:54 up 6 days, 16:33,  load average: 1.65, 1.31, 1.23",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 11:13:19 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "03:13:19 up 14:01,  0 user,  load average: 0.40, 0.25, 0.14",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "11:13:19 up 6 days, 17:14,  load average: 1.21, 1.21, 1.18",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 11:30:20 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "03:30:20 up 14:18,  0 user,  load average: 0.15, 0.13, 0.15",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "11:30:20 up 6 days, 17:31,  load average: 1.13, 1.21, 1.19",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 13:00:59 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "05:00:59 up 15:48,  0 user,  load average: 0.29, 0.11, 0.07",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "13:01:00 up 6 days, 19:02,  load average: 1.54, 1.25, 1.18",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 13:31:12 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "05:31:12 up 16:19,  0 user,  load average: 0.17, 0.10, 0.07",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "13:31:10 up 6 days, 19:32,  load average: 1.36, 1.19, 1.18",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 14:00:58 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "06:00:58 up 16:48,  0 user,  load average: 0.37, 0.12, 0.03",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "14:00:59 up 6 days, 20:02,  load average: 1.28, 1.16, 1.12",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 16:34:36 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "08:34:36 up 19:22,  0 user,  load average: 0.31, 0.27, 0.16",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "16:34:36 up 6 days, 22:36,  load average: 1.52, 1.48, 1.27",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 17:01:00 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "09:01:00 up 19:49,  0 user,  load average: 0.35, 0.13, 0.10",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "17:01:00 up 6 days, 23:02,  load average: 1.38, 1.24, 1.19",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 18:35:01 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "10:35:01 up 21:23,  0 user,  load average: 0.42, 0.32, 0.18",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "18:35:01 up 7 days, 36 min,  load average: 1.48, 1.18, 0.94",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 19:32:22 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "11:32:22 up 22:20,  0 user,  load average: 0.12, 0.09, 0.06",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "19:32:22 up 7 days,  1:33,  load average: 1.39, 1.18, 1.13",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 20:04:02 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "12:04:02 up 22:52,  0 user,  load average: 0.30, 0.20, 0.12",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.6Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "20:04:03 up 7 days,  2:05,  load average: 1.23, 1.23, 1.19",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 21:01:32 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "13:01:32 up 23:49,  0 user,  load average: 0.77, 0.22, 0.10",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.2Gi",
+        "mem_avail": "2.6Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "21:01:32 up 7 days,  3:03,  load average: 1.16, 1.15, 1.16",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 21:32:56 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "13:32:56 up 1 day, 20 min,  0 user,  load average: 0.21, 0.11, 0.08",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.3Gi",
+        "mem_avail": "2.5Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "21:32:56 up 7 days,  3:34,  load average: 1.04, 1.08, 1.07",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 22:00:29 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "14:00:29 up 1 day, 48 min,  0 user,  load average: 0.05, 0.04, 0.05",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.5Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "22:00:30 up 7 days,  4:02,  load average: 1.29, 1.15, 1.10",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-21 23:00:51 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "15:00:51 up 1 day,  1:48,  0 user,  load average: 0.15, 0.04, 0.03",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.5Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "23:00:52 up 7 days,  5:02,  load average: 1.24, 1.13, 1.12",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-22 00:01:47 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "16:01:47 up 1 day,  2:49,  0 user,  load average: 0.17, 0.09, 0.02",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "00:01:46 up 7 days,  6:03,  load average: 1.26, 1.19, 1.13",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-22 00:03:40 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "16:03:40 up 1 day,  2:51,  0 user,  load average: 0.55, 0.19, 0.06",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "00:03:39 up 7 days,  6:05,  load average: 1.55, 1.33, 1.19",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-08-22 01:03:43 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "15G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "17:03:43 up 1 day,  3:51,  0 user,  load average: 0.28, 0.16, 0.08",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "72%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "01:03:42 up 7 days,  7:05,  load average: 1.61, 1.40, 1.25",
+        "mem_pct": "59%"
+      }
     }
   ]
 }
