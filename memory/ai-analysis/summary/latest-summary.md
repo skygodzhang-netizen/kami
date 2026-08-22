@@ -1,77 +1,43 @@
 # AI运维分析报告
 
 时间：
-2026-08-20 12:00:00
-
+2026-08-22 12:00 UTC
 
 ## 系统状态
 
 风险等级：
-low
-
+high
 
 ## Ubuntu
 
-磁盘使用率：
-17%
-
-内存：
-1.6G/3.8G (42%)
-
-负载：
-0.32
-
-运行时长：
-6天
-
+磁盘：17%
+内存：1.5G/3.8G
+负载：0.24
+运行时间：1天22小时
 
 ## iStoreOS
 
-Overlay：
-72% (基线60-70%，略高)
-
-温度：
-53℃
-
-OpenClash：
-running
-
-Tailscale：
-connected
-
-
-## 网络质量
-
-Agnes API：
-online (200ms) 评分100
-
-OpenAI API：
-online (1159ms) 评分95
-
-Cloudflare DNS：
-online (219ms) 评分85
-
-Google DNS：
-online (275ms) 评分85
-
+Overlay：72%
+OpenClash：运行中
 
 ## Docker
 
-homeassistant：
-Up 2 days
+homeassistant：运行中（47小时）
 
+## 异常事件
 
-## 趋势分析
+OpenClaw Gateway 服务未运行
+- 进程检查：未找到
+- 健康检查：无法连接（000）
 
-磁盘每日增长：
-约0.01%
+## 网络状态
 
-Overlay：
-略超基线，趋势稳定
-
+Google DNS：196ms
+Cloudflare DNS：216ms
+OpenAI API：1.5s
+Agnes API：2.0s
 
 ## AI建议
 
-系统整体运行稳定，无异常。
-Overlay空间72%略超基线，建议近期关注，暂不处理。
-今日无需操作。
+1. 检查 OpenClaw Gateway 服务状态
+2. 重启服务或排查启动失败原因

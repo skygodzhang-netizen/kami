@@ -97,3 +97,21 @@
 - SSL证书: gateway.pem 剩余364天 ✅
 - 安全邮件: 无新增高危事件
 - 磁盘趋势: 数据已采集
+[2026-08-20 17:32 CST] 夜间心跳巡检完成，系统正常
+
+[2026-08-21 07:00 CST] 夜间心跳巡检完成，系统正常
+- Ubuntu AI Server：✅ 运行9小时48分，负载0.50，内存37%，磁盘17%，HA API 200，SSL 363天，0包可升级
+- iStoreOS：✅ 运行6天13小时，负载1.26，分区正常，OpenClash/Tailscale/WAN均正常
+- 安全邮件：无新增高危事件
+- Docker：1个容器正常，0异常
+- ⚠️ event_loop_delay P99=188ms（继续观察）
+- ℹ️ Tailscale zhanglihua offline（路由器侧）
+2026-08-21 21:01:41 UTC 晚检完成，系统整体稳定
+2026-08-22 07:02 UTC 午后巡检完成，系统稳定；OpenClash 曾短暂停止已恢复；早检连续6次超时需排查
+
+[2026-08-22 19:30 CST] 晚间巡检完成
+- Ubuntu AI Server: ✅ 正常
+- iStoreOS: ⚠️ OpenClash 代理仍不可用（服务商端问题，relay 服务器 twgame03/twct02.akacaio.org 不可达）
+- SSL: 全部正常，剩余361天
+- 安全邮件: 无新增高危事件
+[2026-08-22 13:07:27 CST] Tailscale 服务在路由器上未运行，状态文件缺失
