@@ -1,5 +1,18 @@
 # Solutions Library
 
+## Google DNS丢包
+
+问题：
+Google DNS (8.8.8.8) 丢包严重
+
+建议：
+更换为 Cloudflare DNS (1.1.1.1)
+
+状态：
+待确认
+
+---
+
 
 ## OpenClaw Gateway
 
