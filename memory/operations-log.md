@@ -22,3 +22,5 @@
 - 全部服务正常
 - HA token 修复：确认使用 ha-token 而非 ha_token
 - 发现 7 个 HA 状态变化，已记录
+[2026-08-26 16:31:08] Heartbeat check - all normal
+[2026-08-27 13:00:14] Heartbeat check - all normal

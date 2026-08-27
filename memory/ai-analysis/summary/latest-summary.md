@@ -1,7 +1,7 @@
 # AI运维分析报告
 
 时间：
-2026-08-26 12:00:08
+2026-08-26 20:00:08
 
 
 ## 系统状态
@@ -17,18 +17,6 @@ medium
 
 17%
 
-内存使用：
-
-1.1G/3.8G
-
-CPU负载：
-
-0.14
-
-OpenClaw Gateway：
-
-active
-
 
 ## iStoreOS
 
@@ -38,38 +26,12 @@ Overlay：
 
 温度：
 
-47℃
+49℃
 
 
 OpenClash：
 
 running
-
-
-## Docker
-
-homeassistant：
-
-Up 5 days
-
-
-## 网络质量
-
-Cloudflare DNS：
-
-193ms 在线
-
-Google DNS：
-
-223ms 丢包严重
-
-OpenAI API：
-
-2.8s 在线
-
-Agnes API：
-
-1.9s 在线
 
 
 ## 趋势分析
@@ -81,8 +43,8 @@ Agnes API：
 
 ## AI建议
 
-Google DNS丢包严重，建议更换为Cloudflare DNS。
+检测到潜在风险。
 
-OpenClaw Gateway健康检查待排查（历史遗留问题）。
+建议人工检查相关服务。
 
-整体系统稳定。
+不会自动修改系统。
