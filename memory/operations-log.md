@@ -1,5 +1,11 @@
 # 操作日志
 
+## 2026-08-27 14:30 CST
+- **事件：** 巡检发现 iStoreOS OpenClash 进程未运行
+- **操作：** 执行 `/etc/init.d/openclash restart`
+- **结果：** 成功重启，clash + mihomo 双进程正常运行
+- **影响：** 短暂断流，已恢复
+
 ## 2026-08-25
 
 ### 12:00 CST - Git 状态巡检
