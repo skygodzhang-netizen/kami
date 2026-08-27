@@ -113,15 +113,28 @@ curl -s -X GET "https://apihub.agnes-ai.cn/agnesapi?video_id=<VIDEO_ID>" \
 - 多图视频生成
 - 关键帧动画
 
-### 步骤 3：下载视频到工作区并发送
+### 步骤 3：下载视频到工作区
 视频完成后下载到工作区：
 curl -sL "<视频URL>" -o /root/.openclaw/workspace/<文件名>.mp4
-使用 message 工具的 attachments 参数发送视频，media 路径必须是 /root/.openclaw/workspace/ 下的文件。
+⚠️ 必须先下载再发送，不要先发送。
 
-### 步骤 4：清理（必须执行）
-发送成功后立即删除：
+### 步骤 4：通过 message 工具发送
+使用 `message` 工具的 `attachments` 参数发送视频：
+```json
+{
+  "media": "/root/.openclaw/workspace/<文件名>.mp4",
+  "mimeType": "video/mp4",
+  "name": "<文件名>.mp4"
+}
+```
+⚠️ media 路径必须是 `/root/.openclaw/workspace/` 下的文件。
+
+### 步骤 5：清理（必须执行）
+**只有确认 message 发送成功后**才能删除：
+```bash
 rm /root/.openclaw/workspace/<文件名>.mp4
-发完务必清理，不要在工作区残留视频文件。
+```
+⚠️ 如果发送失败，不要删除视频文件，保留供重试。
 
 ## ElevenLabs TTS 配置
 
