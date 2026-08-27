@@ -72,7 +72,19 @@ rm /root/.openclaw/workspace/<文件名>.png
 - 发完务必清理，不要在工作区残留图片文件
 
 ## 视频生成
-当用户要求生成视频时，使用 Agnes-Video-V2.0 模型。
+当用户要求生成视频时，优先使用 Agnes-Video-2.5-Flash 模型（速度更快），如果模型不可用则使用 Agnes-Video-V2.0。
+
+### 模型选择
+- **agnes-video-2.5-flash**: 更快，支持 text/keyframe/reference 模式
+- **agnes-video-v2.0**: 更稳定，经典模型
+
+### 查询端点（重要）
+- 提交任务: POST /v1/videos
+- 查询状态: GET /v1/videos/{video_id}  （注意：是 /v1/videos/ 不是 /agnesapi）
+- 视频下载: 从返回的 url 字段获取
+
+### API Key
+⚠️ 使用完整 API Key，不要脱敏。
 
 ### 步骤 1：创建视频任务
 ```bash
