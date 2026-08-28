@@ -15,11 +15,15 @@
 ### iStoreOS 路由器 🔴
 - 系统运行 14 天 10 小时，load 1.14
 - 磁盘 overlay 73% / sdb4 8% / sda1 23%
-- OpenClash 服务 running，但 **mihomo 进程未运行**
-- 代理端口返回 407，代理流量全部失败
+- OpenClash 服务 running，clash 进程 PID 12168
+- **代理端口正常**：7890/7891/7893 监听中
+- **但无可用节点**：
+  - proxylite 订阅源返回 404 Not Found
+  - 所有代理请求失败（返回 000）
+  - 直连正常
 - Tailscale running
 - WAN 123.155.8.238，外网连通正常（0% 丢包）
-- **代理失效需处理** 🔴
+- **需更新订阅链接或重新配置节点** 🔴
 
 ### 网络状态
 - Ubuntu → google.com: 200 ✅
@@ -28,7 +32,7 @@
 
 ### 今日关键问题
 1. **HA token 过期** — 连续多日未处理
-2. **OpenClash 代理失效** — mihomo 进程未运行，上游节点不可达
+2. **OpenClash 代理失效** — proxylite 订阅 404，无可用节点
 3. **Telegram bot 被踢出频道** — 通知持续失败
 4. 23 个包可升级（非紧急）
 
