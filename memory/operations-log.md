@@ -1,5 +1,10 @@
 # 操作日志
 
+## 2026-08-28 09:30 CST
+- **事件：** 心跳巡检
+- **结果：** 全部正常 ✅
+- **注意：** HA token 需更新（HTTP 401，非紧急）
+
 ## 2026-08-27 14:30 CST
 - **事件：** 巡检发现 iStoreOS OpenClash 进程未运行
 - **操作：** 执行 `/etc/init.d/openclash restart`
@@ -30,3 +35,4 @@
 - 发现 7 个 HA 状态变化，已记录
 [2026-08-26 16:31:08] Heartbeat check - all normal
 [2026-08-27 13:00:14] Heartbeat check - all normal
+[2026-08-28 03:07] Heartbeat check - all normal
