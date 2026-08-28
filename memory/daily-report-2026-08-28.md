@@ -1,31 +1,36 @@
-# 2026-08-28 晚检日报
+# 2026-08-28 日报
 
-## Ubuntu AI Server ✅
-- [系统] up 8d 18min, load 0.12 ✅
-- [内存] 1.3G / 3.8G (~32%) ✅
-- [磁盘] / : 17% (可用78G) ✅
-- [Docker] homeassistant: Up 8 days ✅
-- [Gateway] PID 145852, active ✅
-- [SSL 证书] gateway 355天 ✅
-- [更新] 23 个包可升级（非紧急）
-- [安全] fail2ban 无异常 ✅
-- [HA 状态] HTTP 401（token 过期）⚠️
-- [Agnes API] ✅ 正常
+## 巡检总结
 
-## iStoreOS 路由器 ✅
-- [系统] up 14d 3h, load 1.23 ✅
-- [磁盘] overlay: 73% ✅ | sdb4: 8% ✅ | sda1: 23% ✅
-- [OpenClash] running ✅
-- [Tailscale] running ✅
-- [网络] WAN pppoe-wan: 123.155.8.238 ✅
+### Ubuntu AI Server ✅
+- 系统运行 8 天 7 小时，load 0.30
+- 内存 1.3G / 3.8G (~34%)
+- 磁盘 / 17% (可用 78G)
+- Docker: homeassistant Up 8 days
+- Gateway active, Caddy active
+- fail2ban active，无安全事件
+- 23 个包可升级（非紧急）
+- **HA token 过期**（连续多日未处理）⚠️
 
-## 磁盘趋势
-- 已采集 2026-08-28 21:31 数据 ✅
+### iStoreOS 路由器 🔴
+- 系统运行 14 天 10 小时，load 1.14
+- 磁盘 overlay 73% / sdb4 8% / sda1 23%
+- OpenClash 服务 running，但 **mihomo 进程未运行**
+- 代理端口返回 407，代理流量全部失败
+- Tailscale running
+- WAN 123.155.8.238，外网连通正常（0% 丢包）
+- **代理失效需处理** 🔴
 
-## 待处理事项
-- [ ] HA long_lived_access_token 已过期，需重新获取
-- [ ] 23 个包可升级（非紧急）
-- [ ] Telegram bot 被踢出频道
+### 网络状态
+- Ubuntu → google.com: 200 ✅
+- iStoreOS → 8.8.8.8: 0% 丢包 ✅
+- iStoreOS → baidu.com: 0% 丢包 ✅
 
-## 结论
-全部服务正常 ✅，HA token 仍需处理 🔧
+### 今日关键问题
+1. **HA token 过期** — 连续多日未处理
+2. **OpenClash 代理失效** — mihomo 进程未运行，上游节点不可达
+3. **Telegram bot 被踢出频道** — 通知持续失败
+4. 23 个包可升级（非紧急）
+
+---
+*生成时间：2026-08-28 20:00 UTC (04:00 CST)*
