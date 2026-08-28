@@ -36,3 +36,8 @@
 [2026-08-26 16:31:08] Heartbeat check - all normal
 [2026-08-27 13:00:14] Heartbeat check - all normal
 [2026-08-28 03:07] Heartbeat check - all normal
+[2026-08-28 14:02:22] Heartbeat check - all normal
+[2026-08-28 16:30] 早检完成 - 全部正常
+- Ubuntu AI Server: 系统/内存/磁盘/Docker/Gateway/HA/SSL/安全邮件/磁盘趋势 均正常
+- iStoreOS 路由器: 系统/磁盘/OpenClash/Tailscale/WAN 均正常
+- 待处理: 23个包可升级（非紧急）
