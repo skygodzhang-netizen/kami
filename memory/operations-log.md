@@ -41,3 +41,5 @@
 - Ubuntu AI Server: 系统/内存/磁盘/Docker/Gateway/HA/SSL/安全邮件/磁盘趋势 均正常
 - iStoreOS 路由器: 系统/磁盘/OpenClash/Tailscale/WAN 均正常
 - 待处理: 23个包可升级（非紧急）
+[2026-08-28 16:03:50 CST] 08:00 UTC心跳巡检完成 - OpenClash代理失效持续，WAN丢包50%，Telegram通知失败（代理问题）
+[2026-08-28 17:30 UTC] 巡检通知 Telegram 发送失败 - recipient @heartbeat 无法解析
