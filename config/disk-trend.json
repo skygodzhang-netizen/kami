@@ -7671,6 +7671,34 @@
         "uptime": "21:00:18 up 1 day, 12:14,  load average: 1.18, 1.17, 1.21",
         "mem_pct": "58%"
       }
+    },
+    {
+      "timestamp": "2026-09-02 21:02:39 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "13:02:39 up 1 day, 12:15,  0 user,  load average: 0.15, 0.19, 0.12",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "73%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "23%"
+        },
+        "uptime": "21:02:39 up 1 day, 12:17,  load average: 1.36, 1.26, 1.24",
+        "mem_pct": "58%"
+      }
     }
   ]
 }
