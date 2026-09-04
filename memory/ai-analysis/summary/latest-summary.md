@@ -1,7 +1,7 @@
 # AI运维分析报告
 
 时间：
-2026-09-02 12:00 UTC
+2026-09-04 12:00 UTC
 
 
 ## 系统状态
@@ -15,14 +15,23 @@ medium
 磁盘使用率：
 17%
 
-内存使用率：
-37% (1.4GB/3.8GB)
+内存：
+1.4Gi/3.8Gi
 
 负载：
-0.24
+0.23
 
 运行时间：
-1天11小时
+3天11小时
+
+Docker：
+homeassistant Up 3 days
+
+OpenClaw Gateway：
+active，/health 空响应（已知）
+
+Home Assistant：
+API正常，/health 404（已知）
 
 
 ## iStoreOS
@@ -31,60 +40,39 @@ Overlay：
 73%
 
 温度：
-48℃
+47℃
 
 OpenClash：
 running
 
-负载：
-1.45/1.32/1.30
-
-
-## Docker
-
-homeassistant：
-Up 35h ✅
-
 
 ## 网络质量
 
-Agnes API：
-224ms 得分100 ✅
+Agnes API：online 204ms 评分100
+Cloudflare DNS：online 184ms 评分95
+OpenAI API：online 1427ms 评分95
+Google DNS：online 298ms 评分85
 
-Cloudflare DNS：
-184ms 得分95 ✅
-
-OpenAI API：
-1.24s 得分95 ⚠️
-
-Google DNS：
-201ms 得分85 ⚠️
-
-丢包：
-0%
-
-
-## 已知问题
-
-- OpenClaw Gateway /health 端点空响应（待排查）
-- OpenAI API 延迟偏高（1.24s）
-- Telegram 连接间歇性超时（已自动fallback恢复）
+丢包：0%
 
 
 ## 趋势分析
 
 磁盘每日增长：
-约0.01%
+0.01%
 
-OpenClaw Gateway 内存：
-1.3GB（峰值2.1GB）
+Google DNS丢包：
+已恢复（此前8/26有严重丢包）
 
-Telegram 连接：
-间歇性DNS超时，fallback成功
+
+## 已知问题
+
+1. OpenClaw Gateway /health 端点空响应（自2026-08-25未解决）
+2. Home Assistant /health 返回404
 
 
 ## AI建议
 
-1. OpenClaw Gateway /health 端点问题已记录多日，建议安排排查
-2. OpenAI API延迟关注是否有退化趋势
-3. 系统整体稳定，无需紧急处理
+1. /health 端点问题已持续10天，建议排查
+2. overlay 73% 接近80%阈值，关注增长趋势
+3. 磁盘增长缓慢，暂无压力
