@@ -1,5 +1,24 @@
 # Incident History
 
+## 2026-09-06
+
+事件：
+系统状态巡检
+
+现象：
+- OpenClaw Gateway /health 端点仍为空响应
+- Gateway 内存占用 1.1G（峰值 1.5G）
+- iStoreOS Overlay 73%（正常偏高）
+- 网络质量稳定，无丢包
+
+处理：
+已记录，持续监控
+
+状态：
+待处理
+
+---
+
 ## 2026-08-26
 
 事件：
