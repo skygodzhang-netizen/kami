@@ -1,35 +1,32 @@
-==========================================
-  日报 — 2026-09-09
-==========================================
+# 📊 每日巡检报告 — 2026-09-09
 
-## Ubuntu AI Server ✅
-- [系统] up 8d 12h ✅ | [负载] 0.16/0.06/0.03 ✅
-- [内存] 1.3G/3.8G (34%) ✅
-- [磁盘] / : 17% (16G/98G, 可用78G) ✅
-- [Docker] homeassistant: Up 8 days ✅
-- [Gateway] active, 端口18789 ✅
-- [证书] 9 个证书检测，全部正常；gateway.pem 剩余 343 天 ✅
-- [更新] 26 个包可升级（含 Docker 29.8.0、Python 3.12.3-16 等）🟡
-- [安全日志] fail2ban active；最近登录均来自内网 192.168.100.109；最近1小时无 journal 错误 ✅
-- [HA Camera] bedroom_camera: idle ✅
+## Ubuntu AI Server (192.168.100.108)
+- [系统] up 8d | 负载范围 0.06-0.95（正常）
+- [磁盘] / : 17% (98G, 可用 78G)
+- [内存] ~1.3-1.7Gi / 3.8Gi
+- [Docker] homeassistant: Up 8 days
+- [服务] Gateway: running | fail2ban: 无异常
+- [更新] 若干常规包可升级（非紧急）
 
-## iStoreOS 路由器 ✅
-- [系统] up 8d 12h ✅ | [负载] 1.19 (4核) ✅ | [温度] 49°C ✅
-- [内存] 4.5G/7.6G (60%) ✅
-- [磁盘] overlay(sdb3) 73% ✅ (<80%阈值) | sdb4 8% ✅ | sda1 24% ✅
-- [OpenClash] running ✅
-- [Tailscale] running ✅ | 无 serve 配置 ✅
-- [Docker] 无运行容器
-- [WAN] pppoe up，uptime 8.5天 ✅
-- [异常] 无
+## iStoreOS 路由器 (192.168.100.1)
+- [系统] up 8d | 负载范围 1.14-1.88（正常）
+- [磁盘] overlay /dev/sdb3: 73% (1.9G, 可用 525.5M) ← 只监控
+- [内存] ~4.7G / 7.6G
+- [服务] OpenClash: running | Tailscale: running
+- [Tailscale serve] 配置存在于 _serve/e416（仅记录）
 
-## 安全邮件 ✅
-- 13:00 UTC 扫描完成，无高危/警告事件
+## SSL 证书
+- 🟢 gateway.pem/crt: 剩余 343 天
+- 共 9 个证书全部正常
 
-## 磁盘趋势 ✅
-- disk-trend-analyze.sh 采集完成（2026-09-09 21:00 CST）
+## 安全邮件扫描
+- 无高危事件
 
-## 待处理事项 🟡
-- Ubuntu 26 个可升级包（Docker 29.8.0 等），暂不自动升级，待 kami 决策
+## 磁盘趋势
+- 已采集，/ 分区 17% 稳定
 
-**结论：** 全部正常 ✅（仅包更新待决策）
+## 异常与处理
+- 无异常
+
+## 巡检记录
+- 本日共 33 次巡检条目（08:01-16:01 CST），全部正常

@@ -8119,6 +8119,90 @@
         "uptime": "21:00:43 up 8 days, 12:15,  load average: 1.12, 1.17, 1.17",
         "mem_pct": "59%"
       }
+    },
+    {
+      "timestamp": "2026-09-10 00:01:02 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "16:01:02 up 8 days, 15:14,  0 user,  load average: 0.72, 0.27, 0.09",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "73%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "24%"
+        },
+        "uptime": "00:01:02 up 8 days, 15:16,  load average: 1.32, 1.39, 1.33",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-09-10 09:00:29 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "01:00:29 up 9 days, 14 min,  0 user,  load average: 0.30, 0.09, 0.04",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.4Gi",
+        "mem_avail": "2.4Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "73%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "24%"
+        },
+        "uptime": "09:00:29 up 9 days, 15 min,  load average: 1.56, 1.35, 1.29",
+        "mem_pct": "59%"
+      }
+    },
+    {
+      "timestamp": "2026-09-10 21:01:14 CST",
+      "ubuntu": {
+        "disk_/": {
+          "size": "98G",
+          "used": "16G",
+          "avail": "78G",
+          "pct": "17%"
+        },
+        "uptime": "13:01:15 up 9 days, 12:14,  0 user,  load average: 0.32, 0.14, 0.10",
+        "mem_total": "3.8Gi",
+        "mem_used": "1.5Gi",
+        "mem_avail": "2.3Gi"
+      },
+      "istoreos": {
+        "disk__overlay": {
+          "pct": "73%"
+        },
+        "disk_sata2-4": {
+          "pct": "8%"
+        },
+        "disk_data_sda1": {
+          "pct": "24%"
+        },
+        "uptime": "21:01:15 up 9 days, 12:16,  load average: 1.88, 1.45, 1.27",
+        "mem_pct": "59%"
+      }
     }
   ]
 }

@@ -59,7 +59,7 @@ except Exception as e:
     if [ "$change_count" -gt 0 ]; then
         echo "  发现 $change_count 个状态变化"
         
-        for change in $(echo "$changes" | python3 -c "import json,sys; [print(json.dumps(c)) for c in json.load(sys.stdin)]"); do
+        while IFS= read -r change; do
             entity=$(echo "$change" | python3 -c "import json,sys; print(json.load(sys.stdin)['entity_id'])")
             old=$(echo "$change" | python3 -c "import json,sys; print(json.load(sys.stdin)['old_state'])")
             new=$(echo "$change" | python3 -c "import json,sys; print(json.load(sys.stdin)['new_state'])")
@@ -90,7 +90,7 @@ except Exception as e:
             if [ "$notification" = "yes" ]; then
                 echo "[$ts] $entity: $old → $new" >> "$NOTIFICATION_QUEUE"
             fi
-        done
+        done < <(echo "$changes" | python3 -c "import json,sys; [print(json.dumps(c)) for c in json.load(sys.stdin)]")
         
         echo "$changes" >> "$HA_LOG"
         
