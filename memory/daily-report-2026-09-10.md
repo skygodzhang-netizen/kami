@@ -1,34 +1,31 @@
-# 日报 — 2026-09-10（晚检 21:00 CST）
+# 📊 每日巡检报告 — 2026-09-10
 
-## 总览
-✅ 全部设备/服务正常，无高危事件。
+## Ubuntu AI Server (192.168.100.108)
+- [系统] up 9d | 负载 0.01-0.95（正常）
+- [磁盘] / : 17% (98G, 可用 78G)
+- [内存] ~1.3-1.7Gi / 3.8Gi
+- [Docker] homeassistant: Up 9 days
+- [服务] Gateway: running
+- [更新] base-files/byobu/console-setup/containerd/docker 等常规包可升级（非紧急）
 
-## Ubuntu AI Server
-- **负载**: 0.15/0.10/0.09，运行 9 天 12 小时
-- **内存**: 已用 1.5Gi / 3.8Gi，可用 2.3Gi，swap 几乎未用
-- **磁盘**: / 17%（16G/98G，可用 78G）— 正常
-- **Docker**: homeassistant Up 9 天，无停止容器
-- **Gateway**: 运行正常（uptime 1 天 1 小时）
-- **Home Assistant**: 在线；日志有 metno 气象源 fetch 失败（外部天气源，非本地问题）；camera.bedroom_camera idle
-- **系统更新**: 有若干包可升级（base-files、byobu、console-setup、docker-ce 全家桶、containerd 等），未自动执行，保持现状
-- **安全**: fail2ban 正常（日志滚动 9/6，无新增封禁记录）
-- **SSL 证书**: 9 个证书全部正常，gateway 剩余 342 天，无 <30 天告警
-- **磁盘趋势**: 已采集 2026-09-10 数据（config/disk-trend.json 已更新）
+## iStoreOS 路由器 (192.168.100.1)
+- [系统] up 9d | 负载 1.18-2.00（12:01 瞬时 2.00 已回落，正常）
+- [磁盘] overlay /dev/sdb3: 73% (1.9G, 可用 525.5M) ← 只监控
+- [服务] OpenClash: running | Tailscale: running
+- [Tailscale serve] 配置存在于 _serve/e416（仅记录）
 
-## iStoreOS 路由器
-- **负载**: 1.84/1.46/1.28（多核软路由，正常范围）
-- **磁盘**:
-  - overlay (sdb3): 73% — 低于 80% 告警线，持续观察
-  - sdb4 /mnt/sata2-4: 8% — 正常
-  - sda1 /mnt/data_sda1: 24% — 正常
-- **OpenClash**: 运行中（clash 进程 + watchdog 正常）
-- **Tailscale**: tailscaled 运行中，无 serve 配置（无需提醒）
-- **Docker**: 无运行容器
-- **WAN**: pppoe-wan 在线，IPv6 正常
+## SSL 证书
+- 🟢 gateway.pem/crt: 剩余 342 天
+- 共 9 个证书全部正常
 
-## 安全邮件
-- 扫描完成，无高危/警告事件，常规静默
+## 安全邮件扫描
+- 无高危事件
 
-## 待处理事项
-- overlay 分区 73% 接近 80% 告警线，建议观察增长趋势；如持续上升可分析 /overlay 占用大头
-- 系统有可升级包（含 docker-ce 29.8.0），需要时告知 kami 后执行
+## 磁盘趋势
+- 已采集，/ 分区 17% 稳定
+
+## 异常与处理
+- 12:01 CST 路由器 1 分钟负载瞬时冲高 2.00，30 分钟后回落至 ~1.4，无需处理
+
+## 巡检记录
+- 本日（CST 09-10 起）共 44 次巡检条目，全部正常
