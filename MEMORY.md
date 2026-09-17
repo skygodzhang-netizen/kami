@@ -59,3 +59,16 @@
 - 2026-08-06: 配置 GitHub PAT token 用于 workspace git 操作
 - 远程仓库: skygodzhang-netizen/kami
 - 完成首次推送，包含配置文件和脚本
+
+---
+
+# 2026-09-17
+
+## CAD Hybrid Agent 生产状态 <!-- project: github.com/skygodzhang-netizen/kami -->
+- Win-CAD-Node (192.168.100.109) 生产在线：paired/connected，screen/computer/browser/file/system 能力全注册；Task Scheduler + node.vbs 隐藏启动（禁止改 Service，会导致 computer 失效）
+- 架构：Ubuntu AI Server → OpenClaw Gateway → Win-CAD-Node → Windows AutoCAD 2020
+- CUA 验证结论：screen.snapshot/computer 可用（Notepad 控制通过），但 AutoCAD 纯 GUI 鼠标键盘绘图不稳定（自绘界面+GPU渲染），不默认用 CUA 绘图
+- CAD 控制优先级：COM API > AutoLISP > Script > accoreconsole；CUA 只用于启动/看状态/验证结果
+- 已验证：1000×500 矩形+中心线+保存 CAD 文件全链路通过，Hybrid Agent 状态 READY
+- Timeout 经验：Agent 600s / Provider 900s；长任务排障依次查 Agent/Provider/Tool/Node timeout
+- 详细状态文档: memory/cad-hybrid-agent-state.md
