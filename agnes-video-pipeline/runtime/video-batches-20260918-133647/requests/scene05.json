@@ -1,0 +1,15 @@
+{
+  "scene_id": "scene05",
+  "title": "Hallway follow + final pose",
+  "endpoint": "https://apihub.agnes-ai.com/v1",
+  "key_source": "cpk-Xk...",
+  "payload": {
+    "model": "agnes-video-2.5-flash",
+    "prompt": "The man wears the same black outfit and walks slowly forward down a modern apartment hallway. The camera smoothly follows and gradually moves to his front. In the last 2 seconds, the man stops, turns to face the camera and holds a natural, confident fashion presentation pose. The camera gently pushes in. End as a complete full-body presentation shot.",
+    "mode": "reference",
+    "seconds": "6",
+    "size": "720P",
+    "aspect_ratio": "9:16",
+    "images": "[1 image(s), data-uri redacted]"
+  }
+}

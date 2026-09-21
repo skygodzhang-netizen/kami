@@ -1,0 +1,32 @@
+[13:45:52] POLL_ERR scene05 HTTP Error 429: Too Many Requests
+[13:46:00] POLL_ERR scene04 HTTP Error 429: Too Many Requests
+[13:46:12] POLL_ERR scene04 HTTP Error 429: Too Many Requests
+[13:46:15] POLL_ERR scene03 HTTP Error 429: Too Many Requests
+[13:46:18] POLL_ERR scene04 HTTP Error 429: Too Many Requests
+[13:46:22] POLL_ERR scene03 HTTP Error 429: Too Many Requests
+[13:46:24] POLL_ERR scene04 HTTP Error 429: Too Many Requests
+[13:46:27] POLL_ERR scene03 HTTP Error 429: Too Many Requests
+[13:46:32] POLL_ERR scene05 HTTP Error 429: Too Many Requests
+[13:46:37] POLL_ERR scene04 HTTP Error 429: Too Many Requests
+[13:46:44] POLL_ERR scene05 HTTP Error 429: Too Many Requests
+[13:46:44] POLL_ERR scene02 HTTP Error 429: Too Many Requests
+[13:46:51] POLL_ERR scene03 HTTP Error 429: Too Many Requests
+[13:46:58] POLL_ERR scene03 HTTP Error 429: Too Many Requests
+[13:47:03] POLL_ERR scene03 HTTP Error 429: Too Many Requests
+[13:47:08] POLL_ERR scene04 HTTP Error 429: Too Many Requests
+[13:47:09] POLL_ERR scene03 HTTP Error 429: Too Many Requests
+[13:47:15] POLL_ERR scene03 HTTP Error 429: Too Many Requests
+[13:47:16] POLL_ERR scene02 HTTP Error 429: Too Many Requests
+[13:47:21] POLL_FINAL scene03 status=completed video=task_K6ix4WVauTID85A6vuA97nYX9p4B6GN1 err=
+[13:47:22] POLL_ERR scene02 HTTP Error 429: Too Many Requests
+[13:47:28] POLL_FINAL scene02 status=completed video=task_7B4E22y960ExwQNP28aZ1mOJcbowYo2e err=
+[13:47:44] POLL_ERR scene01 HTTP Error 429: Too Many Requests
+[13:47:44] POLL_ERR scene04 HTTP Error 429: Too Many Requests
+[13:47:55] POLL_ERR scene05 HTTP Error 429: Too Many Requests
+[13:47:56] POLL_ERR scene01 HTTP Error 429: Too Many Requests
+[13:48:02] POLL_ERR scene04 HTTP Error 429: Too Many Requests
+[13:48:02] POLL_ERR scene01 HTTP Error 429: Too Many Requests
+[13:48:08] POLL_FINAL scene04 status=completed video=task_TSPxbfMQ5hWNL65493zogdrIZZY41yME err=
+[13:48:56] POLL_ERR scene05 HTTP Error 429: Too Many Requests
+[13:49:02] POLL_FINAL scene05 status=completed video=task_qCjnLykGTFfCeH4m3dA56HW7XuGVladU err=
+[13:49:48] POLL_FINAL scene01 status=completed video=task_WGJhstYzaOI5e9udralcQNA7R2OLMt28 err=

@@ -1,0 +1,32 @@
+[11:21:29] ### Agnes 5-scene pipeline batch=video-batches-20260918-112129 key_source=openclaw.json model_primary=agnes-video-2.5-flash base=https://apihub.agnes-ai.cn/v1
+[11:21:29] SUBMIT_FAIL scene03 agnes-video-2.5-flash: HTTP Error 400: Bad Request
+[11:21:29] FALLBACK scene03 retry with agnes-video-v2.0
+[11:21:29] SUBMIT_FAIL scene04 agnes-video-2.5-flash: HTTP Error 400: Bad Request
+[11:21:29] FALLBACK scene04 retry with agnes-video-v2.0
+[11:21:29] SUBMIT_FAIL scene02 agnes-video-2.5-flash: HTTP Error 429: Too Many Requests
+[11:21:29] FALLBACK scene02 retry with agnes-video-v2.0
+[11:21:29] SUBMIT_FAIL scene05 agnes-video-2.5-flash: HTTP Error 429: Too Many Requests
+[11:21:29] FALLBACK scene05 retry with agnes-video-v2.0
+[11:21:29] SUBMIT_FAIL scene01 agnes-video-2.5-flash: HTTP Error 429: Too Many Requests
+[11:21:29] FALLBACK scene01 retry with agnes-video-v2.0
+[11:21:29] SUBMIT_FAIL scene03 agnes-video-v2.0: HTTP Error 429: Too Many Requests
+[11:21:29] INSPECT skip scene03
+[11:21:29] SUBMIT_FAIL scene04 agnes-video-v2.0: HTTP Error 429: Too Many Requests
+[11:21:29] INSPECT skip scene04
+[11:21:29] SUBMIT_FAIL scene05 agnes-video-v2.0: HTTP Error 429: Too Many Requests
+[11:21:29] INSPECT skip scene05
+[11:21:29] SUBMIT_FAIL scene02 agnes-video-v2.0: HTTP Error 429: Too Many Requests
+[11:21:29] INSPECT skip scene02
+[11:21:29] SUBMIT_FAIL scene01 agnes-video-v2.0: HTTP Error 429: Too Many Requests
+[11:21:29] INSPECT skip scene01
+[11:21:29] ### generation done: 0/5 clips ready
+Traceback (most recent call last):
+  File "/home/ubuntu/.openclaw/workspace/agnes-video-pipeline/run_pipeline.py", line 126, in <module>
+    main()
+  File "/home/ubuntu/.openclaw/workspace/agnes-video-pipeline/run_pipeline.py", line 65, in main
+    concat_res = concat(reps, scenes, batch, target_w=720, target_h=1280, fps=24)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.openclaw/workspace/agnes-video-pipeline/pipeline_concat.py", line 4, in concat
+    logp = os.path.join(batch, "logs", "ffmpeg.log")
+           ^^
+NameError: name 'os' is not defined. Did you mean: 'ok'? Or did you forget to import 'os'?

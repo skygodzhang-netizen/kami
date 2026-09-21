@@ -1,0 +1,13 @@
+{
+  "scene_id": "scene01",
+  "title": "Bedroom 90deg",
+  "payload": {
+    "model": "agnes-video-v2.0",
+    "prompt": "The man stands in a modern bedroom. Starting from his exact pose in the first frame, he slowly and naturally turns his body about 90 degrees to show the front and side of the black jacket. The camera performs a smooth, subtle orbital movement, keeping a full-body composition. Show the garment silhouette, shoulder construction, sleeves, pants and fabric texture. End in a natural three-quarter presenting pose. Motion is realistic, smooth and calm.",
+    "seconds": 6,
+    "size": "720x1280",
+    "aspect_ratio": "9:16",
+    "resolution": "720P",
+    "images": "[1 image(s), data-uri redacted]"
+  }
+}

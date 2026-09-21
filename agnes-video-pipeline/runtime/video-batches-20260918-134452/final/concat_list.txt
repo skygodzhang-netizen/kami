@@ -1,0 +1,5 @@
+file '/home/ubuntu/.openclaw/workspace/agnes-video-pipeline/runtime/video-batches-20260918-134452/videos/scene01.mp4'
+file '/home/ubuntu/.openclaw/workspace/agnes-video-pipeline/runtime/video-batches-20260918-134452/videos/scene02.mp4'
+file '/home/ubuntu/.openclaw/workspace/agnes-video-pipeline/runtime/video-batches-20260918-134452/videos/scene03.mp4'
+file '/home/ubuntu/.openclaw/workspace/agnes-video-pipeline/runtime/video-batches-20260918-134452/videos/scene04.mp4'
+file '/home/ubuntu/.openclaw/workspace/agnes-video-pipeline/runtime/video-batches-20260918-134452/videos/scene05.mp4'

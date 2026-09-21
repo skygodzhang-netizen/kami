@@ -1,0 +1,10 @@
+[11:21:29] SUBMIT_FAIL scene03 agnes-video-2.5-flash: HTTP Error 400: Bad Request
+[11:21:29] SUBMIT_FAIL scene04 agnes-video-2.5-flash: HTTP Error 400: Bad Request
+[11:21:29] SUBMIT_FAIL scene02 agnes-video-2.5-flash: HTTP Error 429: Too Many Requests
+[11:21:29] SUBMIT_FAIL scene05 agnes-video-2.5-flash: HTTP Error 429: Too Many Requests
+[11:21:29] SUBMIT_FAIL scene01 agnes-video-2.5-flash: HTTP Error 429: Too Many Requests
+[11:21:29] SUBMIT_FAIL scene03 agnes-video-v2.0: HTTP Error 429: Too Many Requests
+[11:21:29] SUBMIT_FAIL scene04 agnes-video-v2.0: HTTP Error 429: Too Many Requests
+[11:21:29] SUBMIT_FAIL scene05 agnes-video-v2.0: HTTP Error 429: Too Many Requests
+[11:21:29] SUBMIT_FAIL scene02 agnes-video-v2.0: HTTP Error 429: Too Many Requests
+[11:21:29] SUBMIT_FAIL scene01 agnes-video-v2.0: HTTP Error 429: Too Many Requests

@@ -1,0 +1,2 @@
+[11:21:29] ### Agnes 5-scene pipeline batch=video-batches-20260918-112129 key_source=openclaw.json model_primary=agnes-video-2.5-flash base=https://apihub.agnes-ai.cn/v1
+[11:21:29] ### generation done: 0/5 clips ready

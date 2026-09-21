@@ -1,0 +1,15 @@
+{
+  "scene_id": "scene04",
+  "title": "Balcony breeze + 180deg",
+  "endpoint": "https://apihub.agnes-ai.com/v1",
+  "key_source": "cpk-Xk...",
+  "payload": {
+    "model": "agnes-video-2.5-flash",
+    "prompt": "The man stands on a modern apartment balcony. A gentle natural breeze lightly moves the black jacket. He slowly turns about 180 degrees to show the side, back and front of the garment. The camera performs a smooth half-orbit. Emphasize the garment outline, fabric texture and drape. The wind is natural; the clothes must not deform.",
+    "mode": "reference",
+    "seconds": "6",
+    "size": "720P",
+    "aspect_ratio": "9:16",
+    "images": "[1 image(s), data-uri redacted]"
+  }
+}

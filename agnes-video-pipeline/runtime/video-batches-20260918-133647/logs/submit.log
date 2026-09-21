@@ -1,0 +1,11 @@
+[13:36:49] SUBMIT_RETRY scene03 http=503 attempt=1 waiting 25s
+[13:36:49] SUBMIT_RETRY scene04 http=503 attempt=1 waiting 25s
+[13:36:49] SUBMIT_RETRY scene05 http=503 attempt=1 waiting 25s
+[13:36:49] SUBMIT_RETRY scene02 http=503 attempt=1 waiting 25s
+[13:36:50] SUBMIT_RETRY scene01 http=503 attempt=1 waiting 25s
+[13:37:15] SUBMIT_RETRY scene03 http=503 attempt=2 waiting 25s
+[13:37:16] SUBMIT_FAIL scene02 agnes-video-2.5-flash: HTTP 429: {"error":{"message":"Too many requests. Please try again in a moment. (request id: 20260918133715513724975a4QuM90H)","type":"AgnesAI_error","param":"","code":"rate_limit_exceeded"}}
+[13:37:16] SUBMIT_FAIL scene05 agnes-video-2.5-flash: HTTP 429: {"error":{"message":"Too many requests. Please try again in a moment. (request id: 20260918133715832665996NQ4fuWZR)","type":"AgnesAI_error","param":"","code":"rate_limit_exceeded"}}
+[13:37:16] SUBMIT_FAIL scene04 agnes-video-2.5-flash: HTTP 429: {"error":{"message":"Too many requests. Please try again in a moment. (request id: 20260918133715886064013GkoaFdBp)","type":"AgnesAI_error","param":"","code":"rate_limit_exceeded"}}
+[13:37:16] SUBMIT_FAIL scene01 agnes-video-2.5-flash: HTTP 429: {"error":{"message":"Too many requests. Please try again in a moment. (request id: 20260918133716289873670kFJ1QLke)","type":"AgnesAI_error","param":"","code":"rate_limit_exceeded"}}
+[13:37:44] SUBMIT_FAIL scene03 agnes-video-2.5-flash: HTTP 429: {"error":{"message":"Too many requests. Please try again in a moment. (request id: 20260918133743384344194oraqClc6)","type":"AgnesAI_error","param":"","code":"rate_limit_exceeded"}}

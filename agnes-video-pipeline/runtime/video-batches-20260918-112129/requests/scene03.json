@@ -1,0 +1,13 @@
+{
+  "scene_id": "scene03",
+  "title": "Kitchen walk + turn",
+  "payload": {
+    "model": "agnes-video-v2.0",
+    "prompt": "The man wears the same black outfit and walks slowly and naturally in a modern kitchen. He takes 2 to 3 steps forward, then naturally turns to face the camera. The camera smoothly tracks him. Emphasize the garment fit, folds, drape and motion during real walking. Motion is not exaggerated.",
+    "seconds": 6,
+    "size": "720x1280",
+    "aspect_ratio": "9:16",
+    "resolution": "720P",
+    "images": "[1 image(s), data-uri redacted]"
+  }
+}

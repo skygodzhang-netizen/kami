@@ -1,0 +1,63 @@
+{
+  "batch_id": "video-batches-20260918-134452",
+  "started_at": "2026-09-18T13:44:52.356986+00:00",
+  "model_primary": "agnes-video-2.5-flash",
+  "endpoint": "https://apihub.agnes-ai.com/v1",
+  "tasks": [
+    {
+      "scene_id": "scene01",
+      "task_id": "task_WGJhstYzaOI5e9udralcQNA7R2OLMt28",
+      "status": "completed",
+      "model": "agnes-video-2.5-flash",
+      "submit_time_seconds": 2.63,
+      "poll_seconds": 242.1,
+      "fallback_used": null,
+      "file_size": 2616201,
+      "error": null
+    },
+    {
+      "scene_id": "scene02",
+      "task_id": "task_7B4E22y960ExwQNP28aZ1mOJcbowYo2e",
+      "status": "completed",
+      "model": "agnes-video-2.5-flash",
+      "submit_time_seconds": 5.54,
+      "poll_seconds": 101.9,
+      "fallback_used": null,
+      "file_size": 3066108,
+      "error": null
+    },
+    {
+      "scene_id": "scene03",
+      "task_id": "task_K6ix4WVauTID85A6vuA97nYX9p4B6GN1",
+      "status": "completed",
+      "model": "agnes-video-2.5-flash",
+      "submit_time_seconds": 1.72,
+      "poll_seconds": 94.7,
+      "fallback_used": null,
+      "file_size": 2632948,
+      "error": null
+    },
+    {
+      "scene_id": "scene04",
+      "task_id": "task_TSPxbfMQ5hWNL65493zogdrIZZY41yME",
+      "status": "completed",
+      "model": "agnes-video-2.5-flash",
+      "submit_time_seconds": 1.69,
+      "poll_seconds": 141.4,
+      "fallback_used": null,
+      "file_size": 3788728,
+      "error": null
+    },
+    {
+      "scene_id": "scene05",
+      "task_id": "task_qCjnLykGTFfCeH4m3dA56HW7XuGVladU",
+      "status": "completed",
+      "model": "agnes-video-2.5-flash",
+      "submit_time_seconds": 2.71,
+      "poll_seconds": 196.2,
+      "fallback_used": null,
+      "file_size": 2425874,
+      "error": null
+    }
+  ]
+}

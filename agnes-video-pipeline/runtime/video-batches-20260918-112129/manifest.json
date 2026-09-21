@@ -1,0 +1,63 @@
+{
+  "batch_id": "video-batches-20260918-112129",
+  "started_at": "2026-09-18T11:21:29.120822+00:00",
+  "model_primary": "agnes-video-2.5-flash",
+  "endpoint": "https://apihub.agnes-ai.cn/v1",
+  "tasks": [
+    {
+      "scene_id": "scene03",
+      "task_id": null,
+      "status": "submit_failed",
+      "model": "agnes-video-2.5-flash",
+      "submit_time_seconds": 0.4,
+      "poll_seconds": null,
+      "fallback_used": null,
+      "file_size": null,
+      "error": "HTTP Error 400: Bad Request | fallback: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "scene_id": "scene04",
+      "task_id": null,
+      "status": "submit_failed",
+      "model": "agnes-video-2.5-flash",
+      "submit_time_seconds": 0.41,
+      "poll_seconds": null,
+      "fallback_used": null,
+      "file_size": null,
+      "error": "HTTP Error 400: Bad Request | fallback: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "scene_id": "scene05",
+      "task_id": null,
+      "status": "submit_failed",
+      "model": "agnes-video-2.5-flash",
+      "submit_time_seconds": 0.44,
+      "poll_seconds": null,
+      "fallback_used": null,
+      "file_size": null,
+      "error": "HTTP Error 429: Too Many Requests | fallback: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "scene_id": "scene02",
+      "task_id": null,
+      "status": "submit_failed",
+      "model": "agnes-video-2.5-flash",
+      "submit_time_seconds": 0.41,
+      "poll_seconds": null,
+      "fallback_used": null,
+      "file_size": null,
+      "error": "HTTP Error 429: Too Many Requests | fallback: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "scene_id": "scene01",
+      "task_id": null,
+      "status": "submit_failed",
+      "model": "agnes-video-2.5-flash",
+      "submit_time_seconds": 0.53,
+      "poll_seconds": null,
+      "fallback_used": null,
+      "file_size": null,
+      "error": "HTTP Error 429: Too Many Requests | fallback: HTTP Error 429: Too Many Requests"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "scene_id": "scene02",
+  "title": "Living room 180deg",
+  "endpoint": "https://apihub.agnes-ai.com/v1",
+  "key_source": "cpk-Xk...",
+  "payload": {
+    "model": "agnes-video-2.5-flash",
+    "prompt": "The man stands in a modern living room. Starting from his exact pose in the first frame, he slowly rotates his body about 180 degrees to show the back, side and front of the black jacket. The camera smoothly orbits around him. Emphasize the back silhouette, shoulders, sleeves, pants and overall outline. End in a three-quarter front presenting pose.",
+    "mode": "reference",
+    "seconds": "6",
+    "size": "720P",
+    "aspect_ratio": "9:16",
+    "images": "[1 image(s), data-uri redacted]"
+  }
+}

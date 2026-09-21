@@ -1,0 +1,58 @@
+{
+  "global": {
+    "model_primary": "agnes-video-2.5-flash",
+    "model_fallback": "agnes-video-v2.0",
+    "size": "720x1280",
+    "aspect_ratio": "9:16",
+    "resolution": "720P",
+    "seconds": 6,
+    "n": 1,
+    "final": {
+      "width": 720,
+      "height": 1280,
+      "codec": "h264",
+      "pix_fmt": "yuv420p",
+      "fps": 24,
+      "target_duration_seconds": 30
+    }
+  },
+  "common_negative": "different person, extra people, duplicated person, changed face, different hairstyle, changed outfit, different clothing, deformed garment, distorted body, second man, text, watermark, logo",
+  "person_lock": "A young East Asian man, black short hair, slim build, wearing a black zip-up track jacket with cream-white stripes on the sleeves, cream ribbed collar and cuffs, and dark gray wide-leg trousers. Identity, face, hair and outfit must stay identical to the reference image throughout.",
+  "scenes": [
+    {
+      "scene_id": "scene01",
+      "scene_no": 1,
+      "image": "input/scene01.jpg",
+      "title": "Bedroom 90deg",
+      "prompt": "The man stands in a modern bedroom. Starting from his exact pose in the first frame, he slowly and naturally turns his body about 90 degrees to show the front and side of the black jacket. The camera performs a smooth, subtle orbital movement, keeping a full-body composition. Show the garment silhouette, shoulder construction, sleeves, pants and fabric texture. End in a natural three-quarter presenting pose. Motion is realistic, smooth and calm."
+    },
+    {
+      "scene_id": "scene02",
+      "scene_no": 2,
+      "image": "input/scene02.jpg",
+      "title": "Living room 180deg",
+      "prompt": "The man stands in a modern living room. Starting from his exact pose in the first frame, he slowly rotates his body about 180 degrees to show the back, side and front of the black jacket. The camera smoothly orbits around him. Emphasize the back silhouette, shoulders, sleeves, pants and overall outline. End in a three-quarter front presenting pose."
+    },
+    {
+      "scene_id": "scene03",
+      "scene_no": 3,
+      "image": "input/scene03.jpg",
+      "title": "Kitchen walk + turn",
+      "prompt": "The man wears the same black outfit and walks slowly and naturally in a modern kitchen. He takes 2 to 3 steps forward, then naturally turns to face the camera. The camera smoothly tracks him. Emphasize the garment fit, folds, drape and motion during real walking. Motion is not exaggerated."
+    },
+    {
+      "scene_id": "scene04",
+      "scene_no": 4,
+      "image": "input/scene04.jpg",
+      "title": "Balcony breeze + 180deg",
+      "prompt": "The man stands on a modern apartment balcony. A gentle natural breeze lightly moves the black jacket. He slowly turns about 180 degrees to show the side, back and front of the garment. The camera performs a smooth half-orbit. Emphasize the garment outline, fabric texture and drape. The wind is natural; the clothes must not deform."
+    },
+    {
+      "scene_id": "scene05",
+      "scene_no": 5,
+      "image": "input/scene05.jpg",
+      "title": "Hallway follow + final pose",
+      "prompt": "The man wears the same black outfit and walks slowly forward down a modern apartment hallway. The camera smoothly follows and gradually moves to his front. In the last 2 seconds, the man stops, turns to face the camera and holds a natural, confident fashion presentation pose. The camera gently pushes in. End as a complete full-body presentation shot."
+    }
+  ]
+}
