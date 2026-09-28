@@ -1,0 +1,337 @@
+{
+  "_meta": {
+    "version": "4.0-webnovel",
+    "description": "网文实战配置 - 情绪驱动、节奏抓人、人味优先",
+    "target_platforms": [
+      "番茄",
+      "起点",
+      "七猫",
+      "飞卢"
+    ],
+    "core_philosophy": "爽感>信息>文笔，情绪>逻辑>精致"
+  },
+  "narrative": {
+    "voice": "第三人称限知（主角视角）",
+    "primary_driver": "情绪推进",
+    "secondary_driver": "冲突升级",
+    "writing_mode": "展示+讲述混合，该快则快该慢则慢",
+    "psychological_depth": {
+      "conscious": 60,
+      "subconscious": 20,
+      "somatic": 20,
+      "techniques": [
+        "直接心理活动",
+        "内心吐槽",
+        "目标明确化",
+        "情绪即时反馈"
+      ],
+      "avoid": [
+        "过度意识流",
+        "冗长心理分析",
+        "脱离剧情的内心独白"
+      ]
+    },
+    "hook_system": {
+      "chapter_opening": [
+        "冲突前置",
+        "悬念抛出",
+        "情绪爆点",
+        "反常事件"
+      ],
+      "chapter_ending": [
+        "卡点（危机/转折/新信息）",
+        "情绪高潮",
+        "悬念强化",
+        "目标升级"
+      ],
+      "micro_hooks": "每500字必须有小刺激（新信息/小冲突/情绪波动）"
+    }
+  },
+  "pacing": {
+    "rhythm_principles": {
+      "default": "快节奏推进，慢节奏只用于关键情绪点",
+      "variation": "根据剧情需要自然切换，不强制",
+      "sentence_flexibility": "短句用于紧张/动作，长句用于描写/情绪，允许混合"
+    },
+    "scene_structure": {
+      "opening": {
+        "goal": "3句话内进入剧情或抓住注意力",
+        "techniques": [
+          "动作开场",
+          "对话开场",
+          "冲突开场",
+          "悬念开场"
+        ],
+        "avoid": [
+          "大段环境描写",
+          "慢速铺垫",
+          "与主线无关的琐事"
+        ]
+      },
+      "development": {
+        "layering": "冲突升级→主角应对→新危机/新信息→情绪反应",
+        "density": "每300字必须有推进（信息/冲突/情绪三选一）",
+        "tension_curve": "持续上升，小高潮不断，大高潮压轴"
+      },
+      "climax": {
+        "synchronization": "外部冲突与内部情绪同时爆发",
+        "technique": "动作+心理+对话三线并行",
+        "length": "可以短促有力，也可以延绵不绝，视类型而定"
+      },
+      "resolution": {
+        "type": "收束+新钩子",
+        "techniques": [
+          "即时情绪反馈",
+          "下章预告式结尾",
+          "反转/悬念"
+        ],
+        "avoid": [
+          "道理总结",
+          "过度抒情",
+          "完全闭合无悬念"
+        ]
+      }
+    },
+    "info_delivery": {
+      "worldbuilding": "碎片化插入，需要时才解释，不专门铺垫",
+      "character_background": "通过行动和对话透露，不旁白介绍",
+      "power_system": "实战中讲解，边打边升级，数据可视化"
+    }
+  },
+  "description": {
+    "literary_quality": {
+      "priority": "画面感>信息>文笔精致度",
+      "principle": "能一句话说清楚不用两句，能用动作表现不用形容词",
+      "sentence_craft": {
+        "variation": "允许重复句式制造节奏感（如排比、递进）",
+        "rhythm": "口语化优先，读起来顺口",
+        "techniques": [
+          "动词驱动",
+          "名词堆叠",
+          "短句冲击",
+          "留白"
+        ]
+      }
+    },
+    "sensory_system": {
+      "visual": 50,
+      "tactile": 20,
+      "auditory": 20,
+      "olfactory": 5,
+      "gustatory": 5,
+      "rule": "视觉为主，其他感官在关键时刻点睛",
+      "avoid": [
+        "通感等炫技",
+        "脱离角色视角的全知描写"
+      ]
+    },
+    "psychological_rendering": {
+      "direct_thought": 50,
+      "indirect_thought": 30,
+      "somatic_manifestation": 20,
+      "techniques": {
+        "内心吐槽": "主角对事件的即时反应，增加亲切感",
+        "目标明确": "经常提醒读者主角想要什么",
+        "情绪标签": "允许直接说'他很愤怒'，快速建立情绪",
+        "读者共情": "通过主角反应引导读者情绪"
+      }
+    },
+    "metaphor_usage": {
+      "density": "每2000字1个足够，网文重直白",
+      "type": "简单明了的生活化比喻",
+      "avoid": [
+        "复杂文学隐喻",
+        "强行文艺"
+      ]
+    }
+  },
+  "dialogue": {
+    "density": "medium-high",
+    "target_ratio": "30-50%",
+    "functions": [
+      "推进剧情",
+      "塑造人设",
+      "制造冲突",
+      "释放信息",
+      "调节节奏"
+    ],
+    "integration": "对话+动作+心理，三位一体",
+    "subtext": "允许表面客气内里藏刀，也允许直白对喷",
+    "attribution": "说/道/问/答/吼/笑/冷声道，多样化",
+    "style": {
+      "modern": "口语化，带网络感，允许流行语（适度）",
+      "ancient": "半文半白，重气势和节奏，不考据癖",
+      "character_voice": "不同角色有明显不同说话风格"
+    },
+    "avoid": [
+      "说明书式对话",
+      "全员一个语气",
+      "无意义的寒暄"
+    ]
+  },
+  "character_voice": {
+    "protagonist": {
+      "requirements": [
+        "目标明确",
+        "性格鲜明",
+        "有缺点有成长",
+        "让读者有代入感"
+      ],
+      "narrative_bias": "所有描写带主角情绪色彩，客观场景也带主观感受",
+      "catchphrase_system": {
+        "usage": "口头禅在情绪高点或关键时刻使用，不硬塞",
+        "variation": "允许变形和化用，不生硬重复"
+      }
+    },
+    "antagonist": {
+      "requirements": [
+        "有动机",
+        "有压迫感",
+        "不只是工具人"
+      ],
+      "interaction": "制造真实冲突，不是单纯送经验"
+    },
+    "supporting": {
+      "requirements": [
+        "有记忆点",
+        "功能明确",
+        "不抢戏"
+      ],
+      "differentiation": "通过语言风格、行为模式区分"
+    }
+  },
+  "style_guards": {
+    "flexibility": {
+      "principle": "规则是参考不是枷锁，剧情需要可以打破",
+      "variation": "允许章节间风格微调，保持新鲜感"
+    },
+    "repetition_control": {
+      "enabled": true,
+      "max_repeats": 3,
+      "tracked_phrases": [
+        "恐怖如斯",
+        "倒吸一口凉气",
+        "瞳孔一缩",
+        "心头一震"
+      ],
+      "strategy": "建立个人词库，用新鲜表达替代陈词滥调",
+      "allowed_repetition": [
+        "强调性重复",
+        "节奏性重复",
+        "情绪递进重复"
+      ]
+    },
+    "monotony_prevention": {
+      "paragraph_structure": "自然变化，不强制轮换",
+      "opening_variety": "允许连续同类型开场如果剧情需要",
+      "rhythm_pulse": "根据情绪曲线自然起伏"
+    },
+    "psychological_authenticity": {
+      "check": true,
+      "principle": "情绪反应符合人设，但不追求现实完美",
+      "allow": [
+        "夸张化情绪",
+        "即时反应",
+        "标签化描述"
+      ],
+      "avoid": [
+        "人设崩塌",
+        "毫无征兆的情绪转变"
+      ]
+    }
+  },
+  "quality_thresholds": {
+    "chapter_length": {
+      "min": 2000,
+      "ideal": "2500-3500",
+      "max": 5000,
+      "flexibility": "根据卡点需要可伸缩"
+    },
+    "engagement_metrics": {
+      "hook_density": "每章至少3个情绪刺激点",
+      "conflict_presence": "每章必须有冲突或张力",
+      "progression": "每章必须推进主线或揭示重要信息",
+      "character_moment": "每章必须有主角的高光或成长"
+    },
+    "literary_standards": {
+      "clarity": "读起来顺畅，不卡顿",
+      "immersion": "画面感强，有代入感",
+      "emotional_resonance": "能调动读者情绪"
+    }
+  },
+  "platform_specific": {
+    "tomato": {
+      "features": [
+        "强情绪",
+        "快节奏",
+        "多冲突",
+        "爽点密集"
+      ],
+      "avoid": [
+        "慢热",
+        "压抑",
+        "复杂设定前置"
+      ]
+    },
+    "qidian": {
+      "features": [
+        "世界观完整",
+        "升级感",
+        "长期铺垫",
+        "群像可选"
+      ],
+      "avoid": [
+        "逻辑漏洞",
+        "人设崩塌",
+        "水文"
+      ]
+    },
+    "feilu": {
+      "features": [
+        "极致爽感",
+        "快节奏",
+        "创意脑洞",
+        "即时反馈"
+      ],
+      "avoid": [
+        "压抑超过3章",
+        "复杂感情线",
+        "慢升级"
+      ]
+    }
+  },
+  "efficiency_guidelines": {
+    "scene_templates": {
+      "usage": "参考而非套用，根据剧情灵活调整",
+      "types": [
+        "装逼打脸",
+        "危机逃生",
+        "升级突破",
+        "智斗博弈",
+        "情感爆发",
+        "揭秘反转"
+      ]
+    },
+    "writing_shortcuts": {
+      "description": "用动作代替静态描写",
+      "emotion": "用反应代替分析",
+      "transition": "硬切或一句话带过，不拖沓"
+    }
+  },
+  "forbidden_patterns": [
+    "连续3章无实质推进",
+    "主角被动超过2章",
+    "同一信息重复解释",
+    "脱离主线的支线超过1章",
+    "情绪压抑无释放超过3章",
+    "重要设定无铺垫突然抛出"
+  ],
+  "positive_patterns": [
+    "每章有让读者想点下一章的理由",
+    "主角主动性强，有目标有行动",
+    "冲突升级，一波未平一波又起",
+    "情绪有起伏，爽点与紧张点交替",
+    "配角有记忆点，不只是工具人",
+    "世界观通过剧情自然展现"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "角色关系类型定义",
+    "last_updated": "2026-04-08"
+  },
+  "romantic": {
+    "name": "情感关系",
+    "types": [
+      {"id": "lover", "name": "恋人", "intimacy_range": [80, 100], "trust_min": 70, "bidirectional": true},
+      {"id": "crush", "name": "暗恋", "intimacy_range": [50, 80], "trust_min": 30, "bidirectional": false, "reverse_type": "crush"},
+      {"id": "ex_lover", "name": "前任", "intimacy_range": [-30, 50], "trust_min": 0, "bidirectional": true},
+      {"id": "arranged_marriage", "name": "未婚夫妻", "intimacy_range": [0, 100], "trust_min": 0, "bidirectional": true}
+    ]
+  },
+  "familial": {
+    "name": "血缘关系",
+    "types": [
+      {"id": "parent", "name": "父子/父女", "intimacy_range": [20, 100], "trust_min": 30, "bidirectional": false, "reverse_type": "child"},
+      {"id": "child", "name": "子女", "intimacy_range": [20, 100], "trust_min": 30, "bidirectional": false, "reverse_type": "parent"},
+      {"id": "sibling", "name": "兄弟姐妹", "intimacy_range": [0, 100], "trust_min": 20, "bidirectional": true},
+      {"id": "cousin", "name": "表亲/堂亲", "intimacy_range": [0, 80], "trust_min": 10, "bidirectional": true}
+    ]
+  },
+  "social": {
+    "name": "社交关系",
+    "types": [
+      {"id": "master", "name": "师徒", "intimacy_range": [20, 100], "trust_min": 50, "bidirectional": false, "hierarchy": true, "reverse_type": "apprentice"},
+      {"id": "apprentice", "name": "徒弟", "intimacy_range": [20, 100], "trust_min": 50, "bidirectional": false, "hierarchy": true, "reverse_type": "master"},
+      {"id": "senior", "name": "师兄/师姐", "intimacy_range": [0, 90], "trust_min": 30, "bidirectional": false, "hierarchy": true, "reverse_type": "junior"},
+      {"id": "junior", "name": "师弟/师妹", "intimacy_range": [0, 90], "trust_min": 30, "bidirectional": false, "hierarchy": true, "reverse_type": "senior"},
+      {"id": "friend", "name": "朋友", "intimacy_range": [30, 90], "trust_min": 40, "bidirectional": true},
+      {"id": "best_friend", "name": "挚友", "intimacy_range": [70, 100], "trust_min": 80, "bidirectional": true},
+      {"id": "acquaintance", "name": "熟人", "intimacy_range": [0, 40], "trust_min": 0, "bidirectional": true},
+      {"id": "enemy", "name": "敌人", "intimacy_range": [-100, -30], "trust_min": 0, "bidirectional": true},
+      {"id": "rival", "name": "竞争对手", "intimacy_range": [-20, 50], "trust_min": 10, "bidirectional": true}
+    ]
+  },
+  "faction": {
+    "name": "阵营关系",
+    "types": [
+      {"id": "ally", "name": "盟友", "intimacy_range": [40, 100], "trust_min": 50, "bidirectional": true},
+      {"id": "subordinate", "name": "下属", "intimacy_range": [0, 80], "trust_min": 30, "bidirectional": false, "hierarchy": true, "reverse_type": "superior"},
+      {"id": "superior", "name": "上级", "intimacy_range": [0, 80], "trust_min": 30, "bidirectional": false, "hierarchy": true, "reverse_type": "subordinate"},
+      {"id": "traitor", "name": "叛徒", "intimacy_range": [-100, -50], "trust_min": 0, "bidirectional": false, "reverse_type": "enemy"}
+    ]
+  }
+}

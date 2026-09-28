@@ -15,7 +15,7 @@ OPENCLAW_CFG = os.path.expanduser("~/.openclaw/openclaw.json")
 FFMPEG = "/usr/bin/ffmpeg"
 FFPROBE = "/usr/bin/ffprobe"
 API_KEY = None
-BASE_URL = "https://apihub.agnes-ai.cn/v1"
+BASE_URL = "https://apihub.agnes-ai.com/v1"
 _write_lock = threading.Lock()
 
 def log(msg, *logs):
@@ -33,18 +33,18 @@ def mask(s):
     return s[:6] + "..." if len(s) > 10 else "***"
 
 def load_key():
+    """Load the shared Token Plan credential without exposing it in config/logs."""
     global API_KEY
-    for cand in (os.environ.get("AGNES_API_KEY"),):
-        if cand:
-            API_KEY = cand; return "env"
+    key_file = os.path.expanduser("~/.openclaw/secrets/provider/agnes-api-key")
     try:
-        cfg = json.load(open(OPENCLAW_CFG))
-        k = cfg["models"]["providers"]["agnes"].get("apiKey")
-        if k:
-            API_KEY = k; return "openclaw.json"
-    except Exception as e:
-        print("cfg read err", e)
-    return "NOT_FOUND"
+        key = open(key_file, encoding="utf-8").read().strip()
+    except OSError as exc:
+        print("credential read error", type(exc).__name__)
+        return "NOT_FOUND"
+    if not key:
+        return "NOT_FOUND"
+    API_KEY = key
+    return "secret-file"
 
 def http(method, url, body=None, timeout=1200):
     data = None

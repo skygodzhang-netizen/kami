@@ -1,0 +1,3 @@
+"""
+Novel Writer Scripts Package
+"""

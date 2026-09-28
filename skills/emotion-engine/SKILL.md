@@ -90,7 +90,7 @@ memory/emotion/
 
 ### 衰减
 
-暂未实现，不可执行。
+已实现：`scripts/emotion-decay.py --dry-run` 可只读预览；生产由现有 OpenClaw scheduler 每 60 分钟调用一次。
 
 ### 事件去重
 
@@ -148,9 +148,9 @@ Emotion Engine 是辅助层，不得成为 Agent 的单点故障。
 | long_idle | — | — | — | — | — | -5 | — |
 | new_question | — | — | — | +5 | — | — | — |
 
-## 衰减（暂未实现）
+## 衰减（elapsed-time）
 
-> 计划：每 6 小时自动对情绪维度做轻微衰减（趋回基准 50）。当前版本未实现，后续可通过 cron 触发。
+使用 `memory/emotion/decay-config.json` 中七维实际基准和半衰期；根据真实 elapsed time 指数回归，整数结果保持事件脚本兼容。state/context/cursor 原子替换，事件更新与 decay 共用 `.emotion.lock`。重复相同时间调用幂等。禁止人为制造事件测试生产。
 
 ## 未来扩展接口
 
@@ -190,7 +190,7 @@ Emotion Engine 是轻量级辅助功能。不得：
 - 启动模型
 - 使用摄像头
 - 使用麦克风
-- 增加 cron
+- 自行增加 cron（仅允许用户授权的现有 scheduler 每小时 decay 任务）
 - 修改 Gateway
 
 **事件只在实际需要时执行一次 Bash 脚本。**
@@ -344,7 +344,7 @@ Emotion Engine v1 当前：
 - ✅ 7 种事件类型
 
 **暂不支持**：
-- ❌ decay（衰减）
+- ✅ elapsed-time decay（独立脚本，已授权每小时调度）
 - ❌ long_idle 自动检测
 - ❌ AI 情绪识别
 - ❌ 用户语音情绪识别

@@ -7,7 +7,7 @@
 
 set -euo pipefail
 
-EMOTION_DIR="/home/ubuntu/.openclaw/workspace/memory/emotion"
+EMOTION_DIR="${EMOTION_DIR:-/home/ubuntu/.openclaw/workspace/memory/emotion}"
 STATE_FILE="$EMOTION_DIR/state.json"
 HISTORY_FILE="$EMOTION_DIR/history.jsonl"
 CONTEXT_FILE="$EMOTION_DIR/context.md"
@@ -20,15 +20,26 @@ fi
 
 # ── 只读命令 ──────────────────────────────────────────────
 
-if [[ "$1" == "status" ]]; then
+if [[ "${1:-}" == "status" ]]; then
   cat "$STATE_FILE"
   exit 0
 fi
 
-if [[ "$1" == "context" ]]; then
+if [[ "${1:-}" == "context" ]]; then
   cat "$CONTEXT_FILE"
   exit 0
 fi
+
+# Shared with elapsed-time decay; read-only status/context above never write.
+exec 9>"$EMOTION_DIR/.emotion.lock"
+flock -w 10 9 || { echo "Error: emotion lock busy" >&2; exit 1; }
+python3 - "$STATE_FILE" <<'PYVALID'
+import json,math,sys
+s=json.load(open(sys.argv[1]))
+for k in ('pleasure','arousal','stress','curiosity','trust','social','fatigue'):
+    v=s[k]
+    assert isinstance(v,int) and not isinstance(v,bool) and 0<=v<=100, 'invalid emotion dimension'
+PYVALID
 
 # ── 参数检查 ──────────────────────────────────────────────
 if [[ $# -lt 1 ]]; then
@@ -40,6 +51,7 @@ fi
 
 EVENT="$1"
 REASON="${2:-}"
+REASON=$(python3 -c 'import json,sys; print(json.dumps(sys.argv[1],ensure_ascii=False)[1:-1])' "$REASON")
 
 # ── 事件定义 ──────────────────────────────────────────────
 case "$EVENT" in
@@ -164,7 +176,7 @@ TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 DOMINANT=$(generate_tags "$NEW_PLEASURE" "$NEW_STRESS" "$NEW_AROUSAL" "$NEW_CURIOSITY" "$NEW_FATIGUE")
 
 # ── 原子写入 state.json ─────────────────────────────────
-TEMP_STATE=$(mktemp)
+TEMP_STATE=$(mktemp "$EMOTION_DIR/.emotion-write.XXXXXX")
 trap 'rm -f "$TEMP_STATE"' EXIT
 
 cat > "$TEMP_STATE" <<EOF
@@ -182,10 +194,15 @@ cat > "$TEMP_STATE" <<EOF
 }
 EOF
 
+python3 - "$TEMP_STATE" <<'PYVALID'
+import json,os,sys
+with open(sys.argv[1], 'r+') as f:
+    json.load(f); f.flush(); os.fsync(f.fileno())
+PYVALID
 mv "$TEMP_STATE" "$STATE_FILE"
 
 # ── 记录 history.jsonl（所有有效事件均记录）─────────────
-TEMP_HIST=$(mktemp)
+TEMP_HIST=$(mktemp "$EMOTION_DIR/.emotion-write.XXXXXX")
 trap 'rm -f "$TEMP_STATE" "$TEMP_HIST"' EXIT
 
 # 读取现有历史并追加新条目
@@ -212,7 +229,7 @@ echo "$ENTRY" >> "$TEMP_HIST"
 mv "$TEMP_HIST" "$HISTORY_FILE"
 
 # ── 生成 context.md ──────────────────────────────────────
-TEMP_CTX=$(mktemp)
+TEMP_CTX=$(mktemp "$EMOTION_DIR/.emotion-write.XXXXXX")
 trap 'rm -f "$TEMP_STATE" "$TEMP_HIST" "$TEMP_CTX"' EXIT
 generate_context "$NEW_PLEASURE" "$NEW_STRESS" "$NEW_AROUSAL" "$NEW_CURIOSITY" "$NEW_TRUST" "$NEW_SOCIAL" "$NEW_FATIGUE" "$DOMINANT" > "$TEMP_CTX"
 mv "$TEMP_CTX" "$CONTEXT_FILE"

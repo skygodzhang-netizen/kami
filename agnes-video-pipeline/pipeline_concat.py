@@ -51,7 +51,7 @@ def concat(reps, scenes, batch, target_w=720, target_h=1280, fps=24):
 
     log(f"CONCAT compat={all_same} already_target={already_target} all_audio={all_have_audio} sigs={sigs}", logp)
 
-    if all_same and already_target:
+    if all_same and already_target and all_have_audio and all(x["audio"] == "aac" and x["ch"] == 2 for x in sigs):
         lst = os.path.join(batch, "final", "concat_list.txt")
         with open(lst, "w") as f:
             for p in files:
@@ -60,18 +60,35 @@ def concat(reps, scenes, batch, target_w=720, target_h=1280, fps=24):
                "-c", "copy", "-movflags", "+faststart", out]
         method = "stream-copy"
     else:
-        inp = []
-        for p in files:
-            inp += ["-i", p]
-        n = len(files)
-        filt = "".join(f"[{i}:v]scale={target_w}:{target_h}:flags=lanczos,setsar=1,fps={fps}[v{i}]" for i in range(n))
-        fc = filt + "".join(f"[v{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=0[vout]"
-        cmd = [FFMPEG, "-y"] + inp + [
-            "-filter_complex", fc, "-map", "[vout]",
-            "-c:v", "libx264", "-profile:v", "high", "-level", "4.0",
-            "-pix_fmt", "yuv420p", "-r", str(fps),
-            "-movflags", "+faststart", out]
-        method = "re-encode"
+        # Normalize each clip independently so mixed 704/720 widths and audio
+        # layouts concatenate deterministically. Preserve aspect ratio and pad;
+        # never stretch a person to fill the canvas.
+        norm_dir = os.path.join(batch, "final", "normalized")
+        os.makedirs(norm_dir, exist_ok=True)
+        normalized = []
+        for idx, (src, media) in enumerate(zip(files, sigs), 1):
+            dst = os.path.join(norm_dir, f"scene{idx:02d}.mp4")
+            vf = (f"scale={target_w}:{target_h}:force_original_aspect_ratio=decrease:flags=lanczos,"
+                  f"pad={target_w}:{target_h}:(ow-iw)/2:(oh-ih)/2:black,setsar=1,fps={fps}")
+            if media["audio"]:
+                ncmd = [FFMPEG, "-y", "-i", src, "-map", "0:v:0", "-map", "0:a:0", "-vf", vf,
+                        "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(fps),
+                        "-c:a", "aac", "-ac", "2", "-ar", "48000", "-movflags", "+faststart", dst]
+            else:
+                ncmd = [FFMPEG, "-y", "-i", src, "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo",
+                        "-map", "0:v:0", "-map", "1:a:0", "-vf", vf, "-shortest",
+                        "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(fps),
+                        "-c:a", "aac", "-ac", "2", "-ar", "48000", "-movflags", "+faststart", dst]
+            np = subprocess.run(ncmd, capture_output=True, text=True)
+            if np.returncode != 0:
+                return {"method":"normalize+concat","error":(np.stderr or "")[-1500:],"rc":np.returncode,"count":len(normalized)}
+            normalized.append(dst)
+        lst = os.path.join(batch, "final", "concat_list.txt")
+        with open(lst, "w") as f:
+            for p in normalized: f.write(f"file '{p}'\n")
+        cmd = [FFMPEG, "-y", "-f", "concat", "-safe", "0", "-i", lst,
+               "-c", "copy", "-movflags", "+faststart", out]
+        method = "normalize+concat"
 
     log(f"CONCAT method={method} files={len(files)}", logp)
     proc = subprocess.run(cmd, capture_output=True, text=True)
@@ -84,7 +101,7 @@ def concat(reps, scenes, batch, target_w=720, target_h=1280, fps=24):
                 "compat": all_same, "sigs": sigs}
     return {"method": method, "output": out, "rc": proc.returncode, "count": len(files),
             "compat": all_same, "already_target": already_target, "all_have_audio": all_have_audio,
-            "normalization": "scale" if not already_target else "stream-copy",
+            "normalization": "aspect-preserving-scale+pad+AAC-stereo" if method == "normalize+concat" else "stream-copy",
             "sigs": sigs}
 
 
@@ -121,9 +138,16 @@ def verify(out, expected_scenes):
     res["decode_ok"] = dc.returncode == 0
     kts = keyframe_times(out, res.get("fps") or 24)
     res["keyframe_times"] = [round(k, 3) for k in kts]
-    res["scene_present"] = len(kts) >= expected_scenes and all(k < 25.5 for k in kts[:expected_scenes]) if kts else False
+    # A valid five-scene concatenation may place the fifth scene boundary after
+    # 25.5 s when source clips are slightly longer than six seconds. Check the
+    # actual clip lifetime and ordered boundaries instead of a fixed cutoff.
+    boundaries = kts[:expected_scenes]
+    res["scene_present"] = (len(boundaries) == expected_scenes
+                            and boundaries[0] < 1.0
+                            and all(b > a for a, b in zip(boundaries, boundaries[1:]))
+                            and boundaries[-1] < res["duration"] - 1.0)
     res["pass"] = (res["decode_ok"] and res["width"] == 720 and res["height"] == 1280
-                   and res["codec"] == "h264" and res["pix_fmt"] == "yuv420p" and res["fps"] == 24
+                   and res["codec"] == "h264" and res["pix_fmt"] == "yuv420p" and abs(res["fps"] - 24) < 0.1
                    and abs(res["duration"] - 30) < 4 and res["scene_present"])
     return res
 

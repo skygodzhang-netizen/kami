@@ -1,0 +1,32 @@
+{
+  "author_id": "default",
+  "display_name": "作者笔名",
+  "default_genre": "未指定",
+  "default_core_pleasure": "未指定",
+  "author_signature": {
+    "tone": ["日常", "搞笑"],
+    "humor": {
+      "enabled": true,
+      "style": "冷幽默、吐槽、反差、自嘲",
+      "density": "medium",
+      "notes": "笑点从人物性格和处境自然流出，不硬凹段子"
+    },
+    "mature_content": {
+      "enabled": true,
+      "level": "mild",
+      "boundaries": [
+        "可暧昧、可擦边暗示，不写露骨细节",
+        "不写未成年人相关",
+        "不写强迫与非自愿情节"
+      ],
+      "avoid": ["直白色情描写", "长篇肉体细节"]
+    },
+    "daily_life_texture": true,
+    "notes": "叙事有生活质感；题材结构服从 genre，口吻服从本签名"
+  },
+  "mature_content_policy": {
+    "platform_safe": true,
+    "reminder_only": true,
+    "summary": "擦边以暗示和留白为主；校验器仅提醒不阻断"
+  }
+}
