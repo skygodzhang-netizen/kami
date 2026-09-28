@@ -1,0 +1,7 @@
+{
+  "owner_telegram_id": 8446950958,
+  "caddy_config_path": "/etc/caddy/Caddyfile",
+  "caddy_config_sha256": "531f276018c9b74f0d676ade00ef1171af1e3fcb55a3197312290f7033f51802",
+  "timezone": "Asia/Shanghai",
+  "recovery_max_attempts": 1
+}

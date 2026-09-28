@@ -76,7 +76,8 @@ except Exception as e:
 call_service() {
     local service="$1"      # 如 light.turn_on
     local entity_id="$2"    # 如 light.living_room
-    local params="${3:-{}}"
+    local params="${3-}"
+    [[ -n "$params" ]] || params='{}'
     local safety_level="${4:-low}"  # low 或 high
     
     case "$safety_level" in
@@ -94,11 +95,18 @@ call_service() {
             ;;
     esac
     
-    curl -s -X POST \
+    if [[ ! "$service" =~ ^[a-z0-9_]+\.[a-z0-9_]+$ ]]; then
+        echo "Invalid HA service name" >&2
+        return 1
+    fi
+    local payload
+    payload=$(python3 -c 'import json,sys; d=json.loads(sys.argv[2]); assert isinstance(d,dict); d["entity_id"]=sys.argv[1]; print(json.dumps(d))' "$entity_id" "$params") || return 1
+    curl --fail-with-body --silent --show-error --connect-timeout 5 --max-time 20 -X POST \
          -H "Authorization: Bearer $HA_TOKEN" \
          -H "Content-Type: application/json" \
-         -d "{\"entity_id\": \"$entity_id\", $params}" \
-         "$HA_URL/services/$service" 2>/dev/null
+         -d "$payload" \
+         "$HA_URL/api/services/${service/./\/}"
+
 }
 
 # 获取环境快照
@@ -177,7 +185,7 @@ case "${1:-help}" in
         ;;
     service)
         load_token
-        call_service "${2:-}" "${3:-}" "${4:-{}}" "${5:-low}"
+        call_service "${2:-}" "${3:-}" "${4-}" "${5:-low}"
         ;;
     *)
         echo "用法: $0 {state|states|snapshot|service}"

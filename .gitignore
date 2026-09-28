@@ -30,3 +30,32 @@ openclaw-windows-setup.ps1
 
 # Logs (keep in git, but exclude large binary logs)
 # memory/*.log
+
+# Python
+__pycache__/
+*.pyc
+scripts/__pycache__/
+skills/**/__pycache__/
+
+# Backup snapshots (never commit)
+*.before-*.md
+MEMORY.md.before-*
+
+# Lock files
+memory/emotion/.emotion.lock
+
+# Large media / runtime product trees (do not track)
+voice-v2/
+video_future_city/
+video_jobs/
+video-work/
+evaluations/
+evaluation/
+evolution/
+novels/
+backups/
+agnes-video-pipeline/e2e30s/
+agnes-video-pipeline/runtime/
+
+# Tests scratch (keep code, not fixtures)
+tests/fixtures/
