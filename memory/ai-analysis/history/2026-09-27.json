@@ -1,13 +1,13 @@
 {
-  "time":"2026-09-28 12:00:09",
+  "time":"2026-09-27 20:00:02",
   "risk":"low",
   "score":"0",
   "reason":"",
   "metrics":{
-    "ubuntu_disk":"30",
+    "ubuntu_disk":"29",
     "istoreos_overlay":"66",
     "memory":"64",
-    "temperature":"51",
+    "temperature":"49",
     "openclash":"running"
   }
 }

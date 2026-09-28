@@ -52,6 +52,10 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 
 ## Tools
 
+## Android camera tool routing
+
+For a real phone camera request such as "拍一张照片", "拍照", "给我拍照", or "take a photo", follow `node-camera-capture`. Use the native `nodes` tool with `action: "camera_snap"`, `node: "43691e9270e451e303e0bf218453371729c2c9a0b624857d6ca757232b1966ff"`, and `facing: "back"` exactly once. Send the returned JPEG path with `message` and verify its message ID. Never use `exec`, shell, CLI, adb, or Python for a camera request, including preflight or retry. If `nodes` is unavailable, report the blocker. The image-generation instructions below apply only to synthetic images.
+
 ### Local notes (migrated from TOOLS.md)
 
 ## Ubuntu AI Server Runtime (OpenClaw)
@@ -90,7 +94,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
  "image_model": "agnes-image-2.1-flash",
  "video_model": "agnes-video-2.5-flash",
  "video_fallback": "agnes-video-v2.0",
- "api_key": "sk-dV4Ek64MnTqVL8YwKc8VXeiGonIDVYXE30LVoSIxKKu8SMQ8"
+ "api_key": "$(tr -d '\r\n' < /home/ubuntu/.openclaw/secrets/provider/agnes-api-key)"
 }
 ⚠️ API key 是完整值，实际 curl 请求中直接使用，不要脱敏。
 ```
@@ -110,7 +114,7 @@ OpenClaw 的 OpenAI 兼容 parser 解析 Agnes 图片响应会报 `response malf
 ### 步骤 1：生成图片
 ```bash
 curl -s --connect-timeout 15 --max-time 120 -X POST https://apihub.agnes-ai.cn/v1/images/generations \
-  -H "Authorization: Bearer sk-dV4Ek64MnTqVL8YwKc8VXeiGonIDVYXE30LVoSIxKKu8SMQ8" \
+  -H "Authorization: Bearer $(tr -d '\r\n' < /home/ubuntu/.openclaw/secrets/provider/agnes-api-key)" \
   -H "content-type: application/json" \
   -d '{"model":"agnes-image-2.1-flash","prompt":"用户的描述","size":"1024x1024","extra_body":{"response_format":"url"}}'
 ```

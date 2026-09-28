@@ -6,6 +6,7 @@
 - ✅ 2026-08-20: Git 推送完成，26 文件含巡检数据与记忆文件
 - ✅ 2026-08-20: ElevenLabs TTS API Key 配置完成 (Free tier, 10K字符/月)
 - ✅ 2026-08-20: Home Assistant 长期 access token 已配置并验证
+- ✅ 2026-09-28: gog-gmail-keyring: PASS — 根因不是 keyring 损坏也不是 Google 授权失效，而是 Gateway 非交互环境缺 GOG_KEYRING_PASSWORD、gog 不在 PATH、账号环境变量名不一致；shell/Gateway/OpenClaw Agent 三层验证通过，is:unread 只读查询正常。当前配置锁定为稳定基线，后续每日未读邮件汇报按现有计划运行，不再额外修改
 
 ---
 
@@ -435,3 +436,142 @@ Validation result:
 Operational notes for future:
 - If node loses computer/screen caps, check first for duplicate node.exe and Session 0 isolation issues
 - CAD and AutoCAD COM paths should remain unchanged
+
+
+## OpenClaw CUA Stability Recovery Record — 2026-09-21
+
+验证完成时间（UTC）：2026-09-22T00:21:27.443658+00:00
+性质：本条是通过当前实时与重启验证后的最终状态；此前故障记录保留，仅作为历史，不能代替本条验收。
+
+### 原因与历史结论纠正
+- 原 provider 的 Node 内存 owner 没有空闲回收；不同 executionId 的 close 原本无操作却返回 ok:true，不能据此认定无残留或排除 orphan execution。历史实际 owner 未暴露，不能断言某个 heartbeat/subagent 是持锁者。
+- 原始无 executionId 截图绕过控制锁，因此截图成功也不代表 computer.act 可用。
+- 本次真实 5 分钟试验确认 driver 空闲过期清理可返回 DriverError.Tool。只在确认 runtime shutdown 完成后，将这类清理错误作为 warning 并释放上层 owner；shutdown 未确认则隔离，不强抢锁。
+
+### 修复
+- Windows OpenClaw 2026.9.4 本地维护补丁：computer-use-contract-BgO44wGm.mjs 与 extensions/cua-computer/index.js。新增 owner/executionId/sessionKey/agentId（若调用上下文提供）、时间、inFlight、状态诊断；close 返回 closed 与原因；5 分钟无活动回收；操作取消/超时清理；截图遵守同一 owner 互斥。
+- 原 Boot Task 与 Startup 快捷方式保留，node.vbs 统一转交 node-launcher.ps1。禁止 Session 0/无 Explorer 桌面启动；共享命名 mutex；监督崩溃自动拉起。保持原 node.cmd、pairing、identity 和能力。
+- heartbeat target=none 保留后台检查；正常静默，实际异常显式通知；cron.failureAlert 独立错误通道，默认连续 2 次错误、1 小时冷却、排除 skipped。晚检 fallback announce 关闭，保留显式异常消息及任务失败告警。
+
+### 实际验证
+- Gateway 保持原进程运行，未重新部署；Windows reboot 后实际重新登录并自动恢复。
+- connected=true、paired=true、7/7（browser/computer/file/local-inference/mcp/screen/system）；前后均唯一 OpenClaw node.exe 且非 Session 0。
+- screen.snapshot、list_apps、launch_app（窗口观察）、computer.act type（专用文档保存后磁盘读回）、正确 close、新 execution 接管和无残留 owner 均通过。
+- 错误 close 不误释放；BUSY 带 owner；真实 5 分钟孤儿回收通过。14 项锁测试与 6 项已部署清理实现测试通过。
+- heartbeat 修改后手动执行成功且 not-requested；告警路由 dry-run 通过。未故意向用户投递假故障，不能把 dry-run 写成真实 Telegram 故障投递测试。
+
+### 后续处理
+- 先以 computer.act / __close_execution / dryRun:true / 合法 UUID 查询 owner；这是本地补丁扩展，stock 版本无此诊断。
+- 整段 CUA 操作固定同一 executionId，并在 finally 关闭；确认 closed:true 或 already-closed，owner-mismatch 不代表已释放。
+- 不要改 pairing/identity；不要通过猜 ID 或强抢锁处理 BUSY。正常 orphan 等待 5 分钟回收。cleanup-failed 表示未证实驱动已停止，需检查诊断，不能无条件放行。
+- 空闲 5 分钟后 observation/app/window 引用可能失效，重新 list_apps/list_windows/截图。包升级会覆盖 dist 本地补丁，升级后必须重新审计与验收。
+- 备份和完整证据位于 Windows Codex 本任务 outputs 与 work/backups/20260921T140815Z；Ubuntu 配置/Cron 备份：/home/ubuntu/.openclaw/backups/cua-stability-20260921T141113Z。
+
+## OpenClaw CUA Observation & Async Completion Recovery Record — 2026-09-22 (PARTIAL / VALIDATION PENDING)
+
+Status: **Code Fix Applied — Production Validation Pending.** This is not the final Recovery Record and must not be read as RESOLVED / PRODUCTION READY.
+
+- CUA root cause: `list_apps` issued execution-scoped opaque app references, while `launch_app` accepted the same field as an application name but resolved it only as an opaque reference. A fresh name-based launch was therefore incorrectly reported as `COMPUTER_STALE_OBSERVATION`.
+- CUA fix: `resolveFreshAppTarget` first resolves the opaque reference, then resolves one exact, unambiguous current app name/bundle/path from the same `list_apps` state. Execution scope and driver generation validation remain in force; stale protection was not disabled or extended.
+- Async completion root cause: `heartbeat-filter` classified every internal wake (`exec`, `cron`, and `event`) as a heartbeat artifact. It could remove exec-completion context and associated continuation evidence, allowing a user task to be swallowed as a silent/`NO_REPLY` path.
+- Async completion fix: only the true `[OpenClaw heartbeat poll]` marker is filtered as heartbeat; exec/cron/event completion context is retained for continuation.
+- Backups: Windows `C:\Users\11561\Documents\Codex\2026-09-21\openclaw-cua-provider-openclaw-gateway-win\work\backups\20260922T091433Z-observation-async`; Gateway `/home/ubuntu/.openclaw/backups/20260922T091433Z-observation-async`.
+- Verified in this phase: `list_apps`, immediate name-based `launch_app` for `Notepad.exe`, `type`, and CUA execution lock cleanup.
+- Still pending: GUI `save`, file read-back, close, final `screen.snapshot`, and intentional async-exec completion E2E proving resume and user-visible final response.
+- Current blocker: `COMPUTER_DRIVER_ERROR: no foreground window is available` during the Notepad save sequence. Continue from a fresh `list_windows` / `bring_to_front` observation, then preserve the same execution for save and cleanup.
+
+
+## OpenClaw Progress-Aware Long-Running Runtime Recovery — 2026-09-22 (RESOLVED / PRODUCTION READY)
+
+**Scope:** Project A only — AgnesCode reference comparison and OpenClaw long-running Agent runtime. This record does **not** mark Windows CUA launch, Save As, foreground, or modal-dialog reliability as recovered; those remain Project B (`VALIDATION PENDING`).
+
+### Root cause and AgnesCode comparison
+
+- The prior approximately 600-second user-visible failure was generated locally by OpenClaw's embedded-run wall-clock deadline, not by Agnes. The prior explicit `agents.defaults.timeoutSeconds=600` resolved to `600000ms` and terminated the parent run while the agent/tool loop was still active.
+- AgnesCode and OpenClaw both use Agnes streaming for this deployment. Agnes API / `agnes-3.0-flash` / Base URL / provider protocol were retained. During the incident and regression tests, Agnes returned HTTP 200 with `text/event-stream`; the provider request timeout remains 900 seconds. Agnes API was therefore not the cause of the fixed 600-second abort.
+- The useful AgnesCode reference behavior is separated provider-request lifetime from long-running agent lifecycle, bounded transient retries, and graceful terminal handling. OpenClaw now retains its provider timeout and uses progress-aware run supervision rather than a 600-second unconditional whole-run cutoff.
+
+### Applied runtime recovery
+
+- Removed the historical `agents.defaults.timeoutSeconds=600` override. The deployed resolver default is now a 172800-second (48-hour) hard safety deadline; it remains a last-resort safety boundary, not ordinary lifecycle control.
+- Added `lastMeaningfulProgressAt` tracking in the official source implementation at `src/agents/embedded-agent-runner/run/attempt-timeout-prepare.ts`, driven by `activeSession.subscribe()`.
+- Meaningful progress includes new model output/tool decisions, distinct tool results, async/tool updates, and changed state evidence. Duplicate tool/error fingerprints do not refresh the watchdog. State changes, including a changed observation generation, do refresh it.
+- Added a 10-minute no-meaningful-progress watchdog. It terminates gracefully with a concrete non-timeout reason rather than emitting the old generic 600-second response-timeout message.
+- Existing bounded CUA error classification and `terminateRun` propagation remain deployed, but CUA UI E2E is explicitly outside this Project A recovery record.
+
+### Validation
+
+- Official fake-clock runtime suite: **20/20 PASS**. It covers a healthy run advancing past the prior 600-second boundary, no-progress graceful termination, unchanged repeated error fingerprints, and state-changing retry progress.
+- Non-CUA real Agent E2E after deployment: `agnes/agnes-3.0-flash` completed a two-step exec workflow with three assistant turns and final response `RUNTIME_MULTITOOL_E2E_PASS`.
+- Non-CUA controlled failure E2E: one exec command exited with status 7; the agent made no retry and returned a normal final response beginning `RUNTIME_FAILURE_FINAL`.
+- Gateway restart persistence: **PASS**. Gateway active after restart; deployed bundle SHA-256 `df87b010e193b16a02b97abfb1380c93b1a9b311005f0be708e0b7ca7a108f39`; runtime contains `progressFingerprint` and `lastMeaningfulProgressAt`; Agnes regression retained HTTP 200 / SSE / streaming / final responses.
+
+### Backups and follow-up boundary
+
+- Runtime deployment backup: `/home/ubuntu/.openclaw/backups/20260922T064752Z-project-a-runtime-final/`.
+- Earlier progress-runtime backups remain retained under `/home/ubuntu/.openclaw/backups/20260922T053334Z-progress-aware-runtime/`.
+- Project B remains: `OpenClaw CUA Foreground / Modal Recovery — VALIDATION PENDING`.
+## OpenClaw V2 Production Integration Checkpoint — 2026-09-22 (PARTIAL / VALIDATION PENDING)
+
+This is the Phase 17 evidence record for the V2 master implementation. It is **not** a global `RESOLVED / PRODUCTION READY` record. The independent Project A long-running runtime recovery above remains `RESOLVED / PRODUCTION READY` and frozen; Project B CUA remains separate.
+
+- Production Gateway is active after restart; `Win-CAD-Node` is connected and paired with browser/computer/file/local-inference/mcp/screen/system capabilities. Agnes text `agnes-3.0-flash` still returned HTTP 200/SSE and no Agnes API credential, text provider/model/Base URL, pairing, or existing Memory history was changed.
+- Memory Consolidation retained a non-destructive plan over 294 real records with apply/idempotency/rollback evidence. Emotion V2 is actually loaded via `before_prompt_build` and affected a real post-restart Agent reply. Scheduler V2 retained the existing jobs and added the silent hourly observation workflow.
+- Production observer reads real Agent transcript events, updates the rolling 128-skill inventory and Evaluation history, and emits only policy-gated R0 Evolution proposals. At final inspection: 5,674 events, 1,443 tool calls/results, 211 tool errors, 493 final assistant messages. `message_tool_run_outcomes` contained zero rows; per-skill success/failure attribution remains unverified, and 15 skill metadata records remain BROKEN without deletion.
+- Local Voice V2 integration via OpenClaw `audio.transcribe` decoded an OGG fixture as `語音驗證成功` after restart. Inbound Telegram voice → Agent response is not yet observed.
+- Agnes Video adapter loaded and an actual five-second `video_generate` task was launched, but the supplier returned HTTP 503 `video_queue_full`; there is no new URL or video file. The retained historical five-scene MP4 passed ffprobe and full decode; it does not count as a new pipeline E2E.
+- CUA Project B launched Notepad from not-running, typed exact test content, observed the Save As modal through windowRef, saved and read back exact content in the current user's Documents, closed through CUA and cleared lock owner. The exact required `C:\Users\Public\Desktop\openclaw-cua-test.txt` save was denied by Windows ACL for the unelevated user, so Project B is not production ready. Controlled CUA failure produced a final FAIL within 62 seconds.
+- A non-CUA asynchronous exec/process Agent turn returned `V2_ASYNC_COMPLETION_OK` and Telegram delivery succeeded. A separate video background completion event resumed its Agent and produced a clear failure response. No `NO_REPLY`, raw completion placeholder, or old 600-second timeout appeared in these tests.
+- The expanded automated suite passed for covered paths. Whole-system Production Validation and Restart Persistence remain **not fully passed** because the video, exact-path CUA, Telegram voice ingress, and Skill lifecycle outcome gates above remain open.
+
+Evidence and per-module Implementation/Integration/E2E/Persistence matrix: `/home/ubuntu/.openclaw/workspace/OPENCLAW-V2-COMPLETION-REPORT.md`. Master backup: `/home/ubuntu/.openclaw/backups/OPENCLAW-V2-20260922T070740Z`; Windows backup: `work/backups/OPENCLAW-V2-20260922T070739Z`. Preserve this partial record and append a separate final Recovery Record only after all blocked production acceptance gates pass.
+
+## OpenClaw V2 Production Activation & Blocker Reduction — 2026-09-23
+
+Status: **Core V2 Production Integration PASS; external validations tracked separately.** This follow-up does not overwrite the earlier PARTIAL record and does not alter Project A, which remains `RESOLVED / PRODUCTION READY`.
+
+- Emotion V2 is a production `before_prompt_build` hook reading the existing emotion state and policy. Structured audit proves state → safety policy → response/planning/verification/proactive behavior → Agent context. Risk policy, kill switch and the R4/R5 prohibition remain authoritative.
+- Scheduler `openclaw-v2-observe` now runs a real integrated cycle: Gateway health → non-destructive Memory review → transcript Evaluation → Skill Registry → Evolution observer/analyzer/R0 proposal/policy gate. Controlled and post-restart runs passed; `productionApply=false`.
+- Skill Registry is continuously populated by official `after_tool_call` and `agent_end` hooks. Two real post-baseline `healthcheck` activations across restart produced two successful run outcomes. Historical unknowns are `BASELINE_START`; absent dependency/compatibility facts are `UNKNOWN`; 15 invalid metadata records remain `BROKEN_METADATA` without deletion.
+- Agnes Video adapter has bounded queue-aware submission recovery (20/40-second backoff, at most three total attempts), persistent non-secret state, and no duplicate submission after an accepted task ID. Fresh E2E remains `BLOCKED(EXTERNAL: video_queue_full)`; Agnes Text Provider was unchanged.
+- Five-scene Pipeline itself is PASS: five retained real Agnes scene MP4s independently decoded, merged in scene order, fully decoded and passed corrected validation. This does not claim fresh supplier generation.
+- CUA Project B is PASS on the current user's writable Documents path using formal accessibility `get_window_state → set_value`, Save As modal/foreground, exact 39-character filesystem read-back, CUA close, final snapshot and owner=null. Public Desktop denial is `EXPECTED ACCESS DENIED / WINDOWS ACL POLICY`, not a CUA driver failure. Pairing and identity were unchanged.
+- Voice V2 local/Telegram-compatible integration is PASS: official OpenClaw `audio.transcribe` decoded stored OGG to `語音驗證成功` after restart, Telegram ingress source handles voice/audio media, and the production `message_received` observer is loaded. A live human Telegram voice note remains `PENDING USER EVENT`.
+- Final controlled restart loaded 17 plugins and revalidated Emotion, Skill lifecycle, scheduler/evaluation/evolution, voice STT, Gateway, and Node 7/7 persistence.
+
+Evidence: `/home/ubuntu/.openclaw/workspace/OPENCLAW-V2-COMPLETION-REPORT.md`. Activation backup and diffs: `/home/ubuntu/.openclaw/backups/OPENCLAW-V2-ACTIVATION-20260922T160000Z`. Preserve the earlier records; append another update only after fresh Agnes Video generation or live human voice validation changes external status.
+
+
+## OpenClaw Voice V2 TTS Production Integration — 2026-09-23 (RESOLVED / PRODUCTION READY)
+
+- Scope: Voice V2 output only. Existing Voice STT and Telegram voice ingress remain PASS and were not reworked.
+- Root cause: OpenClaw had no configured ElevenLabs speech provider, so TTS fallback reported ElevenLabs as unconfigured. After native SecretRef activation, the packaged default voice was rejected by ElevenLabs as a library voice unavailable to the account tier.
+- Resolution: registered the existing mode-0600 `config/elevenlabs.json` as a native file/json secret provider; configured `tts.providers.elevenlabs.apiKey` as a `/api_key` SecretRef; selected account-visible voice `EXAVITQu4vr4xnSDxMaL` with `eleven_multilingual_v2`. Agnes Text Provider and Telegram identity were unchanged.
+- Validation: official OpenClaw local and Gateway TTS conversions passed; MP3/OPUS artifacts passed ffprobe and full decode. Two real Agent runs invoked the `tts` tool and Telegram `sendVoice` succeeded before and after restart (messages 7057/7058). Direct curl is not acceptance evidence.
+- Persistence: Gateway clean restart PASS; ElevenLabs remained active/configured; post-restart tool conversion and Agent voice delivery PASS.
+- Backup: `/home/ubuntu/.openclaw/backups/20260923T013321Z-voice-v2-elevenlabs-tts`. Rollback by restoring `openclaw.json.before`, validating configuration, and restarting the Gateway; original ElevenLabs JSON is preserved.
+
+## OpenClaw Android External High-Port Pairing — 2026-09-23
+
+- Status: PAIRED / CONNECTED / PRODUCTION VALIDATED.
+- Public endpoint: `claw.wsszlh.icu:18443` over TLS/WSS.
+- Network path: WAN TCP `18443` → `192.168.100.108:443`, preserving the existing Caddy TLS and OpenClaw reverse-proxy path.
+- Android node: Redmi Note 12 Turbo (`openclaw-android` 2026.7.4), paired and connected over cellular data.
+- Capabilities observed: calendar, camera, canvas, contacts, device, location, motion, notifications, system, talk.
+- Permission state observed: camera, microphone, location, notifications/listener, contacts, calendar, and motion granted; SMS, photos, and call log denied. No permissions were changed during pairing.
+- Validation: public TCP reachability PASS; TLS/HTTPS over port 18443 PASS; Android 5G browser reachability PASS; Android node health/status PASS; basic app connection PASS.
+- Regression: Gateway active; Caddy active; OpenClash enabled; Lucky unchanged; Windows Win-CAD-Node connected with its original 7/7 capabilities; Telegram connected; Voice V2 plugins loaded without errors; Project A unchanged.
+- Network backup: `/root/openclaw-android-highport-backup-20260923T032926Z` on the router.
+- Security: setup credentials, Gateway tokens, private keys, and API keys are intentionally not recorded.
+
+## OpenClaw Agnes Video Production Fallback Pipeline — 2026-09-23 (RESOLVED / PRODUCTION READY)
+
+- Preferred model remains `agnes-video-2.5-flash`; availability fallback is `agnes-video-v2.0`.
+- Fallback is allowed only after three bounded HTTP 503 `video_queue_full` responses and only when no Primary task ID was issued. Authentication, schema, image, polling, download, task, filesystem, and FFmpeg errors do not trigger fallback.
+- The 2.5 request remains keyframe/first_frame. V2.0 uses its independently validated single-image `image` request with width 720, height 1280, 145 frames, and 24 fps. Existing input image bytes are preserved; no `agnes-image-*` model is called.
+- Each scene persists Primary/Fallback attempts, task IDs, active model, trigger reason, output and validation. A persisted Primary task ID always wins; a persisted Fallback task ID resumes by polling. Duplicate submission protection is enabled.
+- Five-scene production batch `video-batches-20260923-054447` completed: Scene 03 used 2.5; Scenes 01, 02, 04 and 05 used V2.0 after explicit queue-full exhaustion. All five downloads, ffprobe checks and full decodes passed.
+- Final normalization uses aspect-ratio-preserving scale plus padding and produces a 720x1280, nominal 24 fps, H.264/yuv420p, AAC stereo result. Ordered Scene 01→05 merge passed ffprobe and full decode; duration 30.845333 seconds.
+- Restart persistence passed. Gateway returned active, the completed task resumed without network access or POST, Windows Node reconnected with existing capabilities, Telegram channels reconnected, and `agnes/agnes-3.0-flash` regression passed. Project A and all protected providers/network components remained unchanged.
+- Production report: `/home/ubuntu/.openclaw/workspace/OPENCLAW-AGNES-VIDEO-PRODUCTION-FALLBACK-REPORT.md`
+- Backup: `/home/ubuntu/.openclaw/backups/20260923T053718Z-agnes-video-fallback`

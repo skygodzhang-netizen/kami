@@ -1,1 +1,3 @@
 
+
+2026-09-23T01:47:13.114004+00:00 VOICE_V2_TTS_PRODUCTION_INTEGRATION_2026-09-23 PASS config=native_file_secret_ref provider=elevenlabs model=eleven_multilingual_v2 pre_restart_agent_tts=PASS post_restart_agent_tts=PASS telegram_sendVoice=PASS backup=/home/ubuntu/.openclaw/backups/20260923T013321Z-voice-v2-elevenlabs-tts

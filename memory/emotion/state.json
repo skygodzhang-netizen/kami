@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": null,
+  "updated_at": "2026-09-28T12:18:44.894759Z",
   "pleasure": 50,
   "arousal": 50,
   "stress": 20,
@@ -8,5 +8,5 @@
   "trust": 60,
   "social": 50,
   "fatigue": 20,
-  "dominant_emotion": "平静"
+  "dominant_emotion": "中性"
 }

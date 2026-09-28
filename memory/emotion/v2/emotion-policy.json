@@ -1,0 +1,1 @@
+{"version":1,"safety":{"neverElevateRisk":true,"neverBypassPolicy":true,"neverAutoApproveR4R5":true},"rules":{"stress":{"high":{"verification":"increased","autonomy":"reduced"}},"trust":{"high":{"lowRiskConfirmation":"reduced"}},"curiosity":{"high":{"safeExploration":"enabled"}},"fatigue":{"high":{"proactiveWork":"reduced"}}}}

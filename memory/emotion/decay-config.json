@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseline_source": "skills/emotion-engine/SKILL.md 7-dimensional baseline table",
+  "dimensions": {
+    "pleasure": {"baseline": 50, "half_life_hours": 6},
+    "arousal": {"baseline": 50, "half_life_hours": 2},
+    "stress": {"baseline": 20, "half_life_hours": 6},
+    "curiosity": {"baseline": 50, "half_life_hours": 24},
+    "trust": {"baseline": 60, "half_life_hours": 168},
+    "social": {"baseline": 50, "half_life_hours": 24},
+    "fatigue": {"baseline": 20, "half_life_hours": 24}
+  },
+  "history_threshold": 1,
+  "history_min_interval_seconds": 3600
+}

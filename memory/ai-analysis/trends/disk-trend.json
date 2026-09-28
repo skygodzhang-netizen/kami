@@ -1,9 +1,9 @@
 {
   "status":"ok",
-  "samples":"139",
-  "current_disk":"22%",
-  "growth_total":"6%",
-  "growth_per_day":"0.04%",
-  "forecast_to_85_percent":"1575 days",
+  "samples":"153",
+  "current_disk":"30%",
+  "growth_total":"14%",
+  "growth_per_day":"0.09%",
+  "forecast_to_85_percent":"611 days",
   "risk":"low"
 }

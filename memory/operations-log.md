@@ -43,3 +43,7 @@
 - 待处理: 23个包可升级（非紧急）
 [2026-08-28 16:03:50 CST] 08:00 UTC心跳巡检完成 - OpenClash代理失效持续，WAN丢包50%，Telegram通知失败（代理问题）
 [2026-08-28 17:30 UTC] 巡检通知 Telegram 发送失败 - recipient @heartbeat 无法解析
+
+## 2026-09-26 — 重启事件登记
+- 17:56 CST 双节点重启 = PLANNED MAINTENANCE / CODEX-INITIATED REBOOT（计划内，非故障）
+- 09-25 重启原因独立记录，不自动关联
